@@ -152,6 +152,7 @@ export class MatrixViewComponent implements OnInit {
         const graph: string = DotBuilder.build(
             this.projectConfiguration,
             MatrixViewComponent.getPeriodMap(this.featureDocuments, this.matrixState.getClusterMode()),
+            this.matrixState.getHierarchyMode() === 'hierarchy',
             edges,
             this.matrixState.getLineMode() === 'curved'
         );

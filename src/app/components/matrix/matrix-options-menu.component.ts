@@ -27,6 +27,7 @@ export class MatrixOptionsMenuComponent extends MenuComponent {
     public getRelationsMode = () => this.matrixState.getRelationsMode();
     public getLineMode = () => this.matrixState.getLineMode();
     public getClusterMode = () => this.matrixState.getClusterMode();
+    public getHierarchyMode = () => this.matrixState.getHierarchyMode();
 
 
     public async setRelationsMode(relationsMode: MatrixRelationsMode) {
@@ -47,6 +48,14 @@ export class MatrixOptionsMenuComponent extends MenuComponent {
 
         await this.matrixState.setClusterMode(
             this.matrixState.getClusterMode() === 'periods' ? 'none' : 'periods'
+        );
+        this.onChange.emit();
+    }
+
+    public async toggleHierarchyMode() {
+
+        await this.matrixState.setHierarchyMode(
+            this.matrixState.getHierarchyMode() === 'hierarchy' ? 'none' : 'hierarchy'
         );
         this.onChange.emit();
     }

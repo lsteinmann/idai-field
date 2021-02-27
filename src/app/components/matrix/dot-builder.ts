@@ -12,6 +12,7 @@ export module DotBuilder {
 
     export function build(projectConfiguration: ProjectConfiguration,
                           groups: { [group: string]: Array<Document> },
+                          hierarchyClustering: boolean,
                           edges: { [id: string]: Edges },
                           curvedLineMode = true): string {
 
@@ -22,7 +23,7 @@ export module DotBuilder {
             + createRootDocumentMinRankDefinition(documents, edges)
             + createAboveEdgesDefinitions(documents, edges)
             + createSameRankEdgesDefinitions(documents, edges)
-            + createHierarchyCluster(documents)
+            + (hierarchyClustering ? createHierarchyCluster(documents) : '')
             + (!curvedLineMode ? ' splines=ortho }' : '}');
     }
 

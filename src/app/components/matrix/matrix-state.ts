@@ -4,6 +4,7 @@ import {StateSerializer} from '../../core/common/state-serializer';
 export type MatrixRelationsMode = 'temporal'|'spatial';
 export type MatrixLineMode = 'ortho'|'curved';
 export type MatrixClusterMode = 'periods'|'none';
+export type MatrixHierarchyMode = 'hierarchy'|'none';
 
 
 /**
@@ -17,6 +18,7 @@ export class MatrixState {
     private relationsMode: MatrixRelationsMode = 'temporal';
     private lineMode: MatrixLineMode = 'ortho';
     private clusterMode: MatrixClusterMode = 'periods';
+    private hierarchyMode: MatrixHierarchyMode = 'hierarchy';
 
 
     constructor(private stateSerializer: StateSerializer) {}
@@ -65,10 +67,21 @@ export class MatrixState {
         return this.clusterMode;
     }
 
+    public getHierarchyMode(): MatrixHierarchyMode {
+
+        return this.hierarchyMode;
+    }
+
 
     public async setClusterMode(clusterMode: MatrixClusterMode) {
 
         this.clusterMode = clusterMode;
+        await this.store();
+    }
+
+    public async setHierarchyMode(hierarchyMode: MatrixHierarchyMode) {
+
+        this.hierarchyMode = hierarchyMode;
         await this.store();
     }
 

@@ -84,6 +84,21 @@
                         Gruppierung nach Grobdatierung
                     </label>
                 </div>
+                <div class="form-check form-check-inline">
+                    <input id="hierarchy-check"
+                           class="form-check-input"
+                           name="hierarchy-check"
+                           type="checkbox"
+                           [checked]="getHierarchyMode() === 'hierarchy'"
+                           (change)="toggleHierarchyMode()">
+                    <label id="hierarchy-check-label"
+                           class="form-check-label"
+                           for="hierarchy-check"
+                           i18n="@@matrix.optionsMenu.clusterHierarchyOption">
+                        Gruppierung nach Hierarchie
+                    </label>
+                </div>
+
             </fieldset>
         </form>
     </div>
