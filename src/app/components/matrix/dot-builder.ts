@@ -14,16 +14,18 @@ export module DotBuilder {
                           groups: { [group: string]: Array<Document> },
                           hierarchyClustering: boolean,
                           edges: { [id: string]: Edges },
+                          findDocs: Array<Document>,
+                          sampleDocs: Array<Document>,
                           curvedLineMode = true): string {
 
         const documents: Array<Document> = getDocuments(groups);
 
         return 'digraph { newrank=true; '
-            + createNodeDefinitions(projectConfiguration, groups)
+            + createNodeDefinitions(projectConfiguration, groups, findDocs, sampleDocs)
             + createRootDocumentMinRankDefinition(documents, edges)
             + createAboveEdgesDefinitions(documents, edges)
             + createSameRankEdgesDefinitions(documents, edges)
-            + (hierarchyClustering ? createHierarchyCluster(documents) : '')
+            + (hierarchyClustering ? createHierarchyCluster(projectConfiguration, documents) : '')
             + (!curvedLineMode ? ' splines=ortho }' : '}');
     }
 
@@ -41,7 +43,7 @@ export module DotBuilder {
         return (doc.resource.relations['liesWithin'] || []).length == 0;
     }
 
-    function findChildren(docs: Array<Document>, clusterParentId: string, parentIds: Array<string>) {
+    function findChildren(projectConfiguration:ProjectConfiguration, docs: Array<Document>, clusterParentId: string, parentIds: Array<string>) {
         const children = docs.filter((doc: Document) => (doc.resource.relations['liesWithin'] || []).includes(clusterParentId));
 
         return children.map(doc => {
@@ -50,10 +52,11 @@ export module DotBuilder {
                 'label = "' + doc.resource.identifier + '" '
                 + 'fontname="Roboto" '
                 + 'color=grey '
-                + 'bgcolor="#9CF0E930" '
+                + 'bgcolor="'
+                + projectConfiguration.getColorForCategory(doc.resource.category) +'60" '
                 + 'style=dotted ' +
                 '"' + doc.resource.identifier + '"; ' + 
-                findChildren(docs, doc.resource.id, parentIds) +
+                findChildren(projectConfiguration, docs, doc.resource.id, parentIds) +
                 '} ';
             } else {                
                 return `"${doc.resource.identifier}"; `;
@@ -62,7 +65,7 @@ export module DotBuilder {
     }
 
 
-    function createHierarchyCluster(docs: Array<Document>) {
+    function createHierarchyCluster(projectConfiguration:ProjectConfiguration, docs: Array<Document>) {
         const parentIds = findParents(docs);
         
         return docs.map(doc => {
@@ -73,10 +76,10 @@ export module DotBuilder {
                     + 'fontname="Roboto" '
                     + 'labelcolor="red"'
                     + 'color=grey '
-                    + 'bgcolor="#FAF6C820" '
+                    + 'bgcolor="grey90" '
                     + 'style=dotted ' +
                     '"' + doc.resource.identifier + '"' + 
-                    findChildren(docs, doc.resource.id, parentIds) +
+                    findChildren(projectConfiguration, docs, doc.resource.id, parentIds) +
                     '} '
                 }
             }
@@ -138,24 +141,27 @@ export module DotBuilder {
 
 
     function createNodeDefinitions(projectConfiguration: ProjectConfiguration,
-                                   groups: { [group: string]: Array<Document> }): string {
+                                   groups: { [group: string]: Array<Document> },
+                                   findDocs: Array<Document>,
+                                   sampleDocs: Array<Document>): string {
 
         return 'node [style=filled, fontname="Roboto"] '
             + Object
                 .keys(groups)
                 .map(group => createNodeDefinitionsForGroup(
-                    projectConfiguration, group, groups[group])
+                    projectConfiguration, group, groups[group], findDocs, sampleDocs)
                 )
                 .join('');
     }
 
 
     function createNodeDefinitionsForGroup(projectConfiguration: ProjectConfiguration,
-                                           group: string, documents: Array<Document>): string {
+                                           group: string, documents: Array<Document>,
+                                           findDocs: Array<Document>, sampleDocs: Array<Document>): string {
 
         const nodeDefinitions: string =
             documents
-                .map(createNodeDefinition(projectConfiguration))
+                .map(createNodeDefinition(projectConfiguration, findDocs, sampleDocs))
                 .join('');
 
         return group === 'UNKNOWN'
@@ -299,10 +305,18 @@ export module DotBuilder {
     }
 
 
-    function createNodeDefinition(projectConfiguration: ProjectConfiguration) {
+    function createNodeDefinition(projectConfiguration: ProjectConfiguration, findDocs: Array<Document>, sampleDocs: Array<Document>) {
 
         return (document: Document) => {
-
+            const findCategories = [...new Set(findDocs.filter(fd => (fd.resource.relations['liesWithin'] || []).includes(document.resource.id)).map(fd => fd.resource.category))];
+            let fishEyes = '';
+            if (findCategories.length > 0) {
+                fishEyes = '<br />' + findCategories.map(c => `<font bgcolor="white" color="${projectConfiguration.getColorForCategory(c)}">&#9673;</font>`).join('');
+            }
+            let diamond = '';
+            if (sampleDocs.find(s => (s.resource.relations['liesWithin'] || []).includes(document.resource.id))) {
+                diamond = '&#9670;<br />';
+            }
             return '"' + document.resource.identifier + '"' // <- important to enclose the identifier in "", otherwise -.*# etc. cause errors or unexpected behaviour
                 + ' [id="node-' + document.resource.id + '" fillcolor="'
                 + projectConfiguration.getColorForCategory(document.resource.category)
@@ -310,7 +324,7 @@ export module DotBuilder {
                 + projectConfiguration.getColorForCategory(document.resource.category)
                 + '" fontcolor="'
                 + projectConfiguration.getTextColorForCategory(document.resource.category)
-                + '"] ';
+                + '" label=< ' + diamond + document.resource.identifier + fishEyes + ' >] ';
         }
     }
 

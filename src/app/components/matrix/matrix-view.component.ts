@@ -53,6 +53,8 @@ export class MatrixViewComponent implements OnInit {
     public selectedTrench: FieldDocument|undefined;
 
     private featureDocuments: Array<FeatureDocument> = [];
+    private findDocuments: Array<FieldDocument> = [];
+    private sampleDocuments: Array<FieldDocument> = [];
     private totalFeatureDocuments: Array<FeatureDocument> = [];
     private trenchesLoaded: boolean = false;
 
@@ -142,7 +144,7 @@ export class MatrixViewComponent implements OnInit {
 
 
     public calculateGraph() {
-
+        this.datastore.find
         const edges: { [resourceId: string]: Edges } = EdgesBuilder.build(
             this.featureDocuments,
             this.totalFeatureDocuments,
@@ -154,6 +156,8 @@ export class MatrixViewComponent implements OnInit {
             MatrixViewComponent.getPeriodMap(this.featureDocuments, this.matrixState.getClusterMode()),
             this.matrixState.getHierarchyMode() === 'hierarchy',
             edges,
+            this.findDocuments,
+            this.sampleDocuments,
             this.matrixState.getLineMode() === 'curved'
         );
 
@@ -200,7 +204,10 @@ export class MatrixViewComponent implements OnInit {
         this.totalFeatureDocuments = this.featureDocuments = (await this.featureDatastore.find( {
             constraints: { 'isRecordedIn:contain': trench.resource.id }
         })).documents;
-
+        const findCategories = (this.projectConfiguration.getCategory("Find")?.children || []).map(c => c.name);
+//        console.log(this.projectConfiguration.getCategoryTreelist("Find").map(x => JSON.stringify(x)).join(' '));
+        this.findDocuments = (await this.datastore.find({ categories: findCategories, constraints: { 'liesWithin:contain': this.featureDocuments.map(d => d.resource.id) } })).documents;
+        this.sampleDocuments = (await this.datastore.find({ categories: ["Sample"], constraints: { 'liesWithin:contain': ((this.featureDocuments as Array<FieldDocument>).concat(this.findDocuments)).map(d => d.resource.id) } })).documents;
         this.loading.stop();
     }
 
