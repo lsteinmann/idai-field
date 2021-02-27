@@ -22,7 +22,65 @@ export module DotBuilder {
             + createRootDocumentMinRankDefinition(documents, edges)
             + createAboveEdgesDefinitions(documents, edges)
             + createSameRankEdgesDefinitions(documents, edges)
+            + createHierarchyCluster(documents)
             + (!curvedLineMode ? ' splines=ortho }' : '}');
+    }
+
+
+    function findParents(docs: Array<Document>) {
+        const parentIds: Array<string> = flatMap((doc: Document) => doc.resource.relations['liesWithin'] || [])(docs);
+        return parentIds;
+    }
+
+    function checkIfParent(child: Document, parentIds: Array<string>): boolean {
+        return parentIds.find((id: string) => id === child.resource.id) !== undefined;
+    }
+
+    function checkIfRoot(doc: Document): boolean {
+        return (doc.resource.relations['liesWithin'] || []).length == 0;
+    }
+
+    function findChildren(docs: Array<Document>, clusterParentId: string, parentIds: Array<string>) {
+        const children = docs.filter((doc: Document) => (doc.resource.relations['liesWithin'] || []).includes(clusterParentId));
+
+        return children.map(doc => {
+            if (checkIfParent(doc, parentIds)) {
+                return 'subgraph "cluster ' + doc.resource.identifier + '" { ' +
+                'label = "' + doc.resource.identifier + '" '
+                + 'fontname="Roboto" '
+                + 'color=grey '
+                + 'bgcolor="#9CF0E930" '
+                + 'style=dotted ' +
+                '"' + doc.resource.identifier + '"; ' + 
+                findChildren(docs, doc.resource.id, parentIds) +
+                '} ';
+            } else {                
+                return `"${doc.resource.identifier}"; `;
+            }
+        }).join(" ")
+    }
+
+
+    function createHierarchyCluster(docs: Array<Document>) {
+        const parentIds = findParents(docs);
+        
+        return docs.map(doc => {
+            if (checkIfRoot(doc)) {
+                if (checkIfParent(doc, parentIds)) {
+                    return 'subgraph "cluster ' + doc.resource.identifier + '" { ' +
+                    'label = "' + doc.resource.identifier + '" '
+                    + 'fontname="Roboto" '
+                    + 'labelcolor="red"'
+                    + 'color=grey '
+                    + 'bgcolor="#FAF6C820" '
+                    + 'style=dotted ' +
+                    '"' + doc.resource.identifier + '"' + 
+                    findChildren(docs, doc.resource.id, parentIds) +
+                    '} '
+                }
+            }
+            return ''
+        }).join('')
     }
 
 
