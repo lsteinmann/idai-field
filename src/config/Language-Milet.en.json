@@ -8,7 +8,7 @@
     },
     "identifier": {
       "label": "Name / ID (eindeutig)",
-      "description": "Unique Identifier of this ressource. If applicable, should use the milesian naming conventions; i.e. Area, Year, Trench...; e.g. for contexts: HU19_A_01 for Context 1 in Trench A in the year 2019 on Humeitepe."
+      "description": "Unique Identifier of this ressource. If applicable, should use the milesian naming conventions; i.e. Area, Year, Trench...; e.g. for contexts: HU19.A.01 for Context 1 in Trench A in the year 2019 on Humeitepe."
     },
     "shortDescription": {
       "label": "(short) secondary Title"
@@ -17,7 +17,7 @@
       "label": "Scale"
     },
     "measuringPointID": {
-      "label": "Measuring-Point-IS",
+      "label": "Measuring-Point-ID",
       "description": "ID of the data in the Totalstation, empty if not applicable"
     },
     "localization": {
@@ -44,14 +44,17 @@
   "relations": {
     "isEquivalentTo": {
       "label": "identical with"
+    },
+    "isFilledBy": {
+      "label": "is filled by"
+    },
+    "fills": {
+      "label": "fills"
     }
   },
   "categories": {
     "Trench": {
       "label": "Excavation-Area"
-    },
-    "TrenchSketch": {
-      "label": "Sketch / Planum"
     },
     "Feature": {
       "label": "Trench",
@@ -59,62 +62,74 @@
         "hasDisturbance": {
           "label": "Disturbed",
           "description": "Is the trench/section/context/unit disturbed? (i.e. can some finds be non-indicative?)"
+        },
+        "contextFindProcessing": {
+          "label": "Requests to Find Processing",
+          "description": "How should the contents of the context or unit be processed?"
         }
       }
     },    
     "Layer": {
       "label": "Context",
-      "fields": {
+      "fields": { 
+        "sampleTaken": {
+          "label": "Sample taken",
+          "description": "Has a sample been collected from this context? e.g. flotation, earth or charcoal"
+        },
         "distinguishingCriteria": {
           "label": "Distinguishing criteria (in relation to surrounding contexts)",
-          "description": "NA"
+          "description": "How has this context been distinguished from its surrounding material?"
         },
         "layerClassification": {
-          "label": "Befundart",
-          "description": "Um welche Art von Befund handelt es sich?"
+          "label": "Classification of Context",
+          "description": "What kind of context is it?"
         },
         "isNatural": {
-          "label": "Natürliche Entstehung",
-          "description": "Ist die Schicht natürlich? ('Ja' z. B. bei Erosion, 'nein' wenn anthropogen)"
+          "label": "Natural Occurence",
+          "description": "Is this context a naturally occuring layer ('Yes' for e.g erosion, 'no' if anthropogenous)"
         },
         "contextDescription": {
-          "label": "Beschreibung des Befundes",
-          "description": "Entspricht dem Feld 'Kurzbeschreibung' auf dem Befundzettel"
+          "label": "Description of Context",
+          "description": "See 'short description' on paper form"
         },
         "soilType": {
-          "label": "Bodenanteile",
-          "description": "Partikel des Bodens nach bodenkundlicher Anleitung, bitte erläutern und Anteile in der Beschreibung angeben"
+          "label": "Soiltype",
+          "description": "What type of Soil is it? Elaborate with a thorough description in the text field below"
         },
         "consistency": {
-          "label": "Konsistenz",
-          "description": "Härte bzw. Konsistenz des Bodens"
+          "label": "Consistency",
+          "description": "Consistency of the soil"
         },
         "layerSoilContentDesc": {
-          "label": "Beschreibung des Bodens",
-          "description": "Nach dem Formular: Farbe / Bodenart / Konsistenz"
+          "label": "Soil Description",
+          "description": "See Paper form: Colour / Soiltype / Consistency"
         },
         "layerColor0": {
-          "label": "Grundfarbe des Bodens",
-          "description": "gemeinsam mit Farbintensität auswählen"
+          "label": "Soil base colours",
+          "description": "select the main colour of the soil"
         },
         "layerColorIntensity": {
-          "label": "Intensität der Bodenfarbe",
-          "description": "gemeinsam mit Farbe auswählen"
+          "label": "Soil colour intensity",
+          "description": "select the intensity of the soil colour"
         },
         "layerInclusions": {
-          "label": "Einschlüsse und Bestandteile",
+          "label": "Inclusions",
           "description": "Bodenbestandteile und Einschlüsse"
         },
         "layerInclusionsDesc": {
-          "label": "Einschlüsse: Ergänzungen",
+          "label": "Inclusions: Description and Addenda",
           "description": "Einschlüsse: Ergänzungen"
         },
         "layerFinds": {
-          "label": "Funde",
+          "label": "Finds (overview)",
           "description": "Grober Überblick über die im Befund enthaltenen Funde"
         },
+        "layerFindsComplete": {
+          "label": "Complete find collection",
+          "description": "Have all the finds of this context been handed to find processing (yes) or has only a sample been archives (no)."
+        },
         "layerFindsOther": {
-          "label": "Funde (Ergänzungen)",
+          "label": "Finds (Addenda)",
           "description": "Grober Überblick über die im Befund enthaltenen Funde"
         },
         "layerInterpretation": {
@@ -122,8 +137,8 @@
           "description": "..."
         },
         "layerDatingIndication": {
-          "label": "Datierende Elemente",
-          "description": "Erläuterung der Basis für die Datierung"
+          "label": "Dating Elements",
+          "description": "Elaborate on why the context was dated. See Dating in ..."
         }
       }
     },
@@ -132,10 +147,6 @@
     },
     "Find": {
       "fields": {
-        "measuringPointID": {
-          "label": "Surveying ID (Totalstation)",
-          "description": "MesspunktID, andernfalls 'nicht gemessen' oder 'unklar'"
-        },
         "storagePlaceOther": {
           "label": "Other Storage Place",
           "description": "Please enter place of storage here if it is not an option in the list above."

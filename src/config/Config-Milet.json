@@ -72,6 +72,9 @@
       "localization-description": {
         "inputType": "text"
       },
+      "measuringPointID": {
+        "inputType": "input"
+      },
       "FotoNr": {
         "inputType": "text"
       },
@@ -80,16 +83,23 @@
       },
       "notes": {
         "inputType": "text"
+      },
+      "contextFindProcessing": {
+        "inputType": "radio"
       }
     },
     "valuelists": {
-      "localization": "localization-milet"
+      "localization": "localization-milet",
+      "contextFindProcessing": "contextFindProcessing-milet"
     }
   },
   "Layer:default": {
     "hidden": [],
     "color": "#665432",
     "fields": {
+      "sampleTaken": {
+        "inputType": "boolean"
+      },
       "layerClassification": {
         "inputType": "dropdown"
       },
@@ -126,6 +136,9 @@
       "layerFinds": {
         "inputType": "checkboxes"
       },
+      "layerFindsComplete": {
+        "inputType":  "boolean"
+      },
       "layerFindsOther": {
         "inputType": "text"
       },
@@ -154,9 +167,6 @@
       "orientation"
     ],
     "fields": {
-      "measuringPointID": {
-        "inputType": "input"
-      },
       "profileClassification": {
         "inputType": "text"
       }
@@ -171,7 +181,7 @@
     "color": "#d52228",
     "hidden": [],
     "fields": {
-      "testfield": {
+      "unitNotes": {
         "inputType": "text"
       }
     }
@@ -181,6 +191,14 @@
     "fields": {}
   },
   "Find:default": {
+    "hidden": [
+      "catalogueNumber",
+      "weight",
+      "bibliography",
+      "storageInventoryNumber",
+      "hasRestoration",
+      "conditionPercent"
+    ],
     "fields": {
       "storagePlace": {
         "inputType": "radio"
@@ -210,7 +228,8 @@
     "valuelists": {
       "storagePlace": "Find-storagePlace-milet",
       "localization": "localization-milet",
-      "workflow": "Find-workflow-milet"
+      "workflow": "Find-workflow-milet",
+      "conditionAmount": "Find-conditionAmount-milet"
     }
   },
   "Inscription:default": {
@@ -411,7 +430,7 @@
       }
     },
     "valuelists": {
-      "viewDirection": "viewDirection-miletus"
+      "viewDirection": "viewDirection-milet"
     }
   }
 
