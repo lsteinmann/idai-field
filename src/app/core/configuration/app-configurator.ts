@@ -399,7 +399,23 @@ export class AppConfigurator {
             domain: ['Feature:inherit'],
             range: ['Feature:inherit'],
             sameMainCategoryResource: true
+        }, /* Milet (Lisa Steinmann) */
+        {
+            name: 'fills',
+            inverse: 'isFilledBy',
+            label: '',
+            domain: ['Feature:inherit'],
+            range: ['Feature:inherit'],
+            sameMainCategoryResource: true
         },
+        {
+            name: 'isFilledBy',
+            inverse: 'fills',
+            label: '',
+            domain: ['Feature:inherit'],
+            range: ['Feature:inherit'],
+            sameMainCategoryResource: true
+        }, /* /Milet */
         {
             name: 'borders',
             inverse: 'borders',

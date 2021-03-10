@@ -21,6 +21,10 @@ import IS_ABOVE = PositionRelations.ABOVE;
 import IS_BELOW = PositionRelations.BELOW;
 import IS_CUT_BY = PositionRelations.CUTBY;
 import CUTS = PositionRelations.CUTS;
+/* Milet (Lisa Steinmann) */
+import IS_FILLED_BY = PositionRelations.FILLEDBY;
+import FILLS = PositionRelations.FILLS;
+/* /Milet */
 import {TabManager} from '../../core/tabs/tab-manager';
 import {MenuContext, MenuService} from '../menu-service';
 
@@ -252,6 +256,6 @@ export class MatrixViewComponent implements OnInit {
 
         return relationsMode === 'temporal'
             ? { above: [IS_AFTER], below: [IS_BEFORE], sameRank: IS_CONTEMPORARY_WITH }
-            : { above: [IS_ABOVE, CUTS], below: [IS_BELOW, IS_CUT_BY], sameRank: IS_EQUIVALENT_TO };
+            : { above: [IS_ABOVE, CUTS/* Milet LS->*/, FILLS], below: [IS_BELOW, IS_CUT_BY/* Milet LS->*/, IS_FILLED_BY], sameRank: IS_EQUIVALENT_TO };
     }
 }
