@@ -10,6 +10,8 @@ export type MatrixHierarchyMode = 'hierarchy'|'none';
 /**
  * @author Daniel de Oliveira
  * @author Thomas Kleinke
+ * 
+ * changes in the version for Miletus (hierarchyClustering)
  */
 @Injectable()
 export class MatrixState {

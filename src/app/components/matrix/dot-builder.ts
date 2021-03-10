@@ -7,6 +7,8 @@ import {ProjectConfiguration} from '../../core/configuration/project-configurati
 /**
  * @author Thomas Kleinke
  * @author Daniel de Oliveira
+ * 
+ * changes in the version for Miletus (hierarchyClustering, sample display)
  */
 export module DotBuilder {
 

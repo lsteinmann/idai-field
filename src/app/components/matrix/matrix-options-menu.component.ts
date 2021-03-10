@@ -10,6 +10,8 @@ import {MatrixLineMode, MatrixRelationsMode, MatrixState} from './matrix-state';
 })
 /**
  * @author Thomas Kleinke
+ * 
+ * changes in the version for Miletus (hierarchyClustering)
  */
 export class MatrixOptionsMenuComponent extends MenuComponent {
 

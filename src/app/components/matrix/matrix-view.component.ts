@@ -42,6 +42,8 @@ const Viz = require('viz.js');
  *
  * @author Thomas Kleinke
  * @author Daniel de Oliveira
+ * 
+ * changes in the version for Miletus (hierarchyClustering, sample display)
  */
 export class MatrixViewComponent implements OnInit {
 
