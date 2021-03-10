@@ -25,8 +25,11 @@ export module PositionRelations {
     export const BORDERS = 'borders';                 //
     export const CUTS = 'cuts';                       //
     export const CUTBY = 'isCutBy';               //
-
-    export const ALL = [BORDERS, CUTS, CUTBY, ABOVE, BELOW, EQUIVALENT];
+    /* Milet (Lisa Steinmann) */
+    export const FILLS = 'fills';                       //
+    export const FILLEDBY = 'isFilledBy';                       //
+    /* /Milet */
+    export const ALL = [BORDERS, CUTS, CUTBY, /* Mil */ FILLS, FILLEDBY, /*/Mil*/ ABOVE, BELOW, EQUIVALENT];
 }
 
 
