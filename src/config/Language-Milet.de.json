@@ -5,10 +5,10 @@
     },
     "identifier": {
       "label": "Name / ID (eindeutig)",
-      "description": "Eindeutiger Bezeichner dieser Ressource, muss sich nach dem milesischen System zur Bennenung richten; also: Areal, Jahr Schnitt ...; für Befunde bspw: HU19_A_01 für Befund 1 aus Schnitt A im Jahr 2019 auf dem Humeitepe."
+      "description": "Eindeutiger Bezeichner dieser Ressource, muss sich nach dem milesischen System zur Bennenung richten; also: Areal, Jahr Schnitt ...; für Befunde bspw: HU19.A.01 für Befund 1 aus Schnitt A im Jahr 2019 auf dem Humeitepe."
     },
     "shortDescription": {
-      "label": "Kurztitel"
+      "label": "Kurzansprache"
     },
     "scale": {
       "label": "Maßstab"
@@ -41,6 +41,12 @@
   "relations": {
     "isEquivalentTo": {
       "label": "Identisch mit"
+    },
+    "isFilledBy": {
+      "label": "Verfüllt von"
+    },
+    "fills": {
+      "label": "Verfüllt"
     }
   },
   "categories": {
@@ -53,12 +59,20 @@
         "hasDisturbance": {
           "label": "Störung",
           "description": "Liegt eine Störung des Schnittes/Befundes/der Einheit vor? (Können Funde verunreinigt sein?)"
+        },
+        "contextFindProcessing": {
+          "label": "Empfehlungen an die Fundbearbeitung",
+          "description": "Mit welcher Genauigkeit sollen die Funde aus diesem Kontext aufgenommen werden?"
         }
       }
     },
     "Layer": {
       "label": "Befund",
       "fields": {
+        "sampleTaken": {
+          "label": "Probe entnommen",
+          "description": "Wurde eine Probe aus dem Befund entnommen? Bspw. Erde, Holzkohle etc."
+        },
         "distinguishingCriteria": {
           "label": "Unterscheidungskriterium ggü. Umgebung",
           "description": "Welches Kriterium wurde zur Abgrenzung des Befundes gewählt?"
@@ -107,6 +121,10 @@
           "label": "Funde",
           "description": "Grober Überblick über die im Befund enthaltenen Funde"
         },
+        "layerFindsComplete": {
+          "label": "Vollständige Fundübergabe",
+          "description": "Wurden alle Funde der Befundes ins Magazin gegeben (ja) oder wurde nur eine Auswahl behalten (nein)."
+        },
         "layerFindsOther": {
           "label": "Funde (Ergänzungen)",
           "description": "Grober Überblick über die im Befund enthaltenen Funde"
@@ -122,7 +140,14 @@
       }
     },
     "StrUnit": {
-      "label": "Stratigraphische Einheit"
+      "label": "Stratigraphische Einheit",
+      "fields": {
+        "unitNotes": {
+          "label": "Notizen",
+          "description": "Notizen"
+        }
+      }
+
     },
     "Profile": {
       "label": "Profilaufnahme",

@@ -48048,7 +48048,7 @@
       "Z": {}
     }
   },
-  "viewDirection-miletus": {
+  "viewDirection-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Blickrichtung",
@@ -48121,5 +48121,97 @@
         }
       }
     }
+  },
+  "contextFindProcessing-milet": {
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {
+      "de": "Empfehlung an die Fundbearbeitung",
+      "en": "Requests for find processing"
+    },
+    "creationDate": "10.03.2021",
+    "order": [
+      "North",
+      "Northeast",
+      "East",
+      "Southeast",
+      "South",
+      "Southwest",
+      "West",
+      "Northwest",
+      "not_applicable"],
+    "values": {
+      "none": {
+        "labels": {
+          "de": "keine weitere Bearbeitung",
+          "en": "no further processing required"
+        }
+      },
+      "01_first_impression": {
+        "labels": {
+          "de": "nur Ersteindruck (Stufe 1)",
+          "en": "only cursory impression (Level 1)"
+        }
+      },
+      "02_quantification": {
+        "labels": {
+          "de": "quantitative Aufnahme (Stufe 2)",
+          "en": "quantification (Level 2)"
+        }
+      },
+      "03_complete_processing": {
+        "labels": {
+          "de": "vollständige Aufnahme (Stufe 3)",
+          "en": "complete processing (Level 3)"
+        }
+      }
+    }
+  },
+  "Find-conditionAmount-milet": {
+    "creationDate": "10.03.2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Fragmentarisch": {
+        "labels": {
+          "de": "Fragmentarisch",
+          "en": "Fragmented"
+        }
+      },
+      "Fragmentarisch_0-25": {
+        "labels": {
+          "de": "Fragmentarisch (1-25%)",
+          "en": "Fragmented (1-25%)"
+        }
+      },
+      "Fragmentarisch_25-50": {
+        "labels": {
+          "de": "Fragmentarisch (25-55%)",
+          "en": "Fragmented (25-55%)"
+        }
+      },
+      "Fragmentarisch_50-75": {
+        "labels": {
+          "de": "Fragmentarisch (50-75%)",
+          "en": "Fragmented (50-75%)"
+        }
+      },
+      "Fragmentarisch_75-100": {
+        "labels": {
+          "de": "Fragmentarisch (75-100%)",
+          "en": "Fragmented (75-100%)"
+        }
+      },
+      "intakt": {
+        "labels": {
+          "de": "intakt",
+          "en": "intact"
+        }
+      }
+    },
+    "order": [
+      "Fragmentarisch",
+      "Vollständig",
+      "Vollständig zerstört"
+    ]
   }
 }
