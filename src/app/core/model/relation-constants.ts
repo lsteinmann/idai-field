@@ -28,8 +28,10 @@ export module PositionRelations {
     /* Milet (Lisa Steinmann) */
     export const FILLS = 'fills';                       //
     export const FILLEDBY = 'isFilledBy';                       //
+    export const FINDS = 'hasFinds';     //
+    export const FOUNDIN = 'wasFoundIn' //
     /* /Milet */
-    export const ALL = [BORDERS, CUTS, CUTBY, /* Mil */ FILLS, FILLEDBY, /*/Mil*/ ABOVE, BELOW, EQUIVALENT];
+    export const ALL = [BORDERS, CUTS, CUTBY, /* Mil */ FILLS, FILLEDBY, FINDS, FOUNDIN, /*/Mil*/ ABOVE, BELOW, EQUIVALENT];
 }
 
 

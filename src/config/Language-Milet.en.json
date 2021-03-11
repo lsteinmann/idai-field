@@ -54,6 +54,14 @@
     },
     "fills": {
       "label": "fills"
+    },
+    "wasFoundIn": {
+      "label": "was found in",
+      "description": "Building, Place or Survey they find came from."
+    },
+    "hasFinds": {
+      "label": "Contains Finds",
+      "description": "Objects that were found within this Building, Place or Survey. Please only use this for the Inventory of finds from older excavations such as the Steindepot-Records!"
     }
   },
   "categories": {

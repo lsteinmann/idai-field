@@ -38,12 +38,12 @@ export const COMMON_FIELDS = {
         inputType: FieldDefinition.InputType.DIMENSION,
         group: Groups.DIMENSION,
         positionValuelistId: 'position-values-expansion-default'
-    },
+    }, /* Milet */
     dimensionHeadHeight: {
         inputType: FieldDefinition.InputType.DIMENSION,
         group: Groups.DIMENSION,
         positionValuelistId: 'position-values-expansion-default'
-    },
+    }, /* /Milet */
     dimensionDiameter: {
         inputType: FieldDefinition.InputType.DIMENSION,
         group: Groups.DIMENSION,
@@ -85,7 +85,8 @@ export const COMMON_FIELDS = {
     },
     processor: {
         inputType: FieldDefinition.InputType.CHECKBOXES,
-        valuelistFromProjectField: 'staff',
+        valuelistFromProjectField: 'staff', /* Milet */
+        allowOnlyValuesOfParent: true, /* /Milet */
         group: Groups.STEM
     },
     campaign: {
@@ -154,7 +155,6 @@ export class AppConfigurator {
             fields: {}
         },
         Building: {
-            userDefinedSubcategoriesAllowed: true,
             fields: {},
             parent: 'Operation'
         },
@@ -421,6 +421,20 @@ export class AppConfigurator {
             domain: ['Feature:inherit'],
             range: ['Feature:inherit'],
             sameMainCategoryResource: true
+        },
+        {
+            name: 'wasFoundIn',
+            inverse: 'hasFinds',
+            label: '',
+            domain: ['Find:inherit'],
+            range: ['Building', 'Place', 'Survey', 'Trench']
+        },
+        {
+            name: 'hasFinds',
+            inverse: 'wasFoundIn',
+            label: '',
+            domain: ['Building', 'Place', 'Survey', 'Trench'],
+            range: ['Find:inherit']
         }, /* /Milet */
         {
             name: 'borders',

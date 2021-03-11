@@ -51,6 +51,14 @@
     },
     "fills": {
       "label": "Verfüllt"
+    },
+    "wasFoundIn": {
+      "label": "gefunden in",
+      "description": "Gebäude, Ort oder Survey dem der Fund zugeordnet werden kann."
+    },
+    "hasFinds": {
+      "label": "Zugeordnete Funde",
+      "description": "Funde die diesem Gebäude, Ort oder Survey zugeordnet werden. Bitte nur für das Inventar von Altfunden verwenden, wie bspw. die Steindepot-Aufnahme!"
     }
   },
   "categories": {
