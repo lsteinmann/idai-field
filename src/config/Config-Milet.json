@@ -190,7 +190,8 @@
     "hidden": [],
     "fields": {}
   },
-  "Find:default": {
+  "Find": {
+    "color": "#CF3737",
     "hidden": [
       "catalogueNumber",
       "weight",
@@ -199,26 +200,59 @@
       "hasRestoration",
       "conditionPercent"
     ],
+    "commons": [
+      "spatialLocation",
+      "processor",
+      "campaign",
+      "description",
+      "period",
+      "dating",
+      "dimensionHeight",
+      "dimensionHeight",
+      "dimensionLength",
+      "dimensionWidth",
+      "dimensionPerimeter",
+      "dimensionDiameter",
+      "dimensionThickness",
+      "dimensionVerticalExtent",
+      "dimensionOther",
+      "date"
+    ],
     "fields": {
+      "workflow": {
+        "inputType": "checkboxes"
+      },
       "storagePlace": {
         "inputType": "radio"
       },
       "storagePlaceOther": {
         "inputType": "input"
       },
-      "measuringPointID": {
-        "inputType": "input"
-      },
       "localization": {
         "inputType": "radio"
       },
-      "workflow": {
-        "inputType": "checkboxes"
-      },
-      "OldInventoryNr": {
+      "measuringPointID": {
         "inputType": "input"
       },
+      "amount": {
+        "inputType": "unsignedFloat"
+      },
+      "condition": {
+        "inputType": "dropdown"
+      },
+      "conditionAmount": {
+        "inputType": "dropdown"
+      },
+      "conditionComment": {
+        "inputType": "input"
+      },
+      "comparison": {
+        "inputType": "text"
+      },
       "MuseumInventoryNr": {
+        "inputType": "input"
+      },
+      "OldInventoryNr": {
         "inputType": "input"
       },
       "YearOfFind": {
@@ -229,6 +263,7 @@
       "storagePlace": "Find-storagePlace-milet",
       "localization": "localization-milet",
       "workflow": "Find-workflow-milet",
+      "condition": "Building-condition-default",
       "conditionAmount": "Find-conditionAmount-milet"
     }
   },
@@ -292,75 +327,75 @@
     "color": "#eb0ee7",
     "parent": "Find",
     "fields": {
-      "material": {
+      "reused": {
+        "inputType": "boolean"
+      },
+      "sculptureMaterial": {
         "inputType": "dropdown"
       },
-      "materialattr": {
+      "sculptureMaterialAttr": {
         "inputType": "checkboxes"
       },
       "colour": {
         "inputType": "checkboxes"
       },
-      "materialdescr": {
+      "materialDescription": {
         "inputType": "text"
       },
-      "bodypart": {
+      "sculptureBodypart": {
         "inputType": "checkboxes"
       },
-      "name": {
+      "sculptureName": {
         "inputType": "input"
       },
-      "gender": {
+      "sculptureGender": {
         "inputType": "radio"
       },
-      "sctype": {
+      "sculptureType": {
         "inputType": "checkboxes"
       },
-      "sctypeadd": {
+      "sculptureTypeDescription": {
         "inputType": "text"
       },
-      "clothing": {
+      "sculptureClothing": {
         "inputType": "checkboxes"
       },
-      "clothingadd": {
+      "sculptureClothingDescription": {
         "inputType": "text"
       },
-      "hairstyle": {
+      "sculptureHairstyle": {
         "inputType": "checkboxes"
       },
-      "hairstyleadd": {
+      "sculptureHairstyleDescription": {
         "inputType": "text"
       },
-      "beardstyle": {
+      "sculptureBeardstyle": {
         "inputType": "checkboxes"
       },
-      "beardstyleadd": {
+      "sculptureBeardstyleDescription": {
         "inputType": "text"
       },
-      "attributes": {
+      "sculptureAttributes": {
         "inputType": "checkboxes"
       },
-      "attributesadd": {
+      "sculptureAttributesDescription": {
         "inputType": "text"
       },
-      "reused": {
-        "inputType": "boolean"
-      },
-      "headheight": {
+      "sculptureHeadheight": {
         "inputType": "unsignedFloat"
       }
     },
     "valuelists": {
-      "material": "Sculpture-material-milet",
-      "materialattr": "Sculpture-materialattr-milet",
+      "sculptureMaterial": "Sculpture-sculptureMaterial-milet",
+      "sculptureMaterialAttr": "Sculpture-sculptureMaterialAttr-milet",
       "colour": "colors-milet",
-      "bodypart": "Sculpture-bodypart-milet",
-      "gender": "Sculpture-gender-milet",
-      "sctype": "Sculpture-sctype-milet",
-      "clothing": "Sculpture-clothing-milet",
-      "hairstyle": "Sculpture-hairstyle-milet",
-      "beardstyle": "Sculpture-beardstyle-milet",
-      "attributes": "Sculpture-attributes-milet"
+      "sculptureBodypart": "Sculpture-sculptureBodypart-milet",
+      "sculptureGender": "Sculpture-sculptureGender-milet",
+      "sculptureType": "Sculpture-sculptureType-milet",
+      "sculptureClothing": "Sculpture-sculptureClothing-milet",
+      "sculptureHairstyle": "Sculpture-sculptureHairstyle-milet",
+      "sculptureBeardstyle": "Sculpture-sculptureBeardstyle-milet",
+      "sculptureAttributes": "Sculpture-sculptureAttributes-milet"
     }
   },
   "Coin:default": {

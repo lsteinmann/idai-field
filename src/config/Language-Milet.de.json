@@ -62,7 +62,7 @@
         },
         "contextFindProcessing": {
           "label": "Empfehlungen an die Fundbearbeitung",
-          "description": "Mit welcher Genauigkeit sollen die Funde aus diesem Kontext aufgenommen werden?"
+          "description": "Mit welcher Genauigkeit sollen die Funde aus diesem Kontext aufgenommen werden? Auf der zweiten Seite des Papierformulares unter 'Empfehlung an Fundbearbeitung' zu finden."
         }
       }
     },
@@ -71,23 +71,23 @@
       "fields": {
         "sampleTaken": {
           "label": "Probe entnommen",
-          "description": "Wurde eine Probe aus dem Befund entnommen? Bspw. Erde, Holzkohle etc."
+          "description": "Wenn aus dem Befund eine Probe entnommen wurde (bspw. Holzkohle, Schlämmprobe, etc.) dann bitte 'Ja' angeben. (Enthalten in Papierformular)"
         },
         "distinguishingCriteria": {
           "label": "Unterscheidungskriterium ggü. Umgebung",
-          "description": "Welches Kriterium wurde zur Abgrenzung des Befundes gewählt?"
+          "description": "Welches Kriterium wurde zur Abgrenzung des Befundes gegenüber den umliegenden Befunden gewählt? (Aus Kurzbeschreibung erschließen, nicht auf dem Papierformular enthalten.)"
         },
         "layerClassification": {
           "label": "Befundart",
-          "description": "Um welche Art von Befund handelt es sich?"
+          "description": "Sollte dem Feld 'Befundart' auf dem Papierformular entsprechen. Dort häufig verwendete aber hier fehlende Begriffe bitte für die Datenbank nachreichen!"
         },
         "isNatural": {
           "label": "Natürliche Entstehung",
-          "description": "Ist die Schicht natürlich? ('Ja' z. B. bei Erosion, 'nein' wenn anthropogen)"
+          "description": "Ist der Befund natürlich entstanden? ('Ja' z. B. bei Erosion, 'nein' wenn anthropogen). Wenn während der Ausgrabung Unklarheit herrscht bitte erst in der Nachbearbeitung ergänzen. (Nicht im Papierformular enthalten.)"
         },
         "contextDescription": {
-          "label": "Beschreibung des Befundes",
-          "description": "Entspricht dem Feld 'Kurzbeschreibung' auf dem Befundzettel"
+          "label": "Kurzbeschreibung des Befundes",
+          "description": "Entspricht dem Feld 'Kurzbeschreibung' auf dem Papierformular."
         },
         "soilType": {
           "label": "Bodenanteile",
@@ -98,24 +98,24 @@
           "description": "Härte bzw. Konsistenz des Bodens"
         },
         "layerSoilContentDesc": {
-          "label": "Beschreibung des Bodens",
-          "description": "Nach dem Formular: Farbe / Bodenart / Konsistenz"
+          "label": "Farbe / Bodenart / Konsistenz",
+          "description": "Beschreibung des Bodens: Inhalt des Felds 'Farbe / Bodenart / Konsistenz' im Papierformular"
         },
         "layerColor0": {
           "label": "Grundfarbe des Bodens",
-          "description": "gemeinsam mit Farbintensität auswählen"
+          "description": "Gemeinsam mit Farbintensität auswählen (nach Papierformular)."
         },
         "layerColorIntensity": {
           "label": "Intensität der Bodenfarbe",
-          "description": "gemeinsam mit Farbe auswählen"
+          "description": "Gemeinsam mit Grundfarbe auswählen (nach Papierformular)."
         },
         "layerInclusions": {
-          "label": "Einschlüsse und Bestandteile",
+          "label": "Material / Beimengungen",
           "description": "Bodenbestandteile und Einschlüsse"
         },
         "layerInclusionsDesc": {
-          "label": "Einschlüsse: Ergänzungen",
-          "description": "Einschlüsse: Ergänzungen"
+          "label": "Material / Beimengungen: Ergänzungen",
+          "description": "Bodenbestandteile und Einschlüsse: Inhalt des Feld 'Material / Beimengungen' im Papierformular."
         },
         "layerFinds": {
           "label": "Funde",
@@ -126,16 +126,16 @@
           "description": "Wurden alle Funde der Befundes ins Magazin gegeben (ja) oder wurde nur eine Auswahl behalten (nein)."
         },
         "layerFindsOther": {
-          "label": "Funde (Ergänzungen)",
-          "description": "Grober Überblick über die im Befund enthaltenen Funde"
+          "label": "Weitere Funde und Sonderfunde",
+          "description": "Grober Überblick über die im Befund enthaltenen Funde, nach dem Papierformular: 'Weitere Funde und Sonderfunde'"
         },
         "layerInterpretation": {
           "label": "Interpretation",
-          "description": "..."
+          "description": "Nach dem Papierformular: 'Interpretation'. Gibt eine Deutung des Befundes im Feld an, die in der Aufarbeitung modifiziert werden kann."
         },
         "layerDatingIndication": {
           "label": "Datierende Elemente",
-          "description": "Erläuterung der Basis für die Datierung"
+          "description": "Erläuterung der Basis für die Datierung. Nach dem Papierformular: 'Datierende Elemente, Erläuterung'. Sollte zusätzlich zu der und im Bezug auf die Grobdatierung im Reiter 'Zeit' ausgefüllt werden."
         }
       }
     },
@@ -198,80 +198,81 @@
       }
     },
     "Sculpture": {
+      "label": "Skulptur",
       "fields": {
-        "material": {
-          "label": "Grundmaterial der Skulptur",
-          "description": "Das Material, aus dem die Skulptur besteht."
+        "reused": {
+          "label": "Wiederverwendet?",
+          "description": "Ist die Statue wiederverwendet bzw. nachbearbeitet? (Umgearbeitet, Wiederverwendet)"
         },
-        "materialattr": {
-          "label": "Grundmaterial: Genauere Beschreibung",
+        "sculptureMaterial": {
+          "label": "Grundmaterial der Skulptur",
+          "description": "Das Material, aus dem die Skulptur überwiegend besteht."
+        },
+        "sculptureMaterialAttr": {
+          "label": "Grundmaterial: Genauere Bestimmung",
           "description": "Beschreibung"
         },
         "colour": {
           "label": "Grundmaterial: Farbe",
-          "description": "Farbe des Materials"
+          "description": "Grundfarben des Materials"
         },
-        "materialdescr": {
+        "materialDescription": {
           "label": "Grundmaterial: Beschreibung und Ergänzung",
-          "description": "Platz für zusätzliche Erläuterungen und Beschreibungen"
+          "description": "Detailierte Beschreibung des Materials; Platz für zusätzliche Erläuterungen und Beschreibungen"
         },
-        "bodypart": {
+        "sculptureBodypart": {
           "label": "Erhaltenes Bruchstück",
           "description": "Welche Teile der Skulptur sind erhalten?"
         },
-        "name": {
+        "sculptureName": {
           "label": "Name des Honoranden",
           "description": "Sofern bekannt ist hier der Name der von der Skulptur abgebildeten Person anzugeben."
         },
-        "gender": {
+        "sculptureGender": {
           "label": "Gender",
-          "description": "Beschreibung"
+          "description": "Geschlecht der dargestellten Figur"
         },
-        "sctype": {
-          "label": "Skulpturentyp",
-          "description": "Beschreibung"
+        "sculptureType": {
+          "label": "Kategorie / Skulpturentyp",
+          "description": ""
         },
-        "sctypeadd": {
+        "sculptureTypeDescription": {
           "label": "Skulpturentyp: Ergänzung",
-          "description": "Beschreibung"
+          "description": "Zusätzliche Erläuterungen zum Skulpturtypen."
         },
-        "clothing": {
+        "sculptureClothing": {
           "label": "Kleidung",
-          "description": "Kleidung"
+          "description": ""
         },
-        "clothingadd": {
+        "sculptureClothingDescription": {
           "label": "Kleidung: Ergänzung",
           "description": "Beschreibung"
         },
-        "hairstyle": {
+        "sculptureHairstyle": {
           "label": "Haare",
           "description": "Beschreibung"
         },
-        "hairstyleadd": {
+        "sculptureHairstyleDescription": {
           "label": "Haare: Ergänzung",
           "description": "Beschreibung"
         },
-        "beardstyle": {
+        "sculptureBeardstyle": {
           "label": "Bart",
           "description": "Beschreibung"
         },
-        "beardstyleadd": {
+        "sculptureBeardstyleDescription": {
           "label": "Bart: Ergänzung",
           "description": "Beschreibung"
         },
-        "attributes": {
+        "sculptureAttributes": {
           "label": "Attribute",
           "description": "Beschreibung"
         },
-        "attributesadd": {
+        "sculptureAttributesDescription": {
           "label": "Attribute: Ergänzung",
           "description": "Beschreibung"
         },
-        "reused": {
-          "label": "Wiederverwendet?",
-          "description": "Ist die Statue wiederverwendet bzw. nachbearbeitet?"
-        },
-        "headheight": {
+        "sculptureHeadheight": {
           "label": "Height of Head to Crown (in cm)",
           "description": "Blergh"
         }
