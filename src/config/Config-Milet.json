@@ -380,9 +380,6 @@
       },
       "sculptureAttributesDescription": {
         "inputType": "text"
-      },
-      "sculptureHeadheight": {
-        "inputType": "unsignedFloat"
       }
     },
     "valuelists": {

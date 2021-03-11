@@ -40,6 +40,6 @@
     "BuildingPart": ["color", "hasDisturbance", "featureForm", "featureBorders", "comparison", "featureAmount", "spatialLocation", "condition", "conditionAmount", "conditionComment", "layerAmount", "layerHeight", "muralCrown", "mortarBinder", "mortarColor", "mortarConsistency", "materialForm", "materialCharacteristic", "construction", "constructionDetailsDescription", "descriptionOfBuildingTechnique", "brickwork", "blockTreatment", "blockProcessing", "mark", "markDescription", "bibliography", "findingPlace", "publicationDatingFinds", "publicationDatingStratigraphy", "publicationDatingScientific", "publicationRemark"],
     "Area": [],
     "Excavation": ["isIllegal"],
-    "Sculpture": ["reused", "sculptureMaterial", "sculptureMaterialAttr", "colour", "materialDescription", "sculptureBodypart", "sculptureName", "sculptureGender", "sculptureType", "sculptureTypeDescription", "sculptureClothing", "sculptureClothingDescription", "sculptureHairstyle", "sculptureHairstyleDescription", "sculptureBeardstyle", "sculptureBeardstyleDescription", "sculptureAttributes", "sculptureAttributesDescription", "sculptureHeadheight"]
+    "Sculpture": ["reused", "sculptureMaterial", "sculptureMaterialAttr", "colour", "materialDescription", "sculptureBodypart", "sculptureName", "sculptureGender", "sculptureType", "sculptureTypeDescription", "sculptureClothing", "sculptureClothingDescription", "sculptureHairstyle", "sculptureHairstyleDescription", "sculptureBeardstyle", "sculptureBeardstyleDescription", "sculptureAttributes", "sculptureAttributesDescription"]
   }
 }
