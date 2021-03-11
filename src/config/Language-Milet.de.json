@@ -275,10 +275,6 @@
         "sculptureAttributesDescription": {
           "label": "Attribute: Ergänzung",
           "description": "Beschreibung"
-        },
-        "sculptureHeadheight": {
-          "label": "Height of Head to Crown (in cm)",
-          "description": "Blergh"
         }
       }
     },

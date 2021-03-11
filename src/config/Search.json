@@ -118,5 +118,8 @@
   },
   "Photo": {
     "constraint": ["originalType"]
+  },
+  "Sculpture": {
+    "constraint": ["reused", "sculptureMaterial", "colour", "sculptureBodypart", "sculptureName", "sculptureGender", "sculptureType", "sculptureClothing", "sculptureHairstyle", "sculptureBeardstyle", "sculptureAttributes"]
   }
 }
