@@ -24,8 +24,8 @@
       "label": "Origin of Surveying Data",
       "description": "How was the spatial data acquired?"
     },
-    "localization-description": {
-      "label": "Commentary on Surveying Data",
+    "localizationDescription": {
+      "label": "Description of Localization (if Surveying Data are missing)",
       "description": "Either enter a (topographical) description of localization, if only that exists, or record the point numbers or surveying data in the appropriate format."
     },
     "FotoNr": {

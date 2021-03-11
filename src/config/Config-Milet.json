@@ -69,7 +69,7 @@
       "localization": {
         "inputType": "radio"
       },
-      "localization-description": {
+      "localizationDescription": {
         "inputType": "text"
       },
       "measuringPointID": {
@@ -198,13 +198,13 @@
       "bibliography",
       "storageInventoryNumber",
       "hasRestoration",
+      "description",
       "conditionPercent"
     ],
     "commons": [
       "spatialLocation",
       "processor",
       "campaign",
-      "description",
       "period",
       "dating",
       "dimensionHeight",
@@ -234,6 +234,9 @@
       "measuringPointID": {
         "inputType": "input"
       },
+      "localizationDescription": {
+        "inputType": "text"
+      },
       "amount": {
         "inputType": "unsignedFloat"
       },
@@ -257,6 +260,9 @@
       },
       "YearOfFind": {
         "inputType": "input"
+      },
+      "FotoNr": {
+        "inputType": "text"
       }
     },
     "valuelists": {
