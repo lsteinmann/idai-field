@@ -10,6 +10,10 @@
       "label": "Name / ID (eindeutig)",
       "description": "Unique Identifier of this ressource. If applicable, should use the milesian naming conventions; i.e. Area, Year, Trench...; e.g. for contexts: HU19.A.01 for Context 1 in Trench A in the year 2019 on Humeitepe. (Omit Trench if not applicable.)"
     },
+    "dimensionHeadHeight": {
+      "label": "Height of the Head",
+      "description": "Height of the Head from Crown to ??? "
+    },
     "shortDescription": {
       "label": "Short title"
     },

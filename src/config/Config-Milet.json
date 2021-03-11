@@ -326,6 +326,9 @@
   "Sculpture": {
     "color": "#eb0ee7",
     "parent": "Find",
+    "commons": [
+      "dimensionHeadHeight"
+    ],
     "fields": {
       "reused": {
         "inputType": "boolean"

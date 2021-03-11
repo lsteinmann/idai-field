@@ -39,6 +39,11 @@ export const COMMON_FIELDS = {
         group: Groups.DIMENSION,
         positionValuelistId: 'position-values-expansion-default'
     },
+    dimensionHeadHeight: {
+        inputType: FieldDefinition.InputType.DIMENSION,
+        group: Groups.DIMENSION,
+        positionValuelistId: 'position-values-expansion-default'
+    },
     dimensionDiameter: {
         inputType: FieldDefinition.InputType.DIMENSION,
         group: Groups.DIMENSION,
@@ -149,6 +154,7 @@ export class AppConfigurator {
             fields: {}
         },
         Building: {
+            userDefinedSubcategoriesAllowed: true,
             fields: {},
             parent: 'Operation'
         },
