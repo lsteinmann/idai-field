@@ -25,8 +25,8 @@
       "label": "Provenienz der Messdaten",
       "description": "Wie wurde die Lokalisierung vorgenommen?"
     },
-    "localization-description": {
-      "label": "Kommentar zu den Messdaten",
+    "localizationDescription": {
+      "label": "Beschreibung der Lokalisierung (wenn Messdaten fehlen)",
       "description": "Hier kann entweder eine topographische Beschreibung eingegeben werden, falls nur diese Vorhanden ist, oder bei Bedarf die Liste der Punktnummern oder Messdaten in anderer Form nachgehalten werden."
     },
     "FotoNr": {
