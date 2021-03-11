@@ -30,10 +30,10 @@
     "constraint": ["gazId", "placeName", "findspotClassification", "siteClassification"]
   },
   "Layer": {
-    "constraint": ["isNatural", "consistency", "distinguishingCriteria", "layerClassification", "soilType"]
+    "constraint": ["sampleTaken", "layerClassification", "soilType", "layerInclusions", "layerFinds", "layerFindsComplete"]
   },
   "Feature": {
-    "constraint": ["diary", "hasDisturbance", "featureAmount", "area", "processor", "campaign", "period", "color", "featureBorders", "featureForm"]
+    "constraint": ["contextFindProcessing", "measuringPointID", "FotoNr", "DrawingNr", "hasDisturbance", "processor", "campaign", "localization", "period"]
   },
   "Floor": {
     "constraint": ["condition", "conditionAmount", "consistency", "distinguishingCriteria", "floorClassification", "layerClassification", "mortarBinder"]
@@ -93,7 +93,7 @@
     "constraint": ["denomination", "manufacturingMethod", "metalMaterial", "mint", "mintingRuler", "provenance", "stampPositioning"]
   },
   "Find": {
-    "constraint": ["sketched", "hasRestoration", "drawn", "photographed", "hasRestoration", "amount", "catalogueNumber", "processor", "campaign", "period", "hasRestoration", "storageInventoryNumber", "condition", "conditionAmount", "storagePlace"]
+    "constraint": ["processor", "campaign", "workflow", "storagePlace", "localization", "measuringPointID", "MuseumInventoryNr", "OldInventoryNr", "YearOfFind", "period"]
   },
   "PlasterFragment": {
     "constraint": ["area", "hasDecoration", "color", "plasterComponents"]

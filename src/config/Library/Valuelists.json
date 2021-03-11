@@ -47217,53 +47217,45 @@
       "en": ""
     },
     "values": {
-      "Keine Angabe": {},
-      "Inventarisiert": {},
-      "Fotografiert": {},
-      "Gezeichnet": {},
-      "Restauriert": {},
-      "Detailbearbeitung fertig": {},
-      "Fehlerhaft": {}
+      "Inventarisiert": {
+        "labels": {
+          "de": "Inventarisiert",
+          "en": "Inventory entry"
+        }
+      },
+      "Fotografiert": {
+        "labels": {
+          "de": "Fotografiert",
+          "en": "Photograph"
+        }
+      },
+      "Gezeichnet": {
+        "labels": {
+          "de": "Gezeichnet",
+          "en": "Drawing"
+        }
+      },
+      "Restauriert": {
+        "labels": {
+          "de": "Restauriert",
+          "en": "Restored"
+        }
+      },
+      "Detailbearbeitung fertig": {
+        "labels": {
+          "de": "Detailbearbeitung fertig",
+          "en": "Detailed processing finished"
+        }
+      },
+      "Fehlerhaft": {
+        "labels": {
+          "de": "Fehlerhaft",
+          "en": "Error in processing"
+        }
+      }
     }
   },
-  "Stone-material-milet": {
-    "createdBy": "",
-    "creationDate": "",
-    "description": {
-      "de": "",
-      "en": ""
-    },
-    "values": {
-      "Alabaster": {},
-      "Andesit": {},
-      "Basalt": {},
-      "Bimsstein": {},
-      "Edelstein": {},
-      "Feldspat": {},
-      "Silex/Flint": {},
-      "Granit": {},
-      "Kalk": {},
-      "Kalkstein": {},
-      "Kalzit": {},
-      "Kreide": {},
-      "Marmor": {},
-      "Obsidian": {},
-      "Pophyr": {},
-      "Quarz": {},
-      "Quellgestein": {},
-      "Rhyolith (Quarzporphyr)": {},
-      "Sandstein": {},
-      "Schiefer": {},
-      "Serpentinit": {},
-      "Sinter": {},
-      "Trachyt": {},
-      "Tuff": {},
-      "Vulkangestein": {},
-      "Unsicher bzw. unbestimmbar": {},
-      "Andere": {}
-    }
-  },
-  "Sculpture-material-milet": {
+  "Sculpture-sculptureMaterial-milet": {
     "createdBy": "",
     "creationDate": "",
     "description": {
@@ -47291,7 +47283,7 @@
       "Andere": {}
     }
   },
-  "Sculpture-materialattr-milet": {
+  "Sculpture-sculptureMaterialAttr-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47307,7 +47299,7 @@
       "Andere": {}
     }
   },
-  "Sculpture-bodypart-milet": {
+  "Sculpture-sculptureBodypart-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47332,7 +47324,7 @@
       "other": {}
     }
   },
-  "Sculpture-gender-milet": {
+  "Sculpture-sculptureGender-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47346,7 +47338,7 @@
       "other": {}
     }
   },
-  "Sculpture-sctype-milet": {
+  "Sculpture-sculptureType-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47362,7 +47354,7 @@
       "Unknown": {}
     }
   },
-  "Sculpture-clothing-milet": {
+  "Sculpture-sculptureClothing-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47388,7 +47380,7 @@
       "Other": {}
     }
   },
-  "Sculpture-hairstyle-milet": {
+  "Sculpture-sculptureHairstyle-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47412,7 +47404,7 @@
       "Other": {}
     }
   },
-  "Sculpture-beardstyle-milet": {
+  "Sculpture-sculptureBeardstyle-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47428,7 +47420,7 @@
       "Other": {}
     }
   },
-  "Sculpture-attributes-milet": {
+  "Sculpture-sculptureAttributes-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
@@ -47805,6 +47797,15 @@
     "creationDate": "03-02-2021",
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {},
+    "order": [
+      "Lehm",
+      "Sand",
+      "Sand (fein)",
+      "Sand (mittel)",
+      "Sand (grob)",
+      "Schluff",
+      "Ton"
+    ],
     "values": {
       "Lehm": {
         "labels": {
@@ -47816,6 +47817,24 @@
         "labels": {
           "de": "Sand",
           "en": "Sand"
+        }
+      },
+      "Sand (fein)": {
+        "labels": {
+          "de": "Sand (fein)",
+          "en": "Sand (fine grained)"
+        }
+      },
+      "Sand (mittel)": {
+        "labels": {
+          "de": "Sand (mittel)",
+          "en": "Sand (medium grained)"
+        }
+      },
+      "Sand (grob)": {
+        "labels": {
+          "de": "Sand (grob)",
+          "en": "Sand (large grained)"
         }
       },
       "Schluff": {
@@ -48054,7 +48073,7 @@
       "de": "Blickrichtung",
       "en": "Direction of View"
     },
-    "creationDate": "01.03.2021",
+    "creationDate": "01-03-2021",
     "order": [
       "North",
       "Northeast",
@@ -48128,7 +48147,7 @@
       "de": "Empfehlung an die Fundbearbeitung",
       "en": "Requests for find processing"
     },
-    "creationDate": "10.03.2021",
+    "creationDate": "10-03-2021",
     "order": [
       "North",
       "Northeast",
@@ -48167,7 +48186,7 @@
     }
   },
   "Find-conditionAmount-milet": {
-    "creationDate": "10.03.2021",
+    "creationDate": "10-03-2021",
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {},
     "values": {
@@ -48206,12 +48225,22 @@
           "de": "intakt",
           "en": "intact"
         }
+      },
+      "unbekannt": {
+        "labels": {
+          "de": "unbekannt",
+          "en": "unknown"
+        }
       }
     },
     "order": [
       "Fragmentarisch",
-      "Vollständig",
-      "Vollständig zerstört"
+      "Fragmentarisch_0-25",
+      "Fragmentarisch_25-50",
+      "Fragmentarisch_50-75",
+      "Fragmentarisch_75-100",
+      "intakt",
+      "unbekannt"
     ]
   }
 }
