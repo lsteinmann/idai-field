@@ -589,43 +589,6 @@ export class AppConfigurator {
             };
         }
 
-        if (customConfigurationName === 'Milet') {
-         
-            this.defaultRelations.push({
-                name: 'fills',
-                inverse: 'isFilledBy',
-                label: '',
-                domain: ['Feature:inherit'],
-                range: ['Feature:inherit'],
-                sameMainCategoryResource: true
-            });
-
-            this.defaultRelations.push({
-                name: 'isFilledBy',
-                inverse: 'fills',
-                label: '',
-                domain: ['Feature:inherit'],
-                range: ['Feature:inherit'],
-                sameMainCategoryResource: true
-            });
-
-            this.defaultRelations.push({
-                name: 'wasFoundIn',
-                inverse: 'hasFinds',
-                label: '',
-                domain: ['Find:inherit'],
-                range: ['Building', 'Place', 'Survey', 'Trench']
-            });
-            
-            this.defaultRelations.push({
-                name: 'hasFinds',
-                inverse: 'wasFoundIn',
-                label: '',
-                domain: ['Building', 'Place', 'Survey', 'Trench'],
-                range: ['Find:inherit']
-            });
-        };
-
         if (customConfigurationName === 'Meninx') {
 
             (this.builtinCategories as any)['Wall_surface'] = {
@@ -720,6 +683,60 @@ export class AppConfigurator {
                 range: ['BuildingPart:inherit', 'BuildingFloor'],
                 sameMainCategoryResource: true
             });
+        };
+
+        
+        if (customConfigurationName === 'Milet') {
+         
+            this.defaultRelations.push({
+                name: 'fills',
+                inverse: 'isFilledBy',
+                label: '',
+                domain: ['Feature:inherit'],
+                range: ['Feature:inherit'],
+                sameMainCategoryResource: true
+            });
+
+            this.defaultRelations.push({
+                name: 'isFilledBy',
+                inverse: 'fills',
+                label: '',
+                domain: ['Feature:inherit'],
+                range: ['Feature:inherit'],
+                sameMainCategoryResource: true
+            });
+
+            this.defaultRelations.push({
+                name: 'wasFoundIn',
+                inverse: 'hasFinds',
+                label: '',
+                domain: ['Find:inherit'],
+                range: ['Building', 'Place', 'Survey', 'Trench']
+            });
+            
+            this.defaultRelations.push({
+                name: 'hasFinds',
+                inverse: 'wasFoundIn',
+                label: '',
+                domain: ['Building', 'Place', 'Survey', 'Trench'],
+                range: ['Find:inherit']
+            });
+
+            (this.defaultFields as any)['datingAddenda'] = {
+                visible: true,
+                editable: true,
+                mandatory: false,
+                inputType: 'text',
+                group: Groups.TIME
+            };
+
+            (this.defaultFields as any)['notes'] = {
+                visible: true,
+                editable: true,
+                mandatory: false,
+                inputType: 'text',
+                group: Groups.STEM
+            };
         }
 
 
