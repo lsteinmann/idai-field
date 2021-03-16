@@ -1,6 +1,6 @@
 {
   "Project:default": {
-    "hidden": [],
+    "hidden": ["diary"],
     "fields": {},
     "valuelists": {
       "coordinateReferenceSystem": "coordinate-reference-system-milet"
@@ -11,7 +11,7 @@
     "fields": {}
   },
   "Operation:default": {
-    "hidden": ["diary"],
+    "hidden": [],
     "fields": {
       "AreaShorthand": {
         "inputType": "radio"
@@ -48,9 +48,9 @@
     "color": "#121009",
     "commons": [
       "period",
+      "dating",
       "beginningDate",
       "endDate",
-      "diary",
       "processor",
       "campaign",
       "dimensionLength",
@@ -81,7 +81,7 @@
       "DrawingNr": {
         "inputType": "text"
       },
-      "notes": {
+      "otherNotes": {
         "inputType": "text"
       },
       "contextFindProcessing": {
@@ -181,7 +181,7 @@
     "color": "#d52228",
     "hidden": [],
     "fields": {
-      "unitNotes": {
+      "otherNotesS": {
         "inputType": "text"
       }
     }
@@ -315,8 +315,10 @@
     "hidden": [],
     "fields": {}
   },
-  "Pottery:default": {
-    "hidden": [],
+  "Pottery": {
+    "parent": "Find",
+    "hidden": ["condition", "conditionAmount", "conditionComment", "dimensionHeight"],
+    "commons": [],
     "fields": {}
   },
   "Metal:default": {
@@ -467,7 +469,7 @@
       "scale": {
         "inputType": "dropdown"
       },
-      "notes": {
+      "otherNotes": {
         "inputType": "text"
       },
       "DrawingNr": {
@@ -481,7 +483,7 @@
   },
   "Photo:default": {
     "fields": {
-      "notes": {
+      "otherNotes": {
         "inputType": "text"
       },
       "FotoNr": {

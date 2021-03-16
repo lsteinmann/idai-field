@@ -17,6 +17,9 @@
     "scale": {
       "label": "Maßstab"
     },
+    "datingAddenda": {
+      "label": "Ergänzende Informationen zur Datierung"
+    },
     "measuringPointID": {
       "label": "Messpunkt-Nummer",
       "description": "Punktnummer(n) in der Totalstation, leer wenn nicht zutreffend"
@@ -38,6 +41,10 @@
       "description": "Hier können die mit der Ressource assoziierten Zeichnungsnummern eingetragen werden. Dies gilt zusätzlich zu den sowie inklusive der in der Datenbank hinterlegten Zeichnung und entspricht dem Feld 'Zeichnungen' auf dem Befundzettel."
     },
     "notes": {
+      "label": "Notizen",
+      "description": "..."
+    },
+    "otherNotes": {
       "label": "Notizen",
       "description": "..."
     }
