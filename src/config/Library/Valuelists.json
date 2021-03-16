@@ -47307,21 +47307,81 @@
       "en": ""
     },
     "values": {
-      "left:": {},
-      "right:": {},
-      "Head": {},
-      "Neck": {},
-      "Shoulder": {},
+      "left": {
+        "label": {
+          "de": "links",
+          "en": "left-"
+        }
+      },
+      "right": {
+        "label": {
+          "de": "rechts",
+          "en": "right-"
+        }
+      },
+      "Head": {
+        "label": {
+          "de": "Kopf",
+          "en": "Head"
+        }
+      },
+      "Neck": {
+        "label": {
+          "de": "Nacken",
+          "en": "Neck"
+        }
+      },
+      "Shoulder": {
+        "label": {
+          "de": "Schulter",
+          "en": "Shoulder"
+        }
+      },
       "Arm": {},
       "Hand": {},
       "Torso": {},
-      "Back": {},
-      "Hip": {},
-      "Leg": {},
-      "Foot": {},
-      "Attributes": {},
-      "indeterminable": {},
-      "other": {}
+      "Back": {
+        "label": {
+          "de": "Rücken",
+          "en": "Back"
+        }
+      },
+      "Hip": {
+        "label": {
+          "de": "Hüfte",
+          "en": "Hip"
+        }
+      },
+      "Leg": {
+        "label": {
+          "de": "Bein",
+          "en": "Leg"
+        }
+      },
+      "Foot": {
+        "label": {
+          "de": "Fuß",
+          "en": "Foot"
+        }
+      },
+      "Attributes": {
+        "label": {
+          "de": "Attribute",
+          "en": "Attributes"
+        }
+      },
+      "indeterminable": {
+        "label": {
+          "de": "unbestimmbar",
+          "en": "indeterminable"
+        }
+      },
+      "other": {
+        "label": {
+          "de": "andere",
+          "en": "other"
+        }
+      }
     }
   },
   "Sculpture-sculptureGender-milet": {
@@ -47366,23 +47426,85 @@
       "en": ""
     },
     "values": {
-      "Deities, Personifications and Heroes": {},
-      "Imperial Family": {},
-      "Imperial and Senatorial Office Holders": {},
-      "Provincial Notables": {},
-      "Animals": {},
-      "Other": {},
-      "Unknown": {}
-    }, 
-    "order": [
-      "Deities, Personifications and Heroes",
-      "Imperial Family",
-      "Imperial and Senatorial Office Holders",
-      "Provincial Notables",
-      "Animals",
-      "Other",
-      "Unknown"
-    ]
+      "Deities, Personifications and Heroes": {
+        "label": {
+          "de": "Götter, Personifikationen und Heroen",
+          "en": "Deities, Personifications and Heroes"
+        }
+      },
+      "Imperial Family": {
+        "label": {
+          "de": "Kaiserliche Familie",
+          "en": "Imperial Family"
+        }
+      },
+      "Imperial and Senatorial Office Holders": {
+        "label": {
+          "de": "Kaiserliche und Senatorische Amtsträger",
+          "en": "Imperial and Senatorial Office Holders"
+        }
+      },
+      "Provincial Notables": {
+        "label": {
+          "de": "Würdenträger (Provinzen)",
+          "en": "Provincial Notables"
+        }
+      },
+      "Animals": {
+        "label": {
+          "de": "Tiere",
+          "en": "Animals"
+        }
+      },
+      "Philosophers, Orators and Poets": {
+        "label": {
+          "de": "Philosophen, Redner und Poeten",
+          "en": "Philosophers, Orators and Poets"
+        }
+      },
+      "Military": {
+        "label": {
+          "de": "Militärisch",
+          "en": "Military"
+        }
+      },
+      "Athletes": {
+        "label": {
+          "de": "Athleten",
+          "en": "Athletes"
+        }
+      },
+      "Citizen": {
+        "label": {
+          "de": "Bürger und Bürgerinnen",
+          "en": "Citizens"
+        }
+      },
+      "Other (human)": {
+        "label": {
+          "de": "Andere (Menschen)",
+          "en": "Other (human)"
+        }
+      },
+      "Other mythological creatures": {
+        "label": {
+          "de": "Andere mythologische Wesen",
+          "en": "Other mythological creatures"
+        }
+      },
+      "Other": {
+        "label": {
+          "de": "Andere",
+          "en": "Other"
+        }
+      },
+      "Unknown": {
+        "label": {
+          "de": "Unbekannt",
+          "en": "Unknown"
+        }
+      }
+    }
   },
   "Sculpture-sculptureClothing-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
@@ -47393,21 +47515,91 @@
     },
     "values": {
       "Toga": {},
-      "Toga, late antique": {},
+      "Toga, late antique": {
+        "label": {
+          "de": "Toga, spätantik",
+          "en": "Toga, late antique"
+        }
+      },
       "Toga, toga contabulata": {},
-      "Toga with umbo": {},
-      "Armour": {},
-      "Tunic / chiton": {},
-      "Tunic, colobium": {},
-      "Boots, Military": {},
-      "Footwear, sandals": {},
-      "Footwear, closed, plain boots": {},
-      "Footwear, closed strapped boots": {},
-      "Footwear, open, strapped shoes": {},
-      "Cloak, paludamentum": {},
-      "Cloak, chlamys": {},
-      "Naked": {},
-      "Other": {}
+      "Toga with umbo": {
+        "label": {
+          "de": "Toga mit umbo",
+          "en": "Toga, with umbo"
+        }
+      },
+      "Armour": {
+        "label": {
+          "de": "Rüstung",
+          "en": "Armour"
+        }
+      },
+      "Tunic / chiton": {
+        "label": {
+          "de": "Tunika / chiton",
+          "en": "Tunic / chiton"
+        }
+      },
+      "Tunic, colobium": {
+        "label": {
+          "de": "Tunic, colobium",
+          "en": "Tunic, colobium"
+        }
+      },
+      "Boots, Military": {
+        "label": {
+          "de": "Schuhe, Militär",
+          "en": "Boots, Military"
+        }
+      },
+      "Footwear, sandals": {
+        "label": {
+          "de": "Fußbekleidung, Sandelen",
+          "en": "Footwear, sandals"
+        }
+      },
+      "Footwear, closed, plain boots": {
+        "label": {
+          "de": "Fußbekleidung, geschlossen, einfache Schuhe",
+          "en": "Footwear, closed, plain boots"
+        }
+      },
+      "Footwear, closed strapped boots": {
+        "label": {
+          "de": "Fußbekleidung, geschlossen, verschnürte Schuhe",
+          "en": "Footwear, closed strapped boots"
+        }
+      },
+      "Footwear, open, strapped shoes": {
+        "label": {
+          "de": "Fußbekleidung, offen, verschnürt",
+          "en": "Footwear, open, strapped shoes"
+        }
+      },
+      "Cloak, paludamentum": {
+        "label": {
+          "de": "Mantel, paludamentum",
+          "en": "Cloak, paludamentum"
+        }
+      },
+      "Cloak, chlamys": {
+        "label": {
+          "de": "Mantel, chlamys",
+          "en": "Cloak, chlamys"
+        }
+      },
+      "Naked": {
+        "label": {
+          "de": "Unbekleidet",
+          "en": "Naked"
+        }
+      },
+      "Other": {
+        "label": {
+          "de": "Andere",
+          "en": "Other"
+        }
+      }
     }
   },
   "Sculpture-sculptureHairstyle-milet": {
@@ -47419,19 +47611,68 @@
     },
     "values": {
       "A penna": {},
-      "Brushed forward": {},
-      "Bun": {},
-      "Central": {},
-      "Central braid": {},
-      "Encircling braids": {},
-      "Long, covers ears": {},
-      "Long, to shoulders": {},
+      "Brushed forward": {
+        "label": {
+          "de": "Nach vorne gebürstet",
+          "en": "Brushed forward"
+        }
+      },
+      "Bun": {
+        "label": {
+          "de": "Knoten",
+          "en": "Bun"
+        }
+      },
+      "Central braid": {
+        "label": {
+          "de": "Mittig aufgesetzte Flechtung",
+          "en": "Central braid"
+        }
+      },
+      "Encircling braid(s)": {
+        "label": {
+          "de": "den Kopf umrundend geflochten",
+          "en": "Encircling braid(s)"
+        }
+      },
+      "Long, covers ears": {
+        "label": {
+          "de": "Lang, bedeckt Ohren",
+          "en": "Long, covers ears"
+        }
+      },
+      "Long, to shoulders": {
+        "label": {
+          "de": "Lang, Schulterlänge",
+          "en": "Long, to shoulders"
+        }
+      },
       "Mop": {},
-      "Short": {},
-      "Short-cropped": {},
+      "Short": {
+        "label": {
+          "de": "Kurz",
+          "en": "Short"
+        }
+      },
+      "Short-cropped": {
+        "label": {
+          "de": "Kurz, geschoren",
+          "en": "Short-cropped"
+        }
+      },
       "Turban": {},
-      "Wreath-style": {},
-      "Other": {}
+      "Wreath-style": {
+        "label": {
+          "de": "Kranz-Stil",
+          "en": "Wreath-style"
+        }
+      },
+      "Other": {
+        "label": {
+          "de": "Andere",
+          "en": "Other"
+        }
+      }
     }
   },
   "Sculpture-sculptureBeardstyle-milet": {
@@ -47442,12 +47683,48 @@
       "en": ""
     },
     "values": {
-      "Bearded, long": {},
-      "Bearded, short": {},
-      "Bearded, stubble": {},
-      "Bearded, under-chin": {},
-      "Clean-shaven": {},
-      "Other": {}
+      "Bearded, long": {
+        "label": {
+          "de": "Bärtig, lang",
+          "en": "Bearded, long"
+        }
+      },
+      "Bearded, short": {
+        "label": {
+          "de": "Bärtig, kurz",
+          "en": "Bearded, short"
+        }
+      },
+      "Bearded, stubble": {
+        "label": {
+          "de": "Bärtig, stoppelig",
+          "en": "Bearded, stubble"
+        }
+      },
+      "Bearded, under-chin": {
+        "label": {
+          "de": "Bärtig, unter dem Kinn",
+          "en": "Bearded, under-chin"
+        }
+      },
+      "Clean-shaven": {
+        "label": {
+          "de": "glatt rasiert",
+          "en": "clean-shaven"
+        }
+      },
+      "beardless": {
+        "label": {
+          "de": "bartlos",
+          "en": "beardless"
+        }
+      },
+      "Other": {
+        "label": {
+          "de": "Andere",
+          "en": "Other"
+        }
+      }
     }
   },
   "Sculpture-sculptureAttributes-milet": {
@@ -47458,65 +47735,303 @@
       "en": ""
     },
     "values": {
-      "belt": {},
-      "bust crown": {},
-      "codex / book": {},
-      "corona civica": {},
-      "crown fillet": {},
-      "diadem": {},
-      "diadem, jewelled": {},
-      "diadem, pearl-edged": {},
-      "diadem, plain": {},
-      "earrings": {},
-      "fibula": {},
-      "finger ring": {},
-      "mappa": {},
-      "necklace": {},
-      "orb": {},
-      "sceptre": {},
-      "scroll": {},
-      "scroll bundle": {},
-      "spear": {},
-      "staff": {},
-      "sword": {},
-      "tabellae": {},
-      "wreath": {},
-      "wreath, laurel": {},
-      "other": {}
+      "belt": {
+        "labels": {
+          "de": "Gürtel",
+          "en": "belt"
+        }
+      },
+      "crown": {
+        "labels": {
+          "de": "Krone",
+          "en": "crown"
+        }
+      },
+      "codex / book": {
+        "labels": {
+          "de": "Codex / Buch",
+          "en": "codex / book"
+        }
+      },
+      "corona civica": {
+        "label": {
+          "de": "corona civica",
+          "en": "corono civica"
+        }
+      },
+      "crown fillet": {
+        "labels": {
+          "de": "Königsbinde",
+          "en": "crown fillet"
+        }
+      },
+      "diadem": {
+        "labels": {
+          "de": "Diadem",
+          "en": "diadem"
+        }
+      },
+      "diadem, jewelled": {
+        "labels": {
+          "de": "Diadem, juwelenbesetzt",
+          "en": "diadem, jewelled"
+        }
+      },
+      "diadem, pearl-edged": {
+        "labels": {
+          "de": "Diadem, perlenbesetzt",
+          "en": "diadem, pearl-edged"
+        }
+      },
+      "diadem, plain": {
+        "labels": {
+          "de": "Diadem, einfach",
+          "en": "diadem, plain"
+        }
+      },
+      "earrings": {
+        "labels": {
+          "de": "Ohrringe",
+          "en": "earrings"
+        }
+      },
+      "fibula": {
+        "labels": {
+          "de": "Fibel",
+          "en": "fibula"
+        }
+      },
+      "finger ring": {
+        "labels": {
+          "de": "Ring (Finger)",
+          "en": "finger ring"
+        }
+      },
+      "mappa": {
+        "labels": {
+          "de": "mappa",
+          "en": "mappa"
+        }
+      },
+      "necklace": {
+        "labels": {
+          "de": "Halskette",
+          "en": "nacklace"
+        }
+      },
+      "orb": {
+        "labels": {
+          "de": "orb",
+          "en": "orb"
+        }
+      },
+      "sceptre": {
+        "labels": {
+          "de": "Szepter",
+          "en": "sceptre"
+        }
+      },
+      "scroll": {
+        "labels": {
+          "de": "Schriftrolle",
+          "en": "scroll"
+        }
+      },
+      "spear": {
+        "labels": {
+          "de": "Speer",
+          "en": "spear"
+        }
+      },
+      "staff": {
+        "labels": {
+          "de": "Stab",
+          "en": "staff"
+        }
+      },
+      "sword": {
+        "labels": {
+          "de": "Schwert",
+          "en": "sword"
+        }
+      },
+      "tabellae": {
+        "labels": {
+          "de": "tabellae",
+          "en": "tabellae"
+        }
+      },
+      "wreath": {
+        "labels": {
+          "de": "Kranz",
+          "en": "wreath"
+        }
+      },
+      "other": {
+        "labels": {
+          "de": "andere",
+          "en": "other"
+        }
+      }
     }
   },
-  "colors-milet": {
+  "Sculpture-colors-milet": {
     "creationDate": "26-04-2020",
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
-      "de": "Milet Farbset 2",
-      "en": "Miletus color set 2"
+      "de": "Milet Sculpture Farbset 2",
+      "en": "Miletus Sculpture color set 2"
     },
     "values": {
-      "beige": {},
-      "ocker": {},
-      "cremefarben": {},
-      "hellbraun": {},
-      "braun": {},
-      "mittelbraun": {},
-      "dunkelbraun": {},
-      "rotbraun": {},
-      "dunkelrot": {},
-      "rot": {},
-      "rosa": {},
-      "orangerot": {},
-      "orange": {},
-      "gelb": {},
-      "grün": {},
-      "violett": {},
-      "blau": {},
-      "türkis": {},
-      "hellgrau": {},
-      "grau": {},
-      "dunkelgrau": {},
-      "schwarz": {},
-      "weiß": {}
+      "rosa": {
+        "label": {
+          "de": "rosa",
+          "en": "rose / pink"
+        }
+      },
+      "grün": {
+        "label": {
+          "de": "grün",
+          "en": "green"
+        }
+      },
+      "blau": {
+        "label": {
+          "de": "blau",
+          "en": "blue"
+        }
+      },
+      "bläulich-weiß": {
+        "label": {
+          "de": "bläulich-weiß",
+          "en": "bluish-white"
+        }
+      },
+      "hellgrau": {
+        "labels": {
+          "de": "hellgrau",
+          "en": "light grey"
+        }
+      },
+      "hellgräulich": {
+        "labels": {
+          "de": "hellgräulich",
+          "en": "light greyish"
+        }
+      },
+      "gräulich-weiß": {
+        "labels": {
+          "de": "gräulich-weiß",
+          "en": "greyish-white"
+        }
+      },
+      "gräulich": {
+        "labels": {
+          "de": "gräulich",
+          "en": "greyish"
+        }
+      },
+      "grau": {
+        "labels": {
+          "de": "grau",
+          "en": "grey"
+        }
+      },
+      "dunkelgrau": {
+        "label": {
+          "de": "dunkelgrau",
+          "en": "dark grey"
+        }
+      },
+      "schwarz": {
+        "label": {
+          "de": "schwarz",
+          "en": "black"
+        }
+      },
+      "weiß": {
+        "labels": {
+          "de": "weiß",
+          "en": "white"
+        }
+      },
+      "gräulich-blau": {
+        "labels": {
+          "de": "gräulich-blau",
+          "en": "greyish-blue"
+        }
+      }
     }
+  },
+  "Sculpture-marbleType-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {
+      "de": "Typ des Marmors",
+      "en": "Type of Marble"
+    },
+    "values": {
+      "veined marble": {
+        "label": {
+          "de": "Marmor mit Adern",
+          "en": "Marble with veins"
+        }
+      }, 
+      "nonveined marble": {
+        "label": {
+          "de": "Marmor ohne Adern",
+          "en": "Marble without veins"
+        }
+      }
+    }  
+  },
+  "quality-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {
+      "de": "Qualitätseinschätzung",
+      "en": "Assesment of Quality"
+    }, 
+    "order": [],
+    "values": {
+      "very high quality": {
+        "labels": {
+          "de": "sehr hohe Qualität",
+          "en": "very high quality"
+        }
+      },
+      "high quality": {
+        "labels": {
+          "de": "hohe Qualität",
+          "en": "high quality"
+        }
+      },
+      "medium quality": {
+        "labels": {
+          "de": "mittelmäßige Qualität",
+          "en": "medium quality"
+        }
+      },
+      "low quality": {
+        "labels": {
+          "de": "schlechte Qualität",
+          "en": "low quality"
+        }
+      },
+      "unfinished": {
+        "labels": {
+          "de": "unfertig",
+          "en": "unfinished"
+        }
+      },
+      "partially unfinished": {
+        "labels": {
+          "de": "punktuell unfertig",
+          "en": "partially unfinished"
+        }
+      }
+    }
+
   },
   "Layer-layerConsistency-milet": {
     "creationDate": "03-02-2021",
