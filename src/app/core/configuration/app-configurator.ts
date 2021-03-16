@@ -405,37 +405,7 @@ export class AppConfigurator {
             domain: ['Feature:inherit'],
             range: ['Feature:inherit'],
             sameMainCategoryResource: true
-        }, /* Milet (Lisa Steinmann) */
-        {
-            name: 'fills',
-            inverse: 'isFilledBy',
-            label: '',
-            domain: ['Feature:inherit'],
-            range: ['Feature:inherit'],
-            sameMainCategoryResource: true
         },
-        {
-            name: 'isFilledBy',
-            inverse: 'fills',
-            label: '',
-            domain: ['Feature:inherit'],
-            range: ['Feature:inherit'],
-            sameMainCategoryResource: true
-        },
-        {
-            name: 'wasFoundIn',
-            inverse: 'hasFinds',
-            label: '',
-            domain: ['Find:inherit'],
-            range: ['Building', 'Place', 'Survey', 'Trench']
-        },
-        {
-            name: 'hasFinds',
-            inverse: 'wasFoundIn',
-            label: '',
-            domain: ['Building', 'Place', 'Survey', 'Trench'],
-            range: ['Find:inherit']
-        }, /* /Milet */
         {
             name: 'borders',
             inverse: 'borders',
@@ -619,6 +589,42 @@ export class AppConfigurator {
             };
         }
 
+        if (customConfigurationName === 'Milet') {
+         
+            this.defaultRelations.push({
+                name: 'fills',
+                inverse: 'isFilledBy',
+                label: '',
+                domain: ['Feature:inherit'],
+                range: ['Feature:inherit'],
+                sameMainCategoryResource: true
+            });
+
+            this.defaultRelations.push({
+                name: 'isFilledBy',
+                inverse: 'fills',
+                label: '',
+                domain: ['Feature:inherit'],
+                range: ['Feature:inherit'],
+                sameMainCategoryResource: true
+            });
+
+            this.defaultRelations.push({
+                name: 'wasFoundIn',
+                inverse: 'hasFinds',
+                label: '',
+                domain: ['Find:inherit'],
+                range: ['Building', 'Place', 'Survey', 'Trench']
+            });
+            
+            this.defaultRelations.push({
+                name: 'hasFinds',
+                inverse: 'wasFoundIn',
+                label: '',
+                domain: ['Building', 'Place', 'Survey', 'Trench'],
+                range: ['Find:inherit']
+            });
+        };
 
         if (customConfigurationName === 'Meninx') {
 
