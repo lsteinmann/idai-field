@@ -207,6 +207,147 @@
         }
       }
     },
+    "Pottery": {
+      "label": "Keramik",
+      "fields": {
+        "potteryGroup": {
+          "label": "Keramikklasse",
+          "description": ""
+        },
+        "functionalCategory": {
+          "label": "Funktionskategorie",
+          "description": ""
+        },
+        "vesselForm": {
+          "label": "Gefäßform",
+          "description": ""
+        },
+        "vesselFormDescription": {
+          "label": "Beschreibung der Form",
+          "description": ""
+        },
+        "vesselType": {
+          "label": "Typus",
+          "description": ""
+        },
+        "provenanceInput": {
+          "label": "Provenienz",
+          "description": ""
+        },
+        "amountSherdsTotal": {
+          "label": "Quantifizierung: Anzahl Fragmente (gesamt)",
+          "description": ""
+        },
+        "amountSherdsRim": {
+          "label": "Quantifizierung: Anzahl Randfragmente",
+          "description": ""
+        },
+        "amountSherdsWall": {
+          "label": "Quantifizierung: Anzahl Wandfragmente",
+          "description": ""
+        },
+        "amountSherdsBase": {
+          "label": "Quantifizierung: Anzahl Bodenfragmente",
+          "description": ""
+        },
+        "amountSherdsHandles": {
+          "label": "Quantifizierung: Anzahl Henkelfragmente",
+          "description": ""
+        },
+        "amountSherdsLid": {
+          "label": "Quantifizierung: Anzahl Deckelfragmente",
+          "description": ""
+        },
+        "amountSherdsOther": {
+          "label": "Quantifizierung: Anzahl Sonstige Fragmente",
+          "description": ""
+        },
+        "amountSherdsWholeProfile": {
+          "label": "Quantifizierung: Anzahl Fragmente mit gesamtem Profil",
+          "description": ""
+        },
+        "weightTotal": {
+          "label": "Quantifizierung: Gewicht gesamt (in g)",
+          "description": ""
+        },
+        "potteryCondition": {
+          "label": "Quantifizierung und Erhaltung: Erhaltungszustand",
+          "description": ""
+        },
+        "fabricGroup": {
+          "label": "Fabrikat: Gruppe",
+          "description": ""
+        },
+        "fabricColorInsideMunsell": {
+          "label": "Fabrikat: Farbe innen (Munsell, Format!)",
+          "description": ""
+        },
+        "fabricColorOutsideMunsell": {
+          "label": "Fabrikat: Farbe außen (Munsell, Format!)",
+          "description": ""
+        },
+        "fabricColorBreakMunsell": {
+          "label": "Fabrikat: Farbe Bruchkern (Munsell, Format!)",
+          "description": ""
+        },
+        "fabricHardness": {
+          "label": "Fabrikat: Härte",
+          "description": ""
+        },
+        "fabricStructure": {
+          "label": "Fabrikat: Bruchstruktur",
+          "description": ""
+        },
+        "temperType": {
+          "label": "Fabrikat: Magerungsart",
+          "description": ""
+        },
+        "temperTypeOther": {
+          "label": "Fabrikat: Magerungsart (Sonstige Bestandteile)",
+          "description": ""
+        },
+        "temperAmount": {
+          "label": "Fabrikat: Menge",
+          "description": ""
+        },
+        "temperGrain": {
+          "label": "Fabrikat: Körnung",
+          "description": ""
+        },
+        "surfaceTreatment": {
+          "label": "Oberfläche und Dekoration: Behandlung",
+          "description": ""
+        },
+        "surfaceTreatmentDescription": {
+          "label": "Oberfläche und Dekoration: Behandlung - Beschreibung",
+          "description": ""
+        },
+        "analysisMethod": {
+          "label": "Analyse: Methode",
+          "description": ""
+        },
+        "analysisMethodOther": {
+          "label": "Analyse: Methode (andere)",
+          "description": ""
+        },
+        "analysisAim": {
+          "label": "Analyse: Ziel",
+          "description": ""
+        },
+        "analysisActor": {
+          "label": "Analyse: Ausführende Person / Labor",
+          "description": ""
+        },
+        "analysisResult": {
+          "label": "Analyse: Ergebnis",
+          "description": ""
+        },
+        "otherNotes": {
+          "label": "Arbeitsnotiz",
+          "description": ""
+        }
+      }
+    },
     "Survey": {
       "label": "Survey-Areal",
       "fields": {

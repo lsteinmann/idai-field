@@ -47256,8 +47256,8 @@
     }
   },
   "Sculpture-sculptureMaterial-milet": {
-    "createdBy": "",
-    "creationDate": "",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
+    "creationDate": "16-03-2021",
     "description": {
       "de": "",
       "en": ""
@@ -47284,7 +47284,7 @@
     }
   },
   "Sculpture-sculptureMaterialAttr-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47300,7 +47300,7 @@
     }
   },
   "Sculpture-sculptureBodypart-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47308,31 +47308,31 @@
     },
     "values": {
       "left": {
-        "label": {
+        "labels": {
           "de": "links",
           "en": "left-"
         }
       },
       "right": {
-        "label": {
+        "labels": {
           "de": "rechts",
           "en": "right-"
         }
       },
       "Head": {
-        "label": {
+        "labels": {
           "de": "Kopf",
           "en": "Head"
         }
       },
       "Neck": {
-        "label": {
+        "labels": {
           "de": "Nacken",
           "en": "Neck"
         }
       },
       "Shoulder": {
-        "label": {
+        "labels": {
           "de": "Schulter",
           "en": "Shoulder"
         }
@@ -47341,43 +47341,43 @@
       "Hand": {},
       "Torso": {},
       "Back": {
-        "label": {
+        "labels": {
           "de": "Rücken",
           "en": "Back"
         }
       },
       "Hip": {
-        "label": {
+        "labels": {
           "de": "Hüfte",
           "en": "Hip"
         }
       },
       "Leg": {
-        "label": {
+        "labels": {
           "de": "Bein",
           "en": "Leg"
         }
       },
       "Foot": {
-        "label": {
+        "labels": {
           "de": "Fuß",
           "en": "Foot"
         }
       },
       "Attributes": {
-        "label": {
+        "labels": {
           "de": "Attribute",
           "en": "Attributes"
         }
       },
       "indeterminable": {
-        "label": {
+        "labels": {
           "de": "unbestimmbar",
           "en": "indeterminable"
         }
       },
       "other": {
-        "label": {
+        "labels": {
           "de": "andere",
           "en": "other"
         }
@@ -47385,7 +47385,7 @@
     }
   },
   "Sculpture-sculptureGender-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "Biologisches Geschlecht der dargestellten Person",
@@ -47419,7 +47419,7 @@
     }
   },
   "Sculpture-sculptureType-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47427,79 +47427,79 @@
     },
     "values": {
       "Deities, Personifications and Heroes": {
-        "label": {
+        "labels": {
           "de": "Götter, Personifikationen und Heroen",
           "en": "Deities, Personifications and Heroes"
         }
       },
       "Imperial Family": {
-        "label": {
+        "labels": {
           "de": "Kaiserliche Familie",
           "en": "Imperial Family"
         }
       },
       "Imperial and Senatorial Office Holders": {
-        "label": {
+        "labels": {
           "de": "Kaiserliche und Senatorische Amtsträger",
           "en": "Imperial and Senatorial Office Holders"
         }
       },
       "Provincial Notables": {
-        "label": {
+        "labels": {
           "de": "Würdenträger (Provinzen)",
           "en": "Provincial Notables"
         }
       },
       "Animals": {
-        "label": {
+        "labels": {
           "de": "Tiere",
           "en": "Animals"
         }
       },
       "Philosophers, Orators and Poets": {
-        "label": {
+        "labels": {
           "de": "Philosophen, Redner und Poeten",
           "en": "Philosophers, Orators and Poets"
         }
       },
       "Military": {
-        "label": {
+        "labels": {
           "de": "Militärisch",
           "en": "Military"
         }
       },
       "Athletes": {
-        "label": {
+        "labels": {
           "de": "Athleten",
           "en": "Athletes"
         }
       },
       "Citizen": {
-        "label": {
+        "labels": {
           "de": "Bürger und Bürgerinnen",
           "en": "Citizens"
         }
       },
       "Other (human)": {
-        "label": {
+        "labels": {
           "de": "Andere (Menschen)",
           "en": "Other (human)"
         }
       },
       "Other mythological creatures": {
-        "label": {
+        "labels": {
           "de": "Andere mythologische Wesen",
           "en": "Other mythological creatures"
         }
       },
       "Other": {
-        "label": {
+        "labels": {
           "de": "Andere",
           "en": "Other"
         }
       },
       "Unknown": {
-        "label": {
+        "labels": {
           "de": "Unbekannt",
           "en": "Unknown"
         }
@@ -47507,7 +47507,7 @@
     }
   },
   "Sculpture-sculptureClothing-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47516,86 +47516,86 @@
     "values": {
       "Toga": {},
       "Toga, late antique": {
-        "label": {
+        "labels": {
           "de": "Toga, spätantik",
           "en": "Toga, late antique"
         }
       },
       "Toga, toga contabulata": {},
       "Toga with umbo": {
-        "label": {
+        "labels": {
           "de": "Toga mit umbo",
           "en": "Toga, with umbo"
         }
       },
       "Armour": {
-        "label": {
+        "labels": {
           "de": "Rüstung",
           "en": "Armour"
         }
       },
       "Tunic / chiton": {
-        "label": {
+        "labels": {
           "de": "Tunika / chiton",
           "en": "Tunic / chiton"
         }
       },
       "Tunic, colobium": {
-        "label": {
+        "labels": {
           "de": "Tunic, colobium",
           "en": "Tunic, colobium"
         }
       },
       "Boots, Military": {
-        "label": {
+        "labels": {
           "de": "Schuhe, Militär",
           "en": "Boots, Military"
         }
       },
       "Footwear, sandals": {
-        "label": {
+        "labels": {
           "de": "Fußbekleidung, Sandelen",
           "en": "Footwear, sandals"
         }
       },
       "Footwear, closed, plain boots": {
-        "label": {
+        "labels": {
           "de": "Fußbekleidung, geschlossen, einfache Schuhe",
           "en": "Footwear, closed, plain boots"
         }
       },
       "Footwear, closed strapped boots": {
-        "label": {
+        "labels": {
           "de": "Fußbekleidung, geschlossen, verschnürte Schuhe",
           "en": "Footwear, closed strapped boots"
         }
       },
       "Footwear, open, strapped shoes": {
-        "label": {
+        "labels": {
           "de": "Fußbekleidung, offen, verschnürt",
           "en": "Footwear, open, strapped shoes"
         }
       },
       "Cloak, paludamentum": {
-        "label": {
+        "labels": {
           "de": "Mantel, paludamentum",
           "en": "Cloak, paludamentum"
         }
       },
       "Cloak, chlamys": {
-        "label": {
+        "labels": {
           "de": "Mantel, chlamys",
           "en": "Cloak, chlamys"
         }
       },
       "Naked": {
-        "label": {
+        "labels": {
           "de": "Unbekleidet",
           "en": "Naked"
         }
       },
       "Other": {
-        "label": {
+        "labels": {
           "de": "Andere",
           "en": "Other"
         }
@@ -47603,7 +47603,7 @@
     }
   },
   "Sculpture-sculptureHairstyle-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47612,63 +47612,63 @@
     "values": {
       "A penna": {},
       "Brushed forward": {
-        "label": {
+        "labels": {
           "de": "Nach vorne gebürstet",
           "en": "Brushed forward"
         }
       },
       "Bun": {
-        "label": {
+        "labels": {
           "de": "Knoten",
           "en": "Bun"
         }
       },
       "Central braid": {
-        "label": {
+        "labels": {
           "de": "Mittig aufgesetzte Flechtung",
           "en": "Central braid"
         }
       },
       "Encircling braid(s)": {
-        "label": {
+        "labels": {
           "de": "den Kopf umrundend geflochten",
           "en": "Encircling braid(s)"
         }
       },
       "Long, covers ears": {
-        "label": {
+        "labels": {
           "de": "Lang, bedeckt Ohren",
           "en": "Long, covers ears"
         }
       },
       "Long, to shoulders": {
-        "label": {
+        "labels": {
           "de": "Lang, Schulterlänge",
           "en": "Long, to shoulders"
         }
       },
       "Mop": {},
       "Short": {
-        "label": {
+        "labels": {
           "de": "Kurz",
           "en": "Short"
         }
       },
       "Short-cropped": {
-        "label": {
+        "labels": {
           "de": "Kurz, geschoren",
           "en": "Short-cropped"
         }
       },
       "Turban": {},
       "Wreath-style": {
-        "label": {
+        "labels": {
           "de": "Kranz-Stil",
           "en": "Wreath-style"
         }
       },
       "Other": {
-        "label": {
+        "labels": {
           "de": "Andere",
           "en": "Other"
         }
@@ -47676,7 +47676,7 @@
     }
   },
   "Sculpture-sculptureBeardstyle-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47684,43 +47684,43 @@
     },
     "values": {
       "Bearded, long": {
-        "label": {
+        "labels": {
           "de": "Bärtig, lang",
           "en": "Bearded, long"
         }
       },
       "Bearded, short": {
-        "label": {
+        "labels": {
           "de": "Bärtig, kurz",
           "en": "Bearded, short"
         }
       },
       "Bearded, stubble": {
-        "label": {
+        "labels": {
           "de": "Bärtig, stoppelig",
           "en": "Bearded, stubble"
         }
       },
       "Bearded, under-chin": {
-        "label": {
+        "labels": {
           "de": "Bärtig, unter dem Kinn",
           "en": "Bearded, under-chin"
         }
       },
       "Clean-shaven": {
-        "label": {
+        "labels": {
           "de": "glatt rasiert",
           "en": "clean-shaven"
         }
       },
       "beardless": {
-        "label": {
+        "labels": {
           "de": "bartlos",
           "en": "beardless"
         }
       },
       "Other": {
-        "label": {
+        "labels": {
           "de": "Andere",
           "en": "Other"
         }
@@ -47728,7 +47728,7 @@
     }
   },
   "Sculpture-sculptureAttributes-milet": {
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
       "de": "",
@@ -47754,7 +47754,7 @@
         }
       },
       "corona civica": {
-        "label": {
+        "labels": {
           "de": "corona civica",
           "en": "corono civica"
         }
@@ -47877,32 +47877,32 @@
   },
   "Sculpture-colors-milet": {
     "creationDate": "26-04-2020",
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "description": {
       "de": "Milet Sculpture Farbset 2",
       "en": "Miletus Sculpture color set 2"
     },
     "values": {
       "rosa": {
-        "label": {
+        "labels": {
           "de": "rosa",
           "en": "rose / pink"
         }
       },
       "grün": {
-        "label": {
+        "labels": {
           "de": "grün",
           "en": "green"
         }
       },
       "blau": {
-        "label": {
+        "labels": {
           "de": "blau",
           "en": "blue"
         }
       },
       "bläulich-weiß": {
-        "label": {
+        "labels": {
           "de": "bläulich-weiß",
           "en": "bluish-white"
         }
@@ -47938,13 +47938,13 @@
         }
       },
       "dunkelgrau": {
-        "label": {
+        "labels": {
           "de": "dunkelgrau",
           "en": "dark grey"
         }
       },
       "schwarz": {
-        "label": {
+        "labels": {
           "de": "schwarz",
           "en": "black"
         }
@@ -47965,20 +47965,20 @@
   },
   "Sculpture-marbleType-milet": {
     "creationDate": "16-03-2021",
-    "createdBy": "Lisa Steinmann (Milet)",
+    "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "description": {
       "de": "Typ des Marmors",
       "en": "Type of Marble"
     },
     "values": {
       "veined marble": {
-        "label": {
+        "labels": {
           "de": "Marmor mit Adern",
           "en": "Marble with veins"
         }
       }, 
       "nonveined marble": {
-        "label": {
+        "labels": {
           "de": "Marmor ohne Adern",
           "en": "Marble without veins"
         }
@@ -48878,6 +48878,295 @@
           "en": "Workshop"
         }
       }
+    }
+  },
+  "Pottery-potteryGroup-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "feine Keramik": {},
+      "Mittelgrobe Keramik": {},
+      "Grobe Keramik": {},
+      "Kochware": {},
+      "Graue Ware": {},
+      "Schwarzfirnisware": {},
+      "Schwarzfigurige Keramik": {},
+      "Rotfigurige Keramik": {},
+      "Weißgrundige Keramik": {},
+      "Kleckerware": {},
+      "Stapelware": {},
+      "Westabhang-Keramik": {},
+      "Westabhang-Nachfolgestil": {},
+      "Sigillata unbestimmt": {},
+      "Italische Sigillata": {},
+      "Eastern Sigillata A": {},
+      "Eastern Sigillata B": {},
+      "Eastern Sigillata C": {},
+      "African Red Slip": {},
+      "Late Roman C": {},
+      "Reliefkeramik": {},
+      "Applikenkeramik": {},
+      "Formschüsselkeramik": {},
+      "Bleiglasurkeramik": {},
+      "Barbotine Ware": {},
+      "Dünnwandige Keramik": {},
+      "Handgeformte Keramik": {},
+      "andere": {}
+    }
+  }, 
+  "Pottery-functionalCategory-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Tafelgeschirr": {},
+      "Haushaltskeramik": {},
+      "Kochkeramik": {},
+      "Transportgefäße": {},
+      "Vorratskeramik": {},
+      "Ölgefäße": {},
+      "Miniaturkeramik": {},
+      "Geräte": {}
+    }
+  },
+  "Pottery-vesselForm-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Amphora": {},
+      "Amphoriskos": {},
+      "Ampulle": {},
+      "Askos": {},
+      "Backteller": {},
+      "Becher": {},
+      "Bienenkorb": {},
+      "Bügelhenkelgefäß / Eimer": {},
+      "Chytra": {},
+      "Deckel": {},
+      "Dinos": {},
+      "Dolium": {},
+      "Fischteller": {},
+      "Flasche": {},
+      "Gewicht": {},
+      "Grill": {},
+      "Haushaltsschüssel": {},
+      "Hydria": {},
+      "Kanne": {},
+      "Kantharos": {},
+      "Kohlenbecken": {},
+      "Kotyle": {},
+      "Krater": {},
+      "Krug": {},
+      "Kylix": {},
+      "Lagynos": {},
+      "Lampe": {},
+      "Lekanis": {},
+      "Lekythos": {},
+      "Lopas": {},
+      "Louterion": {},
+      "Mischgefäß": {},
+      "Mortarium": {},
+      "Napf": {},
+      "Pfanne": {},
+      "Pithos": {},
+      "Platte": {},
+      "Pyxis": {},
+      "Rost": {},
+      "Salznapf": {},
+      "Schale": {},
+      "Schüssel": {},
+      "Siebgefäß": {},
+      "Skyphos": {},
+      "Ständer": {},
+      "Tasse": {},
+      "Teller": {},
+      "Topf": {},
+      "Thymiaterion": {},
+      "Unguentarium": {},
+      "Vorratstopf": {},
+      "Wanne": {},
+      "Webgewicht": {},
+      "offenes Gefäß": {},
+      "geschlossenes Gefäß": {},
+      "unbekanntes Gefäß": {},
+      "unbestimmbares Gefäß": {}
+    }
+  },
+  "Pottery-potteryCondition-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "intakt": {
+        "labels": {
+          "de": "(weitgehend ) vollständige(s), intakte(s) Gefäß(e)"
+        }
+      },
+      "vollständig zerbrochen": {
+        "labels": {
+          "de": "vollständige(s), zerbrochene(s) Gefäß(e)"
+        }
+      },
+      "vollständiges Profil": {
+        "labels": {
+          "de": "vollständige(s) Profil(e)"
+        }
+      },
+      "große Scherben": {
+        "labels": {
+          "de": "große Scherben"
+        }
+      },
+      "kleine Scherben": {
+        "labels": {
+          "de": "kleine Scherben"
+        }
+      },
+      "(sehr) stark zerscherbt": {
+        "labels": {
+          "de": "(sehr) stark zerscherbt"
+        }
+      },
+      "Oberflächen stark beschädigt": {
+        "labels": {
+          "de": "Oberflächen stark beschädigt (Pflanzen, Sinter etc.)"
+        }
+      },
+      "Abrollungen": {
+        "labels": {
+          "de": "deutliche Abrollungen"
+        }
+      },
+      "Brandspuren": {
+        "labels": {
+          "de": "Brandspuren"
+        }
+      }
+    }
+  }, 
+  "Pottery-fabricHardness-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "weich": {
+        "labels": {
+          "de": "weich (mit dem Fingernagel ritzbar)"
+        }
+      },
+      "hart": {
+        "labels": {
+          "de": "hart (mit dem Messer ritzbar)"
+        }
+      },
+      "sehr hart": {
+        "labels": {
+          "de": "sehr hart (mit dem Messer schwer ritzbar)"
+        }
+      },
+      "klingend hart": {
+        "labels": {
+          "de": "klingend hart (nicht mit dem Messer ritzbar)"
+        }
+      }
+    }, 
+    "order": [
+      "weich", "hart", "sehr hart", "klingend hart"
+    ]
+  }, 
+  "Pottery-temperType-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Glimmer": {},
+      "Sand": {},
+      "Kalk": {},
+      "Calzit": {},
+      "Eisenoxid": {},
+      "Quarzit": {},
+      "Steinchen": {},
+      "Muschelgrus": {},
+      "Schamotte": {},
+      "Organische": {},
+      "Magerung": {},
+      "Vulkanisch": {}
+    }
+  }, 
+  "Pottery-temperAmount-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "nicht erkennbar": {},
+      "wenige": {},
+      "einige": {},
+      "mittel": {},
+      "reichlich": {},
+      "sehr viel": {}
+    }, 
+    "order": [
+      "nicht erkennbar",
+      "wenige",
+      "einige",
+      "mittel",
+      "reichlich",
+      "sehr viel"
+    ]
+  }, 
+  "Pottery-temperGrain-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "sehr fein": {},
+      "fein": {},
+      "mittel": {},
+      "grob": {},
+      "sehr grob": {}
+    }, 
+    "order": [
+      "sehr fein",
+      "fein",
+      "mittel",
+      "grob",
+      "sehr grob"
+    ]
+  }, 
+  "Pottery-surfaceTreatment-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "verstrichen": {},
+      "geglättet": {},
+      "poliert": {},
+      "glasiert": {},
+      "bemalt": {},
+      "Überzug": {},
+      "Stempel": {},
+      "Relief": {},
+      "Einkerbungen": {},
+      "Applikation": {},
+      "Ritzungen": {},
+      "Kammstrich": {},
+      "Fingereindrücke": {}
+    }
+  }, 
+  "Pottery-analysisMethod-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "NAA": {},
+      "XRF": {},
+      "p-XRF": {},
+      "Dünnschliff": {},
+      "Rückstände": {},
+      "Gebrauchsspuren": {},
+      "andere (Freitext)": {}
     }
   }
 }

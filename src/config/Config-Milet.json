@@ -283,6 +283,127 @@
       "conditionAmount": "Find-conditionAmount-milet"
     }
   },
+  "Pottery": {
+    "parent": "Find",
+    "hidden": ["condition", "conditionAmount", "conditionComment", "dimensionHeight"],
+    "commons": [],
+    "fields": {
+      "potteryGroup": {
+        "inputType": "dropdown"
+      },
+      "functionalCategory": {
+        "inputType": "dropdown"
+      },
+      "vesselForm": {
+        "inputType": "dropdown"
+      },
+      "vesselFormDescription": {
+        "inputType": "text"
+      },
+      "vesselType": {
+        "inputType": "input"
+      },
+      "provenanceInput": {
+        "inputType": "input"
+      },
+      "amountSherdsTotal": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsRim": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsWall": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsBase": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsHandles": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsLid": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsOther": {
+        "inputType": "unsignedInt"
+      },
+      "amountSherdsWholeProfile": {
+        "inputType": "unsignedInt"
+      },
+      "weightTotal": {
+        "inputType": "unsignedFloat"
+      },
+      "potteryCondition": {
+        "inputType": "dropdown"
+      },
+      "fabricGroup": {
+        "inputType": "input"
+      },
+      "fabricColorInsideMunsell": {
+        "inputType": "input"
+      },
+      "fabricColorOutsideMunsell": {
+        "inputType": "input"
+      },
+      "fabricColorBreakMunsell": {
+        "inputType": "input"
+      },
+      "fabricHardness": {
+        "inputType": "dropdown"
+      },
+      "fabricStructure": {
+        "inputType": "text"
+      }, 
+      "temperType": {
+        "inputType": "checkboxes"
+      },
+      "temperTypeOther": {
+        "inputType": "input"
+      }, 
+      "temperAmount": {
+        "inputType": "checkboxes"
+      }, 
+      "temperGrain": {
+        "inputType": "checkboxes"
+      }, 
+      "surfaceTreatment": {
+        "inputType": "checkboxes"
+      }, 
+      "surfaceTreatmentDescription": {
+        "inputType": "text"
+      }, 
+      "analysisMethod": {
+        "inputType": "dropdown"
+      }, 
+      "analysisMethodOther": {
+        "inputType": "input"
+      }, 
+      "analysisAim": {
+        "inputType": "text"
+      }, 
+      "analysisActor": {
+        "inputType": "input"
+      }, 
+      "analysisResult": {
+        "inputType": "text"
+      }, 
+      "otherNotes": {
+        "inputType": "text"
+      }
+    },
+    "valuelists": {
+      "potteryGroup": "Pottery-potteryGroup-milet",
+      "functionalCategory": "Pottery-functionalCategory-milet",
+      "vesselForm": "Pottery-vesselForm-milet",
+      "potteryCondition": "Pottery-potteryCondition-milet",
+      "fabricHardness": "Pottery-fabricHardness-milet",
+      "temperType": "Pottery-temperType-milet",
+      "temperAmount": "Pottery-temperAmount-milet",
+      "temperGrain": "Pottery-temperGrain-milet",
+      "surfaceTreatment": "Pottery-surfaceTreatment-milet",
+      "analysisMethod": "Pottery-analysisMethod-milet"
+    }
+  },
   "Inscription:default": {
     "hidden": [],
     "fields": {}
@@ -313,12 +434,6 @@
   },
   "Architecture:default": {
     "hidden": [],
-    "fields": {}
-  },
-  "Pottery": {
-    "parent": "Find",
-    "hidden": ["condition", "conditionAmount", "conditionComment", "dimensionHeight"],
-    "commons": [],
     "fields": {}
   },
   "Metal:default": {
@@ -496,7 +611,7 @@
     "valuelists": {
       "viewDirection": "viewDirection-milet"
     }
-  },
+  }, 
   "Quantification": {
     "fields": {}
   }
