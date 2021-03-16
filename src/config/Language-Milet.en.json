@@ -192,6 +192,9 @@
           "label": "Material: Colour",
           "description": "Main colours of the Sculptures material."
         },
+        "sculptureMarbleType": {
+          "label": "Type of Marble"
+        },
         "materialDescription": {
           "label": "Material: Description and Addenda",
           "description": "More detailed description of the finds material and any addenda, e.g. other materials and their descriptions."
@@ -199,6 +202,10 @@
         "sculptureBodypart": {
           "label": "Fragment of Sculpture",
           "description": "Which parts of the Sculpture are preserved?"
+        },
+        "sculptureBodypartOther": {
+          "label": "Other type of fragment",
+          "description": "If the type of fragment is not listed, you can enter it here."
         },
         "sculptureName": {
           "label": "Honorand",
@@ -247,6 +254,10 @@
         "sculptureAttributesDescription": {
           "label": "Attributes: Notes",
           "description": "Additional information or descriptions of the Sculptures attributes"
+        },
+        "sculptureQuality": {
+          "label": "Quality of the worksmanship and sculpture",
+          "description": ""
         }
       }
     },

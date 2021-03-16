@@ -216,6 +216,9 @@
           "label": "Grundmaterial: Farbe",
           "description": "Grundfarben des Materials"
         },
+        "sculptureMarbleType": {
+          "label": "Art des Marmors"
+        },
         "materialDescription": {
           "label": "Grundmaterial: Beschreibung und Ergänzung",
           "description": "Detailierte Beschreibung des Materials; Platz für zusätzliche Erläuterungen und Beschreibungen"
@@ -223,6 +226,10 @@
         "sculptureBodypart": {
           "label": "Erhaltenes Bruchstück",
           "description": "Welche Teile der Skulptur sind erhalten?"
+        },
+        "sculptureBodypartOther": {
+          "label": "Anderes Fragment",
+          "description": "Auszufüllen wenn in der Liste nichts zutreffendes zu finden ist."
         },
         "sculptureName": {
           "label": "Name des Honoranden",
@@ -271,6 +278,10 @@
         "sculptureAttributesDescription": {
           "label": "Attribute: Ergänzung",
           "description": "Beschreibung"
+        },
+        "sculptureQuality": {
+          "label": "Qualität der Arbeit / Ausführung der Skulptur",
+          "description": ""
         }
       }
     },

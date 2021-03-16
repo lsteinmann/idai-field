@@ -355,11 +355,17 @@
       "colour": {
         "inputType": "checkboxes"
       },
+      "sculptureMarbleType": {
+        "inputType": "checkboxes"
+      },
       "materialDescription": {
         "inputType": "text"
       },
       "sculptureBodypart": {
         "inputType": "checkboxes"
+      },
+      "sculptureBodypartOther": {
+        "inputType": "input"
       },
       "sculptureName": {
         "inputType": "input"
@@ -396,19 +402,24 @@
       },
       "sculptureAttributesDescription": {
         "inputType": "text"
+      },
+      "sculptureQuality": {
+        "inputType": "radio"
       }
     },
     "valuelists": {
       "sculptureMaterial": "Sculpture-sculptureMaterial-milet",
       "sculptureMaterialAttr": "Sculpture-sculptureMaterialAttr-milet",
-      "colour": "colors-milet",
+      "colour": "Sculpture-colors-milet",
+      "sculptureMarbleType": "Sculpture-marbleType-milet",
       "sculptureBodypart": "Sculpture-sculptureBodypart-milet",
       "sculptureGender": "Sculpture-sculptureGender-milet",
       "sculptureType": "Sculpture-sculptureType-milet",
       "sculptureClothing": "Sculpture-sculptureClothing-milet",
       "sculptureHairstyle": "Sculpture-sculptureHairstyle-milet",
       "sculptureBeardstyle": "Sculpture-sculptureBeardstyle-milet",
-      "sculptureAttributes": "Sculpture-sculptureAttributes-milet"
+      "sculptureAttributes": "Sculpture-sculptureAttributes-milet",
+      "sculptureQuality": "quality-milet"
     }
   },
   "Coin:default": {
