@@ -188,7 +188,17 @@
   },
   "Building:default": {
     "hidden": [],
-    "fields": {}
+    "commons": [
+      "literature"
+    ],
+    "fields": {
+      "context": {
+        "inputType": "dropdown"
+      }
+    }, 
+    "valuelists": {
+      "context": "Building-context-milet"
+    }
   },
   "Find": {
     "color": "#CF3737",

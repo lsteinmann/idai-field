@@ -47225,19 +47225,19 @@
       },
       "Fotografiert": {
         "labels": {
-          "de": "Fotografiert",
+          "de": "Foto",
           "en": "Photograph"
         }
       },
       "Gezeichnet": {
         "labels": {
-          "de": "Gezeichnet",
+          "de": "Zeichnung",
           "en": "Drawing"
         }
       },
       "Restauriert": {
         "labels": {
-          "de": "Restauriert",
+          "de": "Restaurierung",
           "en": "Restored"
         }
       },
@@ -47328,14 +47328,34 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "26-04-2020",
     "description": {
-      "de": "",
-      "en": ""
+      "de": "Biologisches Geschlecht der dargestellten Person",
+      "en": "Gender/Sex of the person depicted"
     },
     "values": {
-      "female": {},
-      "male": {},
-      "inconclusive": {},
-      "other": {}
+      "female": {
+        "labels": {
+          "de": "weiblich",
+          "en": "female"
+        }
+      },
+      "male": {
+        "labels": {
+          "de": "männlich",
+          "en": "male"
+        }
+      },
+      "inconclusive": {
+        "labels": {
+          "de": "unklar",
+          "en": "inconclusive"
+        }
+      },
+      "other": {
+        "labels": {
+          "de": "andere",
+          "en": "other"
+        }
+      }
     }
   },
   "Sculpture-sculptureType-milet": {
@@ -47350,9 +47370,19 @@
       "Imperial Family": {},
       "Imperial and Senatorial Office Holders": {},
       "Provincial Notables": {},
+      "Animals": {},
       "Other": {},
       "Unknown": {}
-    }
+    }, 
+    "order": [
+      "Deities, Personifications and Heroes",
+      "Imperial Family",
+      "Imperial and Senatorial Office Holders",
+      "Provincial Notables",
+      "Animals",
+      "Other",
+      "Unknown"
+    ]
   },
   "Sculpture-sculptureClothing-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
@@ -48242,5 +48272,97 @@
       "intakt",
       "unbekannt"
     ]
+  },
+  "Building-context-milet": {
+    "creationDate": "12-03-2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Akropolis": {
+        "labels": {
+          "de": "Akropolis",
+          "en": "Acropolis"
+        }
+      },
+      "Forum": {
+        "labels": {
+          "de": "Forum",
+          "en": "Forum"
+        }
+      },
+      "Handwerksviertel": {
+        "labels": {
+          "de": "Handwerksviertel",
+          "en": "Artisans district"
+        }
+      },
+      "Heiligtum": {
+        "labels": {
+          "de": "Heiligtum",
+          "en": "Sanctuary"
+        }
+      },
+      "Nekropole": {
+        "labels": {
+          "de": "Nekropole",
+          "en": "Necropolis"
+        }
+      },
+      "Wohnviertel": {
+        "labels": {
+          "de": "Wohnviertel",
+          "en": "Residential area"
+        }
+      },
+      "Extraurban": {
+        "labels": {
+          "de": "Extraurban (sonstige)",
+          "en": "Extraurban (others)"
+        }
+      },
+      "Intraurban": {
+        "labels": {
+          "de": "Intraurban (sonstige)",
+          "en": "Intraurban (other)"
+        }
+      }
+    }
+  },
+  "Building-buildingType-milet": {
+    "creationDate": "",
+    "createdBy": "",
+    "description": {},
+    "values": {
+      "Befestigung": {
+        "labels": {
+          "de": "Befestigung",
+          "en": "Fortification"
+        }
+      },
+      "Haus": {
+        "labels": {
+          "de": "Haus",
+          "en": "House"
+        }
+      },
+      "Lager": {
+        "labels": {
+          "de": "Lager",
+          "en": "Depot"
+        }
+      },
+      "Öffentliches Gebäude": {
+        "labels": {
+          "de": "Öffentliches Gebäude",
+          "en": "Public Building"
+        }
+      },
+      "Werkstatt": {
+        "labels": {
+          "de": "Werkstatt",
+          "en": "Workshop"
+        }
+      }
+    }
   }
 }
