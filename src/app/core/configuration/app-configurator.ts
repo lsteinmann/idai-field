@@ -687,6 +687,35 @@ export class AppConfigurator {
 
         
         if (customConfigurationName === 'Milet') {
+            
+            (this.builtinCategories as any)['Quantification'] = {
+                color: '#c6dbef',
+                supercategory: true,
+                userDefinedSubcategoriesAllowed: true,
+                abstract: false,
+                fields: {}
+            };
+
+            this.defaultRelations.push({
+                name: 'isRecordedIn',
+                label: '',
+                domain: ['Quantification'],
+                range: ['Trench:inherit']
+            });
+
+            this.defaultRelations.push({
+                name: 'liesWithin',
+                label: '',
+                domain: ['Find:inherit'],
+                range: ['Feature:inherit', 'Area:inherit', 'Quantification:inherit']
+            });
+
+            this.defaultRelations.push({
+                name: 'liesWithin',
+                label: '',
+                domain: ['Quantification'],
+                range: ['Feature:inherit']
+            });
          
             this.defaultRelations.push({
                 name: 'fills',

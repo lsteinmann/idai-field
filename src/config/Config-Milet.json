@@ -496,5 +496,8 @@
     "valuelists": {
       "viewDirection": "viewDirection-milet"
     }
+  },
+  "Quantification": {
+    "fields": {}
   }
 }
