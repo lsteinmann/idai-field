@@ -696,6 +696,17 @@ export class AppConfigurator {
                 fields: {}
             };
 
+            (this.builtinCategories as any)['Building'] = {
+                userDefinedSubcategoriesAllowed: true,
+                parent: 'Operation',
+                fields: {
+                    gazId: {
+                    inputType: FieldDefinition.InputType.UNSIGNEDINT,
+                    group: Groups.POSITION
+                    }
+                }
+            };
+
             this.defaultRelations.push({
                 name: 'isRecordedIn',
                 label: '',
