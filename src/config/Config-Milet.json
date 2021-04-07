@@ -30,6 +30,7 @@
   },
   "SurveyUnit:default": {
     "hidden": [],
+    "commons": ["processor", "date"],
     "fields": {}
   },
   "Area:default": {
@@ -90,7 +91,8 @@
     },
     "valuelists": {
       "localization": "localization-milet",
-      "contextFindProcessing": "contextFindProcessing-milet"
+      "contextFindProcessing": "findProcessingWorkflow-milet",
+      "period": "periods-default-1"
     }
   },
   "Layer:default": {
@@ -186,18 +188,73 @@
       }
     }
   },
-  "Building:default": {
-    "hidden": [],
+  "Building": {
+    "hidden": ["buildingCategorySpecific"],
     "commons": [
-      "literature"
+      "period",
+      "dating",
+      "literature",
+      "dimensionLength",
+      "dimensionWidth",
+      "dimensionOther"
     ],
     "fields": {
+      "buildingType": {
+        "inputType": "radio"
+      },
+      "buildingCategory": {
+        "inputType": "dropdown"
+      },
       "context": {
         "inputType": "dropdown"
+      },
+      "buildingContractor": {
+        "inputType": "multiInput"
+      },
+      "associatedDeity": {
+        "inputType": "multiInput"
+      },
+      "architecturalOrder": {
+        "inputType": "dropdown"
+      },
+      "buildingTechnique": {
+        "inputType": "checkboxes"
+      },
+      "material": {
+        "inputType": "checkboxes"
+      },
+      "condition": {
+        "inputType": "dropdown"
+      },
+      "conditionAmount": {
+        "inputType": "dropdown"
+      },
+      "hasRestoration": {
+        "inputType": "boolean"
+      },
+      "conditionComment": {
+        "inputType": "input"
+      },
+      "excavatedIn": {
+        "inputType": "multiInput"
+      },
+      "excavatedBy": {
+        "inputType": "multiInput"
+      },
+      "buildingResearchHistory": {
+        "inputType": "text"
       }
     }, 
     "valuelists": {
-      "context": "Building-context-milet"
+      "buildingType": "Building-buildingType-milet",
+      "buildingCategory": "Building-buildingCategory-milet",
+      "architecturalOrder": "architecturalOrder-milet",
+      "conditionAmount": "Building-conditionAmount-default",
+      "condition": "Building-condition-default",
+      "material": "Building-material-default",
+      "context": "Building-context-milet",
+      "buildingTechnique": "Building-buildingTechnique-default",
+      "period": "periods-default-1"
     }
   },
   "Find": {
@@ -273,6 +330,9 @@
       },
       "FotoNr": {
         "inputType": "text"
+      },
+      "DrawingNr": {
+        "inputType": "text"
       }
     },
     "valuelists": {
@@ -280,13 +340,14 @@
       "localization": "localization-milet",
       "workflow": "Find-workflow-milet",
       "condition": "Building-condition-default",
-      "conditionAmount": "Find-conditionAmount-milet"
+      "conditionAmount": "Find-conditionAmount-milet",
+      "period": "periods-default-1"
     }
   },
   "Pottery": {
     "parent": "Find",
     "hidden": ["condition", "conditionAmount", "conditionComment", "dimensionHeight"],
-    "commons": [],
+    "commons": ["provenance"],
     "fields": {
       "potteryGroup": {
         "inputType": "dropdown"
@@ -376,13 +437,13 @@
         "inputType": "dropdown"
       }, 
       "analysisMethodOther": {
-        "inputType": "input"
+        "inputType": "multiInput"
       }, 
       "analysisAim": {
         "inputType": "text"
       }, 
       "analysisActor": {
-        "inputType": "input"
+        "inputType": "multiInput"
       }, 
       "analysisResult": {
         "inputType": "text"
@@ -395,6 +456,7 @@
       "potteryGroup": "Pottery-potteryGroup-milet",
       "functionalCategory": "Pottery-functionalCategory-milet",
       "vesselForm": "Pottery-vesselForm-milet",
+      "provenance": "provenance-default-1",
       "potteryCondition": "Pottery-potteryCondition-milet",
       "fabricHardness": "Pottery-fabricHardness-milet",
       "temperType": "Pottery-temperType-milet",
@@ -613,6 +675,220 @@
     }
   }, 
   "Quantification": {
-    "fields": {}
+    "commons": [
+      "processor"
+    ],
+    "fields": {
+      "quantificationType": {
+        "inputType": "dropdown"
+      },
+      "countTotal": {
+        "inputType": "unsignedInt"
+      },
+      "weightTotal": {
+        "inputType": "unsignedFloat"
+      }
+    },
+    "valuelists": {
+      "quantificationType": "quantificationType-milet"
+    }
+  },
+  "Pottery_Quantification_A": {
+    "parent": "Quantification",
+    "fields": {
+      "countArchitecturalCeramics": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightArchitecturalCeramics": {
+        "inputType": "unsignedFloat"
+      },
+      "countTransportamphorae": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightTransportamphorae": {
+        "inputType": "unsignedFloat"
+      },
+      "countHouseholdwares": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightHouseholdwares": {
+        "inputType": "unsignedFloat"
+      },
+      "countCookingwares": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightCookingwares": {
+        "inputType": "unsignedFloat"
+      },
+      "countStoragevessels": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightStoragevessels": {
+        "inputType": "unsignedFloat"
+      },
+      "countTablewares": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightTablewares": {
+        "inputType": "unsignedFloat"
+      },
+      "countFinepottery": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightFinepottery": {
+        "inputType": "unsignedFloat"
+      },
+      "countOilcontainers": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightOilcontainers": {
+        "inputType": "unsignedFloat"
+      },
+      "countTools": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightTools": {
+        "inputType": "unsignedFloat"
+      },
+      "countUnspecified": {
+        "inputType": "unsignedInt"
+      }, 
+      "weightUnspecified": {
+        "inputType": "unsignedFloat"
+      }
+    }
+  },
+  "Pottery_Quantification_B": {
+    "parent": "Quantification",
+    "commons": [
+      "period"
+    ],
+    "fields": {
+      "countTransportamphoraeRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countTransportamphoraeBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countTransportamphoraeHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countHouseholdwaresRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countHouseholdwaresBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countHouseholdwaresHandle": {
+        "inputType": "unsignedInt"
+      },
+      "countCookingwaresRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countCookingwaresBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countCookingwaresHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countStoragevesselsRim": {
+        "inputType": "unsignedInt"
+      },  
+      "countStoragevesselsBase": {
+        "inputType": "unsignedInt"
+      },  
+      "countStoragevesselsHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countTablewaresRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countTablewaresBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countTablewaresHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countFinepotteryRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countFinepotteryBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countFinepotteryHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countOilcontainersRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countOilcontainersBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countOilcontainersHandle": {
+        "inputType": "unsignedInt"
+      }, 
+      "countLampsRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countLampsBase": {
+        "inputType": "unsignedInt"
+      }, 
+      "countLampsHandle": {
+        "inputType": "unsignedInt"
+      }
+    },
+    "valuelists": {
+      "period": "periods-default-1"
+    }
+  },
+  "Impression": {
+    "commons": [
+      "processor",
+      "date",
+      "period"
+    ],
+    "fields": {
+      "infoFromField": {
+        "inputType": "text"
+      },
+      "closedContext": {
+        "inputType": "boolean"
+      },
+      "checkAgainstOtherContexts": {
+        "inputType": "text"
+      },
+      "findProcessingWorkflow": {
+        "inputType": "checkboxes"
+      },
+      "workflowDone": {
+        "inputType": "boolean"
+      },
+      "relativeAmount": {
+        "inputType": "text"
+      },
+      "relativeAmountCheck": {
+        "inputType": "radio"
+      },
+      "materialCondition": {
+        "inputType": "text"
+      },
+      "fitsOtherContexts": {
+        "inputType": "text"
+      },
+      "findSpectrum": {
+        "inputType": "text"
+      },
+      "specialFinds": {
+        "inputType": "text"
+      },
+      "generalNotes": {
+        "inputType": "text"
+      }
+    },
+    "valuelists": {
+      "findProcessingWorkflow": "findProcessingWorkflow-milet",
+      "relativeAmountCheck": "relativeAmountCheck-milet",
+      "period": "periods-default-1"
+    }
   }
 }

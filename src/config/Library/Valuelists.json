@@ -48686,23 +48686,14 @@
       }
     }
   },
-  "contextFindProcessing-milet": {
+  "findProcessingWorkflow-milet": {
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Empfehlung an die Fundbearbeitung",
       "en": "Requests for find processing"
     },
     "creationDate": "10-03-2021",
-    "order": [
-      "North",
-      "Northeast",
-      "East",
-      "Southeast",
-      "South",
-      "Southwest",
-      "West",
-      "Northwest",
-      "not_applicable"],
+    "order": [],
     "values": {
       "none": {
         "labels": {
@@ -48716,15 +48707,21 @@
           "en": "only cursory impression (Level 1)"
         }
       },
-      "02_quantification": {
+      "02a_quantification": {
         "labels": {
-          "de": "quantitative Aufnahme (Stufe 2)",
-          "en": "quantification (Level 2)"
+          "de": "quantitative Aufnahme (Stufe 2A)",
+          "en": "quantification (Level 2A)"
+        }
+      },
+      "02b_quantification": {
+        "labels": {
+          "de": "quantitative Aufnahme (Stufe 2B)",
+          "en": "quantification (Level 2B)"
         }
       },
       "03_complete_processing": {
         "labels": {
-          "de": "vollständige Aufnahme (Stufe 3)",
+          "de": "Einzelfundaufnahme (Stufe 3)",
           "en": "complete processing (Level 3)"
         }
       }
@@ -48839,43 +48836,6 @@
         "labels": {
           "de": "Intraurban (sonstige)",
           "en": "Intraurban (other)"
-        }
-      }
-    }
-  },
-  "Building-buildingType-milet": {
-    "creationDate": "",
-    "createdBy": "",
-    "description": {},
-    "values": {
-      "Befestigung": {
-        "labels": {
-          "de": "Befestigung",
-          "en": "Fortification"
-        }
-      },
-      "Haus": {
-        "labels": {
-          "de": "Haus",
-          "en": "House"
-        }
-      },
-      "Lager": {
-        "labels": {
-          "de": "Lager",
-          "en": "Depot"
-        }
-      },
-      "Öffentliches Gebäude": {
-        "labels": {
-          "de": "Öffentliches Gebäude",
-          "en": "Public Building"
-        }
-      },
-      "Werkstatt": {
-        "labels": {
-          "de": "Werkstatt",
-          "en": "Workshop"
         }
       }
     }
@@ -49168,5 +49128,335 @@
       "Gebrauchsspuren": {},
       "andere (Freitext)": {}
     }
+  },
+  "Building-buildingCategory-milet": {
+    "creationDate": "17-03-2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "Altar": {
+        "labels": {
+          "de": "Altar",
+          "en": "Altar"
+        }
+      },
+      "Basilika": {
+        "labels": {
+          "de": "Basilika",
+          "en": "Basilica"
+        }
+      },
+      "Bogen": {
+        "labels": {
+          "de": "Bogen",
+          "en": "Arch"
+        }
+      },
+      "Brücke": {
+        "labels": {
+          "de": "Brücke",
+          "en": "Bridge"
+        }
+      },
+      "Grabbau": {
+        "labels": {
+          "de": "Grabbau",
+          "en": "Tomb"
+        }
+      },
+      "Gymnasium": {
+        "labels": {
+          "de": "Gymnasium",
+          "en": "Gymnasium"
+        }
+      },
+      "Mauerkurtine": {
+        "labels": {
+          "de": "Mauerkurtine",
+          "en": "Curtain wall"
+        }
+      },
+      "Nymphäum": {
+        "labels": {
+          "de": "Nymphäum",
+          "en": "Nymphaeum"
+        }
+      },
+      "Odeion": {
+        "labels": {
+          "de": "Odeion",
+          "en": "Odeion"
+        }
+      },
+      "Strasse": {
+        "labels": {
+          "de": "Strasse",
+          "en": "Street"
+        }
+      },
+      "Stützmauer": {
+        "labels": {
+          "de": "Stützmauer",
+          "en": "Retaining wall"
+        }
+      },
+      "Säulenhalle": {
+        "labels": {
+          "de": "Säulenhalle",
+          "en": "Portico"
+        }
+      },
+      "Tempel": {
+        "labels": {
+          "de": "Tempel / Heiligtum",
+          "en": "Temple / Sanctuary"
+        }
+      },
+      "Theater": {
+        "labels": {
+          "de": "Theater",
+          "en": "Theatre"
+        }
+      },
+      "Therme": {
+        "labels": {
+          "de": "Therme",
+          "en": "Bath"
+        }
+      },
+      "Toranlage": {
+        "labels": {
+          "de": "Toranlage",
+          "en": "Gate"
+        }
+      },
+      "Befestigungsanlage": {
+        "labels": {
+          "de": "Befestigungsanlage",
+          "en": "Fortification"
+        }
+      },
+      "Wohnbau": {
+        "labels": {
+          "de": "Wohngebäude",
+          "en": "Residential Building"
+        }
+      },
+      "Platzanlage": {
+        "labels": {
+          "de": "Platzanlage",
+          "en": "Square / Open space"
+        }
+      },
+      "Moschee": {
+        "labels": {
+          "de": "Moschee",
+          "en": "Mosque"
+        }
+      },
+      "Kirche": {
+        "labels": {
+          "de": "Kirche",
+          "en": "Church"
+        }
+      },
+      "Monument": {
+        "labels": {
+          "de": "Monument",
+          "en": "Monument"
+        }
+      },
+      "Werkstatt": {
+        "labels": {
+          "de": "Werkstatt",
+          "en": "Workshop"
+        }
+      }
+    }
+  },
+  "Building-buildingType-milet": {
+    "creationDate": "17-03-2021",
+    "createdBy": "Lisa Steinmann (Milet)",
+    "description": {
+      "de": "Type of usage"
+    },
+    "values": {
+      "Sakral": {
+        "labels": {
+          "de": "Sakral / Religiös",
+          "en": "Sacral / Relgious"
+        }
+      },
+      "Öffentlich": {
+        "labels": {
+          "de": "Öffentlich",
+          "en": "Public"
+        }
+      },
+      "Privat": {
+        "labels": {
+          "de": "Privat",
+          "en": "Private"
+        }
+      },
+      "Industriell": {
+        "labels": {
+          "de": "Industriell",
+          "en": "Industrial"
+        }
+      },
+      "Infrastruktur": {
+        "labels": {
+          "de": "Infrastruktur",
+          "en": "Infrastructure"
+        }
+      },
+      "Monumental": {
+        "labels": {
+          "de": "Monumental",
+          "en": "Monumental"
+        }
+      },
+      "Befestigung": {
+        "labels": {
+          "de": "Befestigung / Militärisch",
+          "en": "Fortification / Military"
+        }
+      }
+    }
+  },
+  "architecturalOrder-milet": {
+    "createdBy": "Lisa Steinmann (Milet)",
+    "creationDate": "19-03-2021",
+    "description": {},
+    "values": {
+      "dorisch": {
+        "labels": {
+          "de": "dorisch",
+          "en": "doric"
+        }
+      },
+      "ionisch": {
+        "labels": {
+          "de": "ionisch",
+          "en": "ionic"
+        }
+      },
+      "komposit": {
+        "labels": {
+          "de": "komposit",
+          "en": "composite"
+        }
+      },
+      "äolisch": {
+        "labels": {
+          "de": "äolisch",
+          "en": "aeolian"
+        }
+      },
+      "korinthisch": {
+        "labels": {
+          "de": "korinthisch",
+          "en": "corinthian"
+        }
+      },
+      "keine": {
+        "labels": {
+          "de": "keine",
+          "en": "none"
+        }
+      }
+    }
+  },
+  "periods-milet": {
+    "createdBy": "Miletgrabung",
+    "creationDate": "2021",
+    "description": {},
+    "values": {
+      "": {
+        "labels": {
+          "de": "",
+          "en": ""
+        }
+      }
+    }
+  },
+  "quantificationType-milet": {
+    "createdBy": "Lisa Steinmann (Milet)",
+    "creationDate": "26-03-2021",
+    "description": {},
+    "values": {
+      "Pottery": {
+        "labels": {
+          "de": "Keramik",
+          "en": "Pottery"
+        }
+      },
+      "Bones": {
+        "labels": {
+          "de": "Knochen",
+          "en": "Bones"
+        }
+      },
+      "Mollusks": {
+        "labels": {
+          "de": "Mollusken",
+          "en": "Mollusks"
+        }
+      },
+      "Glass": {
+        "labels": {
+          "de": "Glas",
+          "en": "Glass"
+        }
+      },
+      "Metal": {
+        "labels": {
+          "de": "Metall",
+          "en": "Metal"
+        }
+      },
+      "Stone": {
+        "labels": {
+          "de": "Stein",
+          "en": "Stone"
+        }
+      },
+      "Terracotta": {
+        "labels": {
+          "de": "Terrakotta",
+          "en": "Terracotta"
+        }
+      },
+      "Coins": {
+        "labels": {
+          "de": "Münzen",
+          "en": "Coins"
+        }
+      },
+      "Plaster": {
+        "labels": {
+          "de": "Putz",
+          "en": "Plaster"
+        }
+      }
+    }
+  },
+  "relativeAmountCheck-milet": {
+    "creationDate": "16-03-2021",
+    "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "description": {},
+    "values": {
+      "gering": {},
+      "mittel": {},
+      "hoch": {},
+      "sehr hoch": {}
+    }, 
+    "order": [
+      "gering",
+      "mittel",
+      "hoch",
+      "sehr hoch"
+    ]
   }
 }
