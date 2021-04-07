@@ -707,10 +707,31 @@ export class AppConfigurator {
                 }
             };
 
+            (this.builtinCategories as any)['Find'] = {
+                supercategory: true,
+                userDefinedSubcategoriesAllowed: true,
+                fields: {
+                    instanceOf: {
+                        inputType: 'instanceOf',
+                        group: Groups.IDENTIFICATION
+                    },
+                    diameterPercentage: {
+                        inputType: FieldDefinition.InputType.UNSIGNEDFLOAT,
+                        group: Groups.DIMENSION
+                    },
+                }
+            };
+
+            (this.builtinCategories as any)['Impression'] = {
+                supercategory: false,
+                userDefinedSubcategoriesAllowed: false,
+                fields: {}
+            };
+
             this.defaultRelations.push({
                 name: 'isRecordedIn',
                 label: '',
-                domain: ['Quantification'],
+                domain: ['Quantification:inherit', 'Impression'],
                 range: ['Trench:inherit']
             });
 
@@ -724,8 +745,15 @@ export class AppConfigurator {
             this.defaultRelations.push({
                 name: 'liesWithin',
                 label: '',
-                domain: ['Quantification'],
+                domain: ['Impression'],
                 range: ['Feature:inherit']
+            });
+
+            this.defaultRelations.push({
+                name: 'liesWithin',
+                label: '',
+                domain: ['Quantification:inherit'],
+                range: ['Feature:inherit', 'Quantification:inherit']
             });
          
             this.defaultRelations.push({

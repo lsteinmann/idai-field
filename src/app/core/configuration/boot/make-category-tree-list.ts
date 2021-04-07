@@ -173,13 +173,13 @@ function sortGroups(fields: Array<FieldDefinition>, groupName: string): Array<Fi
         case 'stem':
             sortGroup(copiedFields, [
                 'identifier', 'shortDescription', 'supervisor', 'draughtsmen', 'processor', 'campaign',
-                'diary', 'date', 'beginningDate', 'endDate'
+                'diary', 'date', 'beginningDate', 'endDate', 'notes'
             ]);
             break;
         case 'dimension':
             sortGroup(copiedFields, [
                 'dimensionHeight', 'dimensionLength', 'dimensionWidth', 'dimensionPerimeter',
-                'dimensionDiameter', 'dimensionThickness', 'dimensionVerticalExtent', 'dimensionOther'
+                'dimensionDiameter', 'diameterPercentage', 'dimensionThickness', 'dimensionVerticalExtent', 'dimensionOther'
             ]);
             break;
     }
