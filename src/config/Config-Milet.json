@@ -434,7 +434,7 @@
         "inputType": "text"
       }, 
       "analysisMethod": {
-        "inputType": "dropdown"
+        "inputType": "checkboxes"
       }, 
       "analysisMethodOther": {
         "inputType": "multiInput"
@@ -675,6 +675,7 @@
     }
   }, 
   "Quantification": {
+    "color": "#1E6161",
     "commons": [
       "processor"
     ],
@@ -687,6 +688,9 @@
       },
       "weightTotal": {
         "inputType": "unsignedFloat"
+      },
+      "quantificationNotes": {
+        "inputType": "text"
       }
     },
     "valuelists": {
@@ -695,6 +699,7 @@
   },
   "Pottery_Quantification_A": {
     "parent": "Quantification",
+    "color": "#32A1A1",
     "fields": {
       "countArchitecturalCeramics": {
         "inputType": "unsignedInt"
@@ -755,11 +760,15 @@
       }, 
       "weightUnspecified": {
         "inputType": "unsignedFloat"
+      },
+      "quantificationOther": {
+        "inputType": "text"
       }
     }
   },
   "Pottery_Quantification_B": {
     "parent": "Quantification",
+    "color": "#46DFE0",
     "commons": [
       "period"
     ],
@@ -835,6 +844,9 @@
       }, 
       "countLampsHandle": {
         "inputType": "unsignedInt"
+      },
+      "quantificationOther": {
+        "inputType": "text"
       }
     },
     "valuelists": {

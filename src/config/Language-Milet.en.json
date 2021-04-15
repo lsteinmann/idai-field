@@ -43,6 +43,14 @@
     "notes": {
       "label": "Notes",
       "description": "..."
+    },
+    "otherNotes": {
+      "label": "Notes",
+      "description": "..."
+    },
+    "quantificationOther": {
+      "label": "Other elements (not on form)",
+      "description": "Record other pottery fragments that cannot be entered into the form above - use this carefully and only if absolutely neccessary."
     }
   },
   "relations": {
@@ -279,6 +287,267 @@
           "label": "View in direction of ...",
           "description": "Direction the Photograph was shot in."
         }
+      }
+    }
+  },
+  
+  "Quantification": {
+    "label": "Quantification",
+    "fields": {
+      "quantificationType": {
+        "label": "Type of Find",
+        "description": ""
+      },
+      "countTotal": {
+        "label": "Fragment Count (total)",
+        "description": ""
+      },
+      "weightTotal": {
+        "label": "Weight (total)",
+        "description": ""
+      },
+      "quantificationNotes": {
+        "label": "Remarks and Comments on Quantification",
+        "description": ""
+      }
+    }
+  },
+  "Pottery_Quantification_A": {
+    "label": "Quantification Pottery A",
+    "fields": {
+      "countArchitecturalCeramics": {
+        "label": "Architectural Ceramics (Fragment count)",
+        "description": ""
+      }, 
+      "weightArchitecturalCeramics": {
+        "label": "Architectural Ceramics (Weight in g)",
+        "description": ""
+      },
+      "countTransportamphorae": {
+        "label": "Transportamphorae (Fragment count)",
+        "description": ""
+      }, 
+      "weightTransportamphorae": {
+        "label": "Transportamphorae (Weight in g)",
+        "description": ""
+      },
+      "countHouseholdwares": {
+        "label": "Household pottery (Fragment count)",
+        "description": ""
+      }, 
+      "weightHouseholdwares": {
+        "label": "Household pottery (Weight in g)",
+        "description": ""
+      },
+      "countCookingwares": {
+        "label": "Cooking pottery (Fragment count)",
+        "description": ""
+      }, 
+      "weightCookingwares": {
+        "label": "Cooking pottery (Weight in g)",
+        "description": ""
+      },
+      "countStoragevessels": {
+        "label": "Storage vessels (Fragment count)",
+        "description": ""
+      }, 
+      "weightStoragevessels": {
+        "label": "Storage vessels (Weight in g)",
+        "description": ""
+      },
+      "countTablewares": {
+        "label": "Tablewares (Fragment count)",
+        "description": ""
+      }, 
+      "weightTablewares": {
+        "label": "Tablewares (Weight in g)",
+        "description": ""
+      },
+      "countFinepottery": {
+        "label": "Fine pottery (Fragment count)",
+        "description": ""
+      }, 
+      "weightFinepottery": {
+        "label": "Fine pottery (Weight in g)",
+        "description": ""
+      },
+      "countOilcontainers": {
+        "label": "Oil containers = Lekythoi, Unguentaria etc. (Fragment count)",
+        "description": ""
+      }, 
+      "weightOilcontainers": {
+        "label": "Oil containers = Lekythoi, Unguentaria etc. (Weight in g)",
+        "description": ""
+      },
+      "countTools": {
+        "label": "Tools = Lamps, Weights, Beehives etc. (Fragment count)",
+        "description": ""
+      }, 
+      "weightTools": {
+        "label": "Tools = Lamps, Weights, Beehives etc. (Weight in g)",
+        "description": ""
+      },
+      "countUnspecified": {
+        "label": "undetermined (Fragment count)",
+        "description": ""
+      }, 
+      "weightUnspecified": {
+        "label": "undetermined (Weight in g)",
+        "description": ""
+      }
+    }
+  },
+  "Pottery_Quantification_B": {
+    "label": "Quantification Pottery B",
+    "fields": {
+      "countTransportamphoraeRim": {
+        "label": "Transportamphorae (Rim fragments)",
+        "description": ""
+      }, 
+      "countTransportamphoraeBase": {
+        "label": "Transportamphorae (Base fragments)",
+        "description": ""
+      }, 
+      "countTransportamphoraeHandle": {
+        "label": "Transportamphorae (Handle fragments)",
+        "description": ""
+      }, 
+      "countHouseholdwaresRim": {
+        "label": "Household pottery (Rim fragments)",
+        "description": ""
+      }, 
+      "countHouseholdwaresBase": {
+        "label": "Household pottery (Base fragments)",
+        "description": ""
+      }, 
+      "countHouseholdwaresHandle": {
+        "label": "Household pottery (Handle fragments)",
+        "description": ""
+      },
+      "countCookingwaresRim": {
+        "label": "Cooking pottery (Rim fragments)",
+        "description": ""
+      }, 
+      "countCookingwaresBase": {
+        "label": "Cooking pottery (Base fragments)",
+        "description": ""
+      }, 
+      "countCookingwaresHandle": {
+        "label": "Cooking pottery (Handle fragments)",
+        "description": ""
+      }, 
+      "countStoragevesselsRim": {
+        "label": "Storage vessels (Rim fragments)",
+        "description": ""
+      },  
+      "countStoragevesselsBase": {
+        "label": "Storage vessels (Base fragments)",
+        "description": ""
+      },  
+      "countStoragevesselsHandle": {
+        "label": "Storage vessels (Handle fragments)",
+        "description": ""
+      }, 
+      "countTablewaresRim": {
+        "label": "Tablewares (Rim fragments)",
+        "description": ""
+      }, 
+      "countTablewaresBase": {
+        "label": "Tablewares (Base fragments)",
+        "description": ""
+      }, 
+      "countTablewaresHandle": {
+        "label": "Tablewares (Handle fragments)",
+        "description": ""
+      }, 
+      "countFinepotteryRim": {
+        "label": "Fine pottery (Rim fragments)",
+        "description": ""
+      }, 
+      "countFinepotteryBase": {
+        "label": "Fine pottery (Base fragments)",
+        "description": ""
+      }, 
+      "countFinepotteryHandle": {
+        "label": "Fine pottery (Handle fragments)",
+        "description": ""
+      }, 
+      "countOilcontainersRim": {
+        "label": "Öl = Lekythen, Unguentarien etc.",
+        "description": ""
+      }, 
+      "countOilcontainersBase": {
+        "label": "Oil containers = Lekythoi, Unguentaria etc. (Base fragments)",
+        "description": ""
+      }, 
+      "countOilcontainersHandle": {
+        "label": "Oil containers = Lekythoi, Unguentaria etc. (Handle fragments)",
+        "description": ""
+      }, 
+      "countLampsRim": {
+        "label": "Lamps (Rim fragments)",
+        "description": ""
+      }, 
+      "countLampsBase": {
+        "label": "Lamps (Base fragments)",
+        "description": ""
+      }, 
+      "countLampsHandle": {
+        "label": "Lamps (Handle fragments)",
+        "description": ""
+      }
+    }
+  },
+  "Impression": {
+    "label": "First Impression (Context)",
+    "fields": {
+      "infoFromField": {
+        "label": "Assessment of the context by the trench director",
+        "description": ""
+      },
+      "closedContext": {
+        "label": "closed Context",
+        "description": ""
+      },
+      "checkAgainstOtherContexts": {
+        "label": "(Possible) affiliation with other contexts",
+        "description": ""
+      },
+      "findProcessingWorkflow": {
+        "label": "Processing Workflow",
+        "description": ""
+      },
+      "workflowDone": {
+        "label": "Processing finished",
+        "description": ""
+      },
+      "relativeAmount": {
+        "label": "Relative amount of finds",
+        "description": ""
+      },
+      "relativeAmountCheck": {
+        "label": "Relative amount of finds",
+        "description": ""
+      },
+      "materialCondition": {
+        "label": "Condition (of finds)",
+        "description": ""
+      },
+      "fitsOtherContexts": {
+        "label": "Affiliation with other context as assessed by find processing",
+        "description": ""
+      },
+      "findSpectrum": {
+        "label": "Composition of form spectrum, quantitative relations",
+        "description": ""
+      },
+      "specialFinds": {
+        "label": "Special / remarkable forms and finds",
+        "description": ""
+      },
+      "generalNotes": {
+        "label": "Generalized first impression, comments",
+        "description": ""
       }
     }
   }

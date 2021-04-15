@@ -54,6 +54,10 @@
     "otherNotes": {
       "label": "Notizen",
       "description": "..."
+    },
+    "quantificationOther": {
+      "label": "Andere Elemente (nicht in Formular vorgesehen)",
+      "description": "Zum Nachhalten von Bestandteilen die nicht in dem Formular widergegeben werden können - bitte vorsichtig und nur wenn absolut nötig benutzen!"
     }
   },
   "relations": {
@@ -507,7 +511,7 @@
           "description": "Angabe des Volumens in Millilitern"
         }
       }
-    }, 
+    },
     "Quantification": {
       "label": "Quantifizierung",
       "fields": {
@@ -516,11 +520,15 @@
           "description": ""
         },
         "countTotal": {
-          "label": "Anzahl (gesamt)",
+          "label": "Anzahl der Fragmente (gesamt)",
           "description": ""
         },
         "weightTotal": {
           "label": "Gewicht (gesamt)",
+          "description": ""
+        },
+        "quantificationNotes": {
+          "label": "Bemerkungen zur Quantifizierung",
           "description": ""
         }
       }
@@ -529,7 +537,7 @@
       "label": "Quantifizierung Keramik A",
       "fields": {
         "countArchitecturalCeramics": {
-          "label": "Architektonische Keramik (Anzahl)",
+          "label": "Architektonische Keramik (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightArchitecturalCeramics": {
@@ -537,7 +545,7 @@
           "description": ""
         },
         "countTransportamphorae": {
-          "label": "Transportamphoren (Anzahl)",
+          "label": "Transportamphoren (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightTransportamphorae": {
@@ -545,7 +553,7 @@
           "description": ""
         },
         "countHouseholdwares": {
-          "label": "Haushaltskeramik (Anzahl)",
+          "label": "Haushaltskeramik (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightHouseholdwares": {
@@ -553,7 +561,7 @@
           "description": ""
         },
         "countCookingwares": {
-          "label": "Küchengeschirr (Anzahl)",
+          "label": "Küchengeschirr (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightCookingwares": {
@@ -561,7 +569,7 @@
           "description": ""
         },
         "countStoragevessels": {
-          "label": "Vorratsgeschirr (Anzahl)",
+          "label": "Vorratsgeschirr (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightStoragevessels": {
@@ -569,7 +577,7 @@
           "description": ""
         },
         "countTablewares": {
-          "label": "Tafelgeschirr (Anzahl)",
+          "label": "Tafelgeschirr (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightTablewares": {
@@ -577,7 +585,7 @@
           "description": ""
         },
         "countFinepottery": {
-          "label": "Feinkeramik (Anzahl)",
+          "label": "Feinkeramik (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightFinepottery": {
@@ -585,7 +593,7 @@
           "description": ""
         },
         "countOilcontainers": {
-          "label": "Öl = Lekythen, Unguentarien etc. (Anzahl)",
+          "label": "Öl = Lekythen, Unguentarien etc. (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightOilcontainers": {
@@ -593,7 +601,7 @@
           "description": ""
         },
         "countTools": {
-          "label": "Geräte = Lampen, Gewichte, Bienenkorb etc. (Anzahl)",
+          "label": "Geräte = Lampen, Gewichte, Bienenkorb etc. (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightTools": {
@@ -601,7 +609,7 @@
           "description": ""
         },
         "countUnspecified": {
-          "label": "unbestimmt (Anzahl)",
+          "label": "unbestimmt (Anzahl der Fragmente)",
           "description": ""
         }, 
         "weightUnspecified": {
@@ -697,8 +705,8 @@
           "label": "Öl = Lekythen, Unguentarien etc. (Henkelfragmente)",
           "description": ""
         }, 
-        "countLampsRim (Randfragmente)": {
-          "label": "Lampen",
+        "countLampsRim": {
+          "label": "Lampen (Randfragmente)",
           "description": ""
         }, 
         "countLampsBase": {
@@ -763,6 +771,6 @@
           "description": ""
         }
       }
-    }  
+    }
   }
 }
