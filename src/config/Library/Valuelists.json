@@ -47071,19 +47071,22 @@
       "NoCoordinateSystem": {
         "labels": {
           "de": "Kein gültiges Koordinatenbezugssystem",
-          "en": "No valid Coordinate System"
+          "en": "No valid Coordinate System",
+          "fr": "NA"
         }
       },
       "Bendt": {
         "labels": {
           "de": "Bendt (1968, lokales System Milet)",
-          "en": "Bendt (1968, local System Milet)"
+          "en": "Bendt (1968, local System Milet)",
+          "fr": "NA"
         }
       },
       "UTM35N": {
         "labels": {
           "de": "EPSG32635 (UTM 35 N WGS84)",
-          "en": "EPSG32635 (UTM 35 N WGS84)"
+          "en": "EPSG32635 (UTM 35 N WGS84)",
+          "fr": "NA"
         }
       }
     },
@@ -47100,58 +47103,30 @@
     "values": {
       "Befliegung": {
         "labels": {
-          "de": "Befliegung"
+          "de": "Befliegung / Satellitenbilder",
+          "en": "Survey by Plane or by Satellite Imagery",
+          "fr": "NA"
+        }
+      },
+      "Kartierung": {
+        "labels": {
+          "de": "Auswertung von Kartierung",
+          "en": "Survey from Maps",
+          "fr": "NA"
         }
       },
       "Begehung": {
         "labels": {
-          "de": "Begehung"
+          "de": "Begehung",
+          "en": "on-site inspection (Survey by Walking)",
+          "fr": "NA"
         }
       },
       "Fundkatalog": {
         "labels": {
           "de": "Fundkatalog",
-          "en": "Catalogue of Finds"
-        }
-      },
-      "Geoelektrik": {
-        "labels": {
-          "de": "Geoelektrik"
-        }
-      },
-      "Geomagnetik": {
-        "labels": {
-          "de": "Geomagnetik"
-        }
-      },
-      "Georadar": {
-        "labels": {
-          "de": "Georadar"
-        }
-      },
-      "LIDAR": {
-        "labels": {
-          "de": "LIDAR"
-        }
-      },
-      "Luft- oder Satellitenbilder": {
-        "labels": {
-          "de": "Luft- oder Satellitenbilder"
-        }
-      },
-      "Quadratisch": {
-        "labels": {
-          "de": "Quadratisch"
-        }
-      },
-      "Regelmäßig": {
-        "labels": {
-          "de": "Regelmäßig"
-        }
-      },
-      "Seismik": {
-        "labels": {
-          "de": "Seismik"
+          "en": "Catalogue of Finds",
+          "fr": "NA"
         }
       }
     }
@@ -47160,9 +47135,22 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "creationDate": "25-04-2020",
     "description": {
-      "de": "",
+      "de": "TODO reinfolge ändern",
       "en": ""
     },
+    "order": [
+      "Zeytintepe-Depot",
+      "Athenatempel-Depot",
+      "Kalabaktepe-Depot",
+      "Steindepot",
+      "Steingarten",
+      "Theater",
+      "Museum Milet",
+      "in situ",
+      "unbekannt",
+      "nicht aufgehoben",
+      "Anderer Aufbewahrungsort"
+    ],
     "values": {
       "Zeytintepe-Depot": {},
       "Steindepot": {},
@@ -47173,7 +47161,8 @@
       "Museum Milet": {},
       "Anderer Aufbewahrungsort": {},
       "in situ": {},
-      "unbekannt": {}
+      "unbekannt": {},
+      "nicht aufgehoben": {}
     }
   },
   "localization-milet": {
@@ -47186,25 +47175,29 @@
       "Totalstation": {
         "labels": {
           "de": "Messdaten aus Totalstation",
-          "en": "Surveying data from Totalstation"
+          "en": "Surveying data from Totalstation",
+          "fr": "NA"
         }
       },
       "manuell_kartiert": {
         "labels": {
           "de": "Manuell kartiert",
-          "en": "Manual entry on map"
+          "en": "Manual entry on map",
+          "fr": "NA"
         }
       },
       "nicht_lokalisiert": {
         "labels": {
           "de": "nicht lokalisiert / Standort unbekannt",
-          "en": "not located / location unknown"
+          "en": "not located / location unknown",
+          "fr": "NA"
         }
       },
       "topographical_description": {
         "labels": {
           "de": "Standort durch topographische Beschreibung erfasst",
-          "en": "located by topographical Description"
+          "en": "located by topographical description",
+          "fr": "NA"
         }
       }
     }
@@ -47215,42 +47208,55 @@
     "description": {
       "de": "",
       "en": ""
-    },
+    },"order": [
+      "Inventarisiert",
+      "Fotografiert",
+      "Gezeichnet",
+      "Detailbearbeitung fertig",
+      "Restauriert",
+      "Fehlerhaft"
+    ],
     "values": {
       "Inventarisiert": {
         "labels": {
           "de": "Inventarisiert",
-          "en": "Inventory entry"
+          "en": "Inventory entry",
+          "fr": "NA"
         }
       },
       "Fotografiert": {
         "labels": {
           "de": "Foto",
-          "en": "Photograph"
+          "en": "Photograph",
+          "fr": "NA"
         }
       },
       "Gezeichnet": {
         "labels": {
           "de": "Zeichnung",
-          "en": "Drawing"
+          "en": "Drawing",
+          "fr": "NA"
         }
       },
       "Restauriert": {
         "labels": {
           "de": "Restaurierung",
-          "en": "Restored"
+          "en": "Restored",
+          "fr": "NA"
         }
       },
       "Detailbearbeitung fertig": {
         "labels": {
-          "de": "Detailbearbeitung fertig",
-          "en": "Detailed processing finished"
+          "de": "vollständige Einzelfundaufnahme",
+          "en": "Detailed processing finished",
+          "fr": "NA"
         }
       },
       "Fehlerhaft": {
         "labels": {
-          "de": "Fehlerhaft",
-          "en": "Error in processing"
+          "de": "Kontrolle notwendig",
+          "en": "Has to be checked again",
+          "fr": "NA"
         }
       }
     }
@@ -47263,24 +47269,96 @@
       "en": ""
     },
     "values": {
-      "Alabaster": {},
-      "Andesit": {},
-      "Basalt": {},
-      "Bronze": {},
-      "Granit": {},
-      "Kalkstein": {},
-      "Marmor": {},
-      "Obsidian": {},
-      "Pophyr": {},
-      "Quarz": {},
-      "Rhyolith (Quarzporphyr)": {},
-      "Sandstein": {},
-      "Serpentinit": {},
-      "Tuff": {},
-      "Vulkangestein": {},
-      "Lokales Gestein": {},
-      "Unsicher bzw. unbestimmbar": {},
-      "Andere": {}
+      "Alabaster": {
+        "de": "Alabaster",
+        "en": "Alabaster",
+        "fr": "NA"
+      },
+      "Andesit": {
+        "de": "Andesit",
+        "en": "Andesite",
+        "fr": "NA"
+      },
+      "Basalt": {
+        "de": "Basalt",
+        "en": "Basalt",
+        "fr": "NA"
+      },
+      "Bronze": {
+        "de": "Bronze",
+        "en": "Bronze",
+        "fr": "NA"
+      },
+      "Granit": {
+        "de": "Granit",
+        "en": "Granite",
+        "fr": "NA"
+      },
+      "Kalkstein": {
+        "de": "Kalkstein",
+        "en": "Limestone",
+        "fr": "NA"
+      },
+      "Marmor": {
+        "de": "Marmor",
+        "en": "Marble",
+        "fr": "NA"
+      },
+      "Obsidian": {
+        "de": "Obsidian",
+        "en": "Obsidian",
+        "fr": "NA"
+      },
+      "Pophyr": {
+        "de": "Pophyr",
+        "en": "Pophyr",
+        "fr": "NA"
+      },
+      "Quarz": {
+        "de": "Quarz",
+        "en": "Quartz",
+        "fr": "NA"
+      },
+      "Rhyolith (Quarzporphyr)": {
+        "de": "Rhyolith (Quarzporphyr)",
+        "en": "Rhyolite",
+        "fr": "NA"
+      },
+      "Sandstein": {
+        "de": "Sandstein",
+        "en": "Sandstone",
+        "fr": "NA"
+      },
+      "Serpentinit": {
+        "de": "Serpentinit",
+        "en": "Serpentinite",
+        "fr": "NA"
+      },
+      "Tuff": {
+        "de": "Tuff",
+        "en": "Tuff",
+        "fr": "NA"
+      },
+      "Vulkangestein": {
+        "de": "Vulkangestein",
+        "en": "Volcanic rock",
+        "fr": "NA"
+      },
+      "Lokales Gestein": {
+        "de": "Lokales Gestein",
+        "en": "Local Rock",
+        "fr": "NA"
+      },
+      "Unsicher bzw. unbestimmbar": {
+        "de": "Unsicher bzw. unbestimmbar",
+        "en": "Unsure / Unidentifiable",
+        "fr": "NA"
+      },
+      "Andere": {
+        "de": "Andere",
+        "en": "Other",
+        "fr": "NA"
+      }
     }
   },
   "Sculpture-sculptureMaterialAttr-milet": {
@@ -47291,12 +47369,36 @@
       "en": ""
     },
     "values": {
-      "indeterminable": {},
-      "fine-grained": {},
-      "medium-grained": {},
-      "coarse-grained": {},
-      "coloured": {},
-      "Andere": {}
+      "indeterminable": {
+        "de": "unbestimmbar",
+        "en": "indeterminable",
+        "fr": "NA"
+      },
+      "fine-grained": {
+        "de": "feinkörnig",
+        "en": "fine-grained",
+        "fr": "NA"
+      },
+      "medium-grained": {
+        "de": "mittelkörnig",
+        "en": "medium-grained",
+        "fr": "NA"
+      },
+      "coarse-grained": {
+        "de": "grobkörnig",
+        "en": "coarse-grained",
+        "fr": "NA"
+      },
+      "coloured": {
+        "de": "farbig",
+        "en": "coloured",
+        "fr": "NA"
+      },
+      "Andere": {
+        "de": "Andere",
+        "en": "Other",
+        "fr": "NA"
+      }
     }
   },
   "Sculpture-sculptureBodypart-milet": {
@@ -47310,76 +47412,100 @@
       "left": {
         "labels": {
           "de": "links",
-          "en": "left-"
+          "en": "left-",
+          "fr": "NA"
         }
       },
       "right": {
         "labels": {
           "de": "rechts",
-          "en": "right-"
+          "en": "right-",
+          "fr": "NA"
         }
       },
       "Head": {
         "labels": {
           "de": "Kopf",
-          "en": "Head"
+          "en": "Head",
+          "fr": "NA"
         }
       },
       "Neck": {
         "labels": {
           "de": "Nacken",
-          "en": "Neck"
+          "en": "Neck",
+          "fr": "NA"
         }
       },
       "Shoulder": {
         "labels": {
           "de": "Schulter",
-          "en": "Shoulder"
+          "en": "Shoulder",
+          "fr": "NA"
         }
       },
-      "Arm": {},
-      "Hand": {},
-      "Torso": {},
+      "Arm": {
+        "de": "Arm",
+        "en": "Arm",
+        "fr": "NA"
+      },
+      "Hand": {
+        "de": "Hand",
+        "en": "Hand",
+        "fr": "NA"
+      },
+      "Torso": {
+        "de": "Torso",
+        "en": "Torso",
+        "fr": "NA"
+      },
       "Back": {
         "labels": {
           "de": "Rücken",
-          "en": "Back"
+          "en": "Back",
+          "fr": "NA"
         }
       },
       "Hip": {
         "labels": {
           "de": "Hüfte",
-          "en": "Hip"
+          "en": "Hip",
+          "fr": "NA"
         }
       },
       "Leg": {
         "labels": {
           "de": "Bein",
-          "en": "Leg"
+          "en": "Leg",
+          "fr": "NA"
         }
       },
       "Foot": {
         "labels": {
           "de": "Fuß",
-          "en": "Foot"
+          "en": "Foot",
+          "fr": "NA"
         }
       },
       "Attributes": {
         "labels": {
           "de": "Attribute",
-          "en": "Attributes"
+          "en": "Attributes",
+          "fr": "NA"
         }
       },
       "indeterminable": {
         "labels": {
           "de": "unbestimmbar",
-          "en": "indeterminable"
+          "en": "indeterminable",
+          "fr": "NA"
         }
       },
       "other": {
         "labels": {
           "de": "andere",
-          "en": "other"
+          "en": "other",
+          "fr": "NA"
         }
       }
     }
@@ -47395,25 +47521,29 @@
       "female": {
         "labels": {
           "de": "weiblich",
-          "en": "female"
+          "en": "female",
+          "fr": "NA"
         }
       },
       "male": {
         "labels": {
           "de": "männlich",
-          "en": "male"
+          "en": "male",
+          "fr": "NA"
         }
       },
       "inconclusive": {
         "labels": {
           "de": "unklar",
-          "en": "inconclusive"
+          "en": "inconclusive",
+          "fr": "NA"
         }
       },
       "other": {
         "labels": {
           "de": "andere",
-          "en": "other"
+          "en": "other",
+          "fr": "NA"
         }
       }
     }
@@ -47429,79 +47559,92 @@
       "Deities, Personifications and Heroes": {
         "labels": {
           "de": "Götter, Personifikationen und Heroen",
-          "en": "Deities, Personifications and Heroes"
+          "en": "Deities, Personifications and Heroes",
+          "fr": "NA"
         }
       },
       "Imperial Family": {
         "labels": {
           "de": "Kaiserliche Familie",
-          "en": "Imperial Family"
+          "en": "Imperial Family",
+          "fr": "NA"
         }
       },
       "Imperial and Senatorial Office Holders": {
         "labels": {
           "de": "Kaiserliche und Senatorische Amtsträger",
-          "en": "Imperial and Senatorial Office Holders"
+          "en": "Imperial and Senatorial Office Holders",
+          "fr": "NA"
         }
       },
       "Provincial Notables": {
         "labels": {
           "de": "Würdenträger (Provinzen)",
-          "en": "Provincial Notables"
+          "en": "Provincial Notables",
+          "fr": "NA"
         }
       },
       "Animals": {
         "labels": {
           "de": "Tiere",
-          "en": "Animals"
+          "en": "Animals",
+          "fr": "NA"
         }
       },
       "Philosophers, Orators and Poets": {
         "labels": {
           "de": "Philosophen, Redner und Poeten",
-          "en": "Philosophers, Orators and Poets"
+          "en": "Philosophers, Orators and Poets",
+          "fr": "NA"
         }
       },
       "Military": {
         "labels": {
           "de": "Militärisch",
-          "en": "Military"
+          "en": "Military",
+          "fr": "NA"
         }
       },
       "Athletes": {
         "labels": {
           "de": "Athleten",
-          "en": "Athletes"
+          "en": "Athletes",
+          "fr": "NA"
         }
       },
       "Citizen": {
         "labels": {
           "de": "Bürger und Bürgerinnen",
-          "en": "Citizens"
+          "en": "Citizens",
+          "fr": "NA"
         }
       },
       "Other (human)": {
         "labels": {
           "de": "Andere (Menschen)",
-          "en": "Other (human)"
+          "en": "Other (human)",
+          "fr": "NA"
         }
       },
       "Other mythological creatures": {
         "labels": {
           "de": "Andere mythologische Wesen",
-          "en": "Other mythological creatures"
+          "en": "Other mythological creatures",
+          "fr": "NA"
         }
       },
       "Other": {
         "labels": {
           "de": "Andere",
-          "en": "Other"
+          "en": "Other",
+          "fr": "NA"
         }
       },
       "Unknown": {
         "labels": {
           "de": "Unbekannt",
-          "en": "Unknown"
+          "en": "Unknown",
+          "fr": "NA"
         }
       }
     }
@@ -47518,86 +47661,100 @@
       "Toga, late antique": {
         "labels": {
           "de": "Toga, spätantik",
-          "en": "Toga, late antique"
+          "en": "Toga, late antique",
+          "fr": "NA"
         }
       },
       "Toga, toga contabulata": {},
       "Toga with umbo": {
         "labels": {
           "de": "Toga mit umbo",
-          "en": "Toga, with umbo"
+          "en": "Toga, with umbo",
+          "fr": "NA"
         }
       },
       "Armour": {
         "labels": {
           "de": "Rüstung",
-          "en": "Armour"
+          "en": "Armour",
+          "fr": "NA"
         }
       },
       "Tunic / chiton": {
         "labels": {
           "de": "Tunika / chiton",
-          "en": "Tunic / chiton"
+          "en": "Tunic / chiton",
+          "fr": "NA"
         }
       },
       "Tunic, colobium": {
         "labels": {
           "de": "Tunic, colobium",
-          "en": "Tunic, colobium"
+          "en": "Tunic, colobium",
+          "fr": "NA"
         }
       },
       "Boots, Military": {
         "labels": {
           "de": "Schuhe, Militär",
-          "en": "Boots, Military"
+          "en": "Boots, Military",
+          "fr": "NA"
         }
       },
       "Footwear, sandals": {
         "labels": {
           "de": "Fußbekleidung, Sandelen",
-          "en": "Footwear, sandals"
+          "en": "Footwear, sandals",
+          "fr": "NA"
         }
       },
       "Footwear, closed, plain boots": {
         "labels": {
           "de": "Fußbekleidung, geschlossen, einfache Schuhe",
-          "en": "Footwear, closed, plain boots"
+          "en": "Footwear, closed, plain boots",
+          "fr": "NA"
         }
       },
       "Footwear, closed strapped boots": {
         "labels": {
           "de": "Fußbekleidung, geschlossen, verschnürte Schuhe",
-          "en": "Footwear, closed strapped boots"
+          "en": "Footwear, closed strapped boots",
+          "fr": "NA"
         }
       },
       "Footwear, open, strapped shoes": {
         "labels": {
           "de": "Fußbekleidung, offen, verschnürt",
-          "en": "Footwear, open, strapped shoes"
+          "en": "Footwear, open, strapped shoes",
+          "fr": "NA"
         }
       },
       "Cloak, paludamentum": {
         "labels": {
           "de": "Mantel, paludamentum",
-          "en": "Cloak, paludamentum"
+          "en": "Cloak, paludamentum",
+          "fr": "NA"
         }
       },
       "Cloak, chlamys": {
         "labels": {
           "de": "Mantel, chlamys",
-          "en": "Cloak, chlamys"
+          "en": "Cloak, chlamys",
+          "fr": "NA"
         }
       },
       "Naked": {
         "labels": {
           "de": "Unbekleidet",
-          "en": "Naked"
+          "en": "Naked",
+          "fr": "NA"
         }
       },
       "Other": {
         "labels": {
           "de": "Andere",
-          "en": "Other"
+          "en": "Other",
+          "fr": "NA"
         }
       }
     }
@@ -47614,63 +47771,73 @@
       "Brushed forward": {
         "labels": {
           "de": "Nach vorne gebürstet",
-          "en": "Brushed forward"
+          "en": "Brushed forward",
+          "fr": "NA"
         }
       },
       "Bun": {
         "labels": {
           "de": "Knoten",
-          "en": "Bun"
+          "en": "Bun",
+          "fr": "NA"
         }
       },
       "Central braid": {
         "labels": {
           "de": "Mittig aufgesetzte Flechtung",
-          "en": "Central braid"
+          "en": "Central braid",
+          "fr": "NA"
         }
       },
       "Encircling braid(s)": {
         "labels": {
           "de": "den Kopf umrundend geflochten",
-          "en": "Encircling braid(s)"
+          "en": "Encircling braid(s)",
+          "fr": "NA"
         }
       },
       "Long, covers ears": {
         "labels": {
           "de": "Lang, bedeckt Ohren",
-          "en": "Long, covers ears"
+          "en": "Long, covers ears",
+          "fr": "NA"
         }
       },
       "Long, to shoulders": {
         "labels": {
           "de": "Lang, Schulterlänge",
-          "en": "Long, to shoulders"
+          "en": "Long, to shoulders",
+          "fr": "NA"
         }
       },
       "Mop": {},
       "Short": {
         "labels": {
           "de": "Kurz",
-          "en": "Short"
+          "en": "Short",
+          "fr": "NA"
         }
       },
       "Short-cropped": {
         "labels": {
           "de": "Kurz, geschoren",
-          "en": "Short-cropped"
+          "en": "Short-cropped",
+          "fr": "NA"
         }
       },
       "Turban": {},
       "Wreath-style": {
         "labels": {
           "de": "Kranz-Stil",
-          "en": "Wreath-style"
+          "en": "Wreath-style",
+          "fr": "NA"
         }
       },
       "Other": {
         "labels": {
           "de": "Andere",
-          "en": "Other"
+          "en": "Other",
+          "fr": "NA"
         }
       }
     }
@@ -47686,43 +47853,50 @@
       "Bearded, long": {
         "labels": {
           "de": "Bärtig, lang",
-          "en": "Bearded, long"
+          "en": "Bearded, long",
+          "fr": "NA"
         }
       },
       "Bearded, short": {
         "labels": {
           "de": "Bärtig, kurz",
-          "en": "Bearded, short"
+          "en": "Bearded, short",
+          "fr": "NA"
         }
       },
       "Bearded, stubble": {
         "labels": {
           "de": "Bärtig, stoppelig",
-          "en": "Bearded, stubble"
+          "en": "Bearded, stubble",
+          "fr": "NA"
         }
       },
       "Bearded, under-chin": {
         "labels": {
           "de": "Bärtig, unter dem Kinn",
-          "en": "Bearded, under-chin"
+          "en": "Bearded, under-chin",
+          "fr": "NA"
         }
       },
       "Clean-shaven": {
         "labels": {
           "de": "glatt rasiert",
-          "en": "clean-shaven"
+          "en": "clean-shaven",
+          "fr": "NA"
         }
       },
       "beardless": {
         "labels": {
           "de": "bartlos",
-          "en": "beardless"
+          "en": "beardless",
+          "fr": "NA"
         }
       },
       "Other": {
         "labels": {
           "de": "Andere",
-          "en": "Other"
+          "en": "Other",
+          "fr": "NA"
         }
       }
     }
@@ -47738,139 +47912,162 @@
       "belt": {
         "labels": {
           "de": "Gürtel",
-          "en": "belt"
+          "en": "belt",
+          "fr": "NA"
         }
       },
       "crown": {
         "labels": {
           "de": "Krone",
-          "en": "crown"
+          "en": "crown",
+          "fr": "NA"
         }
       },
       "codex / book": {
         "labels": {
           "de": "Codex / Buch",
-          "en": "codex / book"
+          "en": "codex / book",
+          "fr": "NA"
         }
       },
       "corona civica": {
         "labels": {
           "de": "corona civica",
-          "en": "corono civica"
+          "en": "corono civica",
+          "fr": "NA"
         }
       },
       "crown fillet": {
         "labels": {
           "de": "Königsbinde",
-          "en": "crown fillet"
+          "en": "crown fillet",
+          "fr": "NA"
         }
       },
       "diadem": {
         "labels": {
           "de": "Diadem",
-          "en": "diadem"
+          "en": "diadem",
+          "fr": "NA"
         }
       },
       "diadem, jewelled": {
         "labels": {
           "de": "Diadem, juwelenbesetzt",
-          "en": "diadem, jewelled"
+          "en": "diadem, jewelled",
+          "fr": "NA"
         }
       },
       "diadem, pearl-edged": {
         "labels": {
           "de": "Diadem, perlenbesetzt",
-          "en": "diadem, pearl-edged"
+          "en": "diadem, pearl-edged",
+          "fr": "NA"
         }
       },
       "diadem, plain": {
         "labels": {
           "de": "Diadem, einfach",
-          "en": "diadem, plain"
+          "en": "diadem, plain",
+          "fr": "NA"
         }
       },
       "earrings": {
         "labels": {
           "de": "Ohrringe",
-          "en": "earrings"
+          "en": "earrings",
+          "fr": "NA"
         }
       },
       "fibula": {
         "labels": {
           "de": "Fibel",
-          "en": "fibula"
+          "en": "fibula",
+          "fr": "NA"
         }
       },
       "finger ring": {
         "labels": {
           "de": "Ring (Finger)",
-          "en": "finger ring"
+          "en": "finger ring",
+          "fr": "NA"
         }
       },
       "mappa": {
         "labels": {
           "de": "mappa",
-          "en": "mappa"
+          "en": "mappa",
+          "fr": "NA"
         }
       },
       "necklace": {
         "labels": {
           "de": "Halskette",
-          "en": "nacklace"
+          "en": "nacklace",
+          "fr": "NA"
         }
       },
       "orb": {
         "labels": {
           "de": "orb",
-          "en": "orb"
+          "en": "orb",
+          "fr": "NA"
         }
       },
       "sceptre": {
         "labels": {
           "de": "Szepter",
-          "en": "sceptre"
+          "en": "sceptre",
+          "fr": "NA"
         }
       },
       "scroll": {
         "labels": {
           "de": "Schriftrolle",
-          "en": "scroll"
+          "en": "scroll",
+          "fr": "NA"
         }
       },
       "spear": {
         "labels": {
           "de": "Speer",
-          "en": "spear"
+          "en": "spear",
+          "fr": "NA"
         }
       },
       "staff": {
         "labels": {
           "de": "Stab",
-          "en": "staff"
+          "en": "staff",
+          "fr": "NA"
         }
       },
       "sword": {
         "labels": {
           "de": "Schwert",
-          "en": "sword"
+          "en": "sword",
+          "fr": "NA"
         }
       },
       "tabellae": {
         "labels": {
           "de": "tabellae",
-          "en": "tabellae"
+          "en": "tabellae",
+          "fr": "NA"
         }
       },
       "wreath": {
         "labels": {
           "de": "Kranz",
-          "en": "wreath"
+          "en": "wreath",
+          "fr": "NA"
         }
       },
       "other": {
         "labels": {
           "de": "andere",
-          "en": "other"
+          "en": "other",
+          "fr": "NA"
         }
       }
     }
@@ -47886,79 +48083,92 @@
       "rosa": {
         "labels": {
           "de": "rosa",
-          "en": "rose / pink"
+          "en": "rose / pink",
+          "fr": "NA"
         }
       },
       "grün": {
         "labels": {
           "de": "grün",
-          "en": "green"
+          "en": "green",
+          "fr": "NA"
         }
       },
       "blau": {
         "labels": {
           "de": "blau",
-          "en": "blue"
+          "en": "blue",
+          "fr": "NA"
         }
       },
       "bläulich-weiß": {
         "labels": {
           "de": "bläulich-weiß",
-          "en": "bluish-white"
+          "en": "bluish-white",
+          "fr": "NA"
         }
       },
       "hellgrau": {
         "labels": {
           "de": "hellgrau",
-          "en": "light grey"
+          "en": "light grey",
+          "fr": "NA"
         }
       },
       "hellgräulich": {
         "labels": {
           "de": "hellgräulich",
-          "en": "light greyish"
+          "en": "light greyish",
+          "fr": "NA"
         }
       },
       "gräulich-weiß": {
         "labels": {
           "de": "gräulich-weiß",
-          "en": "greyish-white"
+          "en": "greyish-white",
+          "fr": "NA"
         }
       },
       "gräulich": {
         "labels": {
           "de": "gräulich",
-          "en": "greyish"
+          "en": "greyish",
+          "fr": "NA"
         }
       },
       "grau": {
         "labels": {
           "de": "grau",
-          "en": "grey"
+          "en": "grey",
+          "fr": "NA"
         }
       },
       "dunkelgrau": {
         "labels": {
           "de": "dunkelgrau",
-          "en": "dark grey"
+          "en": "dark grey",
+          "fr": "NA"
         }
       },
       "schwarz": {
         "labels": {
           "de": "schwarz",
-          "en": "black"
+          "en": "black",
+          "fr": "NA"
         }
       },
       "weiß": {
         "labels": {
           "de": "weiß",
-          "en": "white"
+          "en": "white",
+          "fr": "NA"
         }
       },
       "gräulich-blau": {
         "labels": {
           "de": "gräulich-blau",
-          "en": "greyish-blue"
+          "en": "greyish-blue",
+          "fr": "NA"
         }
       }
     }
@@ -47968,19 +48178,22 @@
     "createdBy": "Nisan Lordoğlu / Lisa Steinmann (Milet)",
     "description": {
       "de": "Typ des Marmors",
-      "en": "Type of Marble"
+      "en": "Type of Marble",
+      "fr": "NA"
     },
     "values": {
       "veined marble": {
         "labels": {
           "de": "Marmor mit Adern",
-          "en": "Marble with veins"
+          "en": "Marble with veins",
+          "fr": "NA"
         }
       }, 
       "nonveined marble": {
         "labels": {
           "de": "Marmor ohne Adern",
-          "en": "Marble without veins"
+          "en": "Marble without veins",
+          "fr": "NA"
         }
       }
     }  
@@ -47990,44 +48203,51 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Qualitätseinschätzung",
-      "en": "Assesment of Quality"
+      "en": "Assesment of Quality",
+      "fr": "NA"
     }, 
     "order": [],
     "values": {
       "very high quality": {
         "labels": {
           "de": "sehr hohe Qualität",
-          "en": "very high quality"
+          "en": "very high quality",
+          "fr": "NA"
         }
       },
       "high quality": {
         "labels": {
           "de": "hohe Qualität",
-          "en": "high quality"
+          "en": "high quality",
+          "fr": "NA"
         }
       },
       "medium quality": {
         "labels": {
           "de": "mittelmäßige Qualität",
-          "en": "medium quality"
+          "en": "medium quality",
+          "fr": "NA"
         }
       },
       "low quality": {
         "labels": {
           "de": "schlechte Qualität",
-          "en": "low quality"
+          "en": "low quality",
+          "fr": "NA"
         }
       },
       "unfinished": {
         "labels": {
           "de": "unfertig",
-          "en": "unfinished"
+          "en": "unfinished",
+          "fr": "NA"
         }
       },
       "partially unfinished": {
         "labels": {
           "de": "punktuell unfertig",
-          "en": "partially unfinished"
+          "en": "partially unfinished",
+          "fr": "NA"
         }
       }
     }
@@ -48038,7 +48258,8 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Konsistenz des Erdbefunds",
-      "en": "Consistency of Layer"
+      "en": "Consistency of Layer",
+      "fr": "NA"
     }, 
     "order": [
       "very_hard",
@@ -48053,43 +48274,50 @@
       "very_hard": {
         "labels": {
           "de": "sehr hart",
-          "en": "very hard"
+          "en": "very hard",
+          "fr": "NA"
         }
       },
       "hard": {
         "labels": {
           "de": "hart",
-          "en": "hard"
+          "en": "hard",
+          "fr": "NA"
         }
       },
       "solid": {
         "labels": {
           "de": "fest",
-          "en": "solid"
+          "en": "solid",
+          "fr": "NA"
         }
       },
       "starchy": {
         "labels": {
           "de": "steif",
-          "en": "starchy"
+          "en": "starchy",
+          "fr": "NA"
         }
       },
       "soft": {
         "labels": {
           "de": "weich",
-          "en": "soft"
+          "en": "soft",
+          "fr": "NA"
         }
       },
       "very_soft": {
         "labels": {
           "de": "sehr weich",
-          "en": "very soft"
+          "en": "very soft",
+          "fr": "NA"
         }
       },
       "liquid": {
         "labels": {
           "de": "flüssig",
-          "en": "liquid"
+          "en": "liquid",
+          "fr": "NA"
         }
       }
     }
@@ -48099,7 +48327,8 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Einschlüsse im Erdbefund",
-      "en": "Inclusions in Layer"
+      "en": "Inclusions in Layer",
+      "fr": "NA"
     },
     "order": [
       "Kiesel_klein",
@@ -48119,73 +48348,85 @@
       "Kiesel_klein": {
         "labels": {
           "de": "Kiesel (klein)",
-          "en": "Pebbles (small)"
+          "en": "Pebbles (small)",
+          "fr": "NA"
         }
       },
       "Kiesel_mittel": {
         "labels": {
           "de": "Kiesel (mittel)",
-          "en": "Pebbles (medium)"
+          "en": "Pebbles (medium)",
+          "fr": "NA"
         }
       },
       "Kiesel_groß": {
         "labels": {
           "de": "Kiesel (groß)",
-          "en": "Pebbles (big)"
+          "en": "Pebbles (big)",
+          "fr": "NA"
         }
       },
       "Stein_klein": {
         "labels": {
           "de": "Stein (klein)",
-          "en": "Stone (small)"
+          "en": "Stone (small)",
+          "fr": "NA"
         }
       },
       "Stein_mittel": {
         "labels": {
           "de": "Stein (mittel)",
-          "en": "Stone (medium)"
+          "en": "Stone (medium)",
+          "fr": "NA"
         }
       },
       "Stein_groß": {
         "labels": {
           "de": "Stein (groß)",
-          "en": "Stone (big)"
+          "en": "Stone (big)",
+          "fr": "NA"
         }
       },
       "Kalk": {
         "labels": {
           "de": "Kalk",
-          "en": "Lime"
+          "en": "Lime",
+          "fr": "NA"
         }
       },
       "Ziegelbruch_kleinteilig": {
         "labels": {
           "de": "kleinteiliger Ziegelbruch",
-          "en": "small brick/burnt clay fragments"
+          "en": "small brick/burnt clay fragments",
+          "fr": "NA"
         }
       },
       "HolzkohleAsche": {
         "labels": {
           "de": "Holzkohle / Asche",
-          "en": "charcoal / ash"
+          "en": "charcoal / ash",
+          "fr": "NA"
         }
       },
       "Wurzeln": {
         "labels": {
           "de": "Wurzeln",
-          "en": "roots"
+          "en": "roots",
+          "fr": "NA"
         }
       },
       "Tiergänge": {
         "labels": {
           "de": "Tiergänge",
-          "en": "animal burrows"
+          "en": "animal burrows",
+          "fr": "NA"
         }
       },
       "Schnecken": {
         "labels": {
           "de": "Schnecken",
-          "en": "Snails / naturally occuring mollusks"
+          "en": "Snails / naturally occuring mollusks",
+          "fr": "NA"
         }
       }
     }
@@ -48198,55 +48439,71 @@
       "Brandschicht": {
         "labels": {
           "de": "Brandschicht",
-          "en": "burnt layer"
+          "en": "burnt layer",
+          "fr": "NA"
         }
       },
       "Kulturschicht": {
         "labels": {
           "de": "Kulturschicht",
-          "en": "culture layer"
+          "en": "culture layer",
+          "fr": "NA"
         }
       },
       "Laufhorizont": {
         "labels": {
           "de": "Laufhorizont",
-          "en": "floor"
+          "en": "floor",
+          "fr": "NA"
         }
       },
       "Planierschicht": {
         "labels": {
           "de": "Planierschicht",
-          "en": "levelling layer"
+          "en": "levelling layer",
+          "fr": "NA"
         }
       },
       "Schuttschicht": {
         "labels": {
           "de": "Schuttschicht",
-          "en": "debris"
+          "en": "debris",
+          "fr": "NA"
         }
       },
       "Humusschicht": {
         "labels": {
           "de": "Humusschicht",
-          "en": "humus"
+          "en": "humus",
+          "fr": "NA"
         }
       },
       "Filling": {
         "labels": {
           "de": "Verfüllung",
-          "en": "Filling"
+          "en": "Filling",
+          "fr": "NA"
+        }
+      },
+      "Grave": {
+        "labels": {
+          "de": "Grab/Bestattung",
+          "en": "Grave/Burial",
+          "fr": "NA"
         }
       },
       "other": {
         "labels": {
           "de": "andere",
-          "en": "other"
+          "en": "other",
+          "fr": "NA"
         }
       },
       "unbekannt": {
         "labels": {
           "de": "unbekannt",
-          "en": "unknown"
+          "en": "unknown",
+          "fr": "NA"
         }
       }
     }
@@ -48261,37 +48518,43 @@
       "black": {
         "labels": {
           "de": "schwarz",
-          "en": "black"
+          "en": "black",
+          "fr": "NA"
         }
       },
       "grey": {
         "labels": {
           "de": "grau",
-          "en": "grey"
+          "en": "grey",
+          "fr": "NA"
         }
       },
       "brown": {
         "labels": {
           "de": "braun",
-          "en": "brown"
+          "en": "brown",
+          "fr": "NA"
         }
       },
       "yellow": {
         "labels": {
           "de": "gelb",
-          "en": "yellow"
+          "en": "yellow",
+          "fr": "NA"
         }
       },
       "ochre": {
         "labels": {
           "de": "ocker",
-          "en": "ochre"
+          "en": "ochre",
+          "fr": "NA"
         }
       },
       "red": {
         "labels": {
           "de": "rot",
-          "en": "red"
+          "en": "red",
+          "fr": "NA"
         }
       }
     }
@@ -48309,31 +48572,36 @@
       "very_light": {
         "labels": {
           "de": "sehr hell",
-          "en": "very light"
+          "en": "very light",
+          "fr": "NA"
         }
       },
       "light": {
         "labels": {
           "de": "hell",
-          "en": "light"
+          "en": "light",
+          "fr": "NA"
         }
       },
       "medium": {
         "labels": {
           "de": "mittel",
-          "en": "medium"
+          "en": "medium",
+          "fr": "NA"
         }
       },
       "dark": {
         "labels": {
           "de": "dunkel",
-          "en": "dark"
+          "en": "dark",
+          "fr": "NA"
         }
       },
       "very_dark": {
         "labels": {
           "de": "sehr dunkel",
-          "en": "very dark"
+          "en": "very dark",
+          "fr": "NA"
         }
       }
     }
@@ -48355,43 +48623,50 @@
       "Lehm": {
         "labels": {
           "de": "Lehm",
-          "en": "Loam"
+          "en": "Loam",
+          "fr": "NA"
         }
       },
       "Sand": {
         "labels": {
           "de": "Sand",
-          "en": "Sand"
+          "en": "Sand",
+          "fr": "NA"
         }
       },
       "Sand (fein)": {
         "labels": {
           "de": "Sand (fein)",
-          "en": "Sand (fine grained)"
+          "en": "Sand (fine grained)",
+          "fr": "NA"
         }
       },
       "Sand (mittel)": {
         "labels": {
           "de": "Sand (mittel)",
-          "en": "Sand (medium grained)"
+          "en": "Sand (medium grained)",
+          "fr": "NA"
         }
       },
       "Sand (grob)": {
         "labels": {
           "de": "Sand (grob)",
-          "en": "Sand (large grained)"
+          "en": "Sand (large grained)",
+          "fr": "NA"
         }
       },
       "Schluff": {
         "labels": {
           "de": "Schluff",
-          "en": "Silt"
+          "en": "Silt",
+          "fr": "NA"
         }
       },
       "Ton": {
         "labels": {
           "de": "Ton",
-          "en": "Clay"
+          "en": "Clay",
+          "fr": "NA"
         }
       }
     }
@@ -48401,91 +48676,106 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Überblick über die Fundgattungen im Befund",
-      "en": "Overview of finds in the context"
+      "en": "Overview of finds in the context",
+      "fr": "NA"
     },
     "values": {
       "Keramik": {
         "labels": {
           "de": "Keramik",
-          "en": "Pottery"
+          "en": "Pottery",
+          "fr": "NA"
         }
       },
       "Terrakotta": {
         "labels": {
           "de": "Terrakotta",
-          "en": "Terracotta"
+          "en": "Terracotta",
+          "fr": "NA"
         }
       },
       "Stein (bearbeitet)": {
         "labels": {
           "de": "Stein (bearbeitet)",
-          "en": "Stone (carved)"
+          "en": "Stone (carved)",
+          "fr": "NA"
         }
       },
       "Tesserae": {
         "labels": {
           "de": "Tesserae",
-          "en": "Tesserae"
+          "en": "Tesserae",
+          "fr": "NA"
         }
       },
       "Inkrustationen": {
         "labels": {
           "de": "Inkrustationen",
-          "en": "Inlays"
+          "en": "Inlays",
+          "fr": "NA"
         }
       },
       "Wandputz": {
         "labels": {
           "de": "Wandputz",
-          "en": "Stucco/Plaster"
+          "en": "Stucco/Plaster",
+          "fr": "NA"
         }
       },
       "Metall": {
         "labels": {
           "de": "Metall",
-          "en": "Metal"
+          "en": "Metal",
+          "fr": "NA"
         }
       },
       "Glas": {
         "labels": {
           "de": "Glas",
-          "en": "Glass"
+          "en": "Glass",
+          "fr": "NA"
         }
       },
       "Münzen": {
         "labels": {
           "de": "Münzen",
-          "en": "Coins"
+          "en": "Coins",
+          "fr": "NA"
         }
       },
       "Ziegel": {
         "labels": {
           "de": "Ziegel",
-          "en": "Bricks"
+          "en": "Bricks",
+          "fr": "NA"
         }
       },
       "Knochen": {
         "labels": {
           "de": "Knochen",
-          "en": "Bone"
+          "en": "Bone",
+          "fr": "NA"
         }
       },
       "Holz": {
         "labels": {
           "de": "Holz",
-          "en": "Wood"
+          "en": "Wood",
+          "fr": "NA"
         }
       },
       "Mollusken": {
         "labels": {
           "de": "Mollusken",
-          "en": "Molluscs"
+          "en": "Molluscs",
+          "fr": "NA"
         }
       },
       "Sample": {
         "labels": {
           "de": "Probe",
-          "en": "Sample"
+          "en": "Sample",
+          "fr": "NA"
         }
       }
     }
@@ -48495,7 +48785,8 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Maßstab",
-      "en": "Scale"
+      "en": "Scale",
+      "fr": "NA"
     },
     "order": [
       "1:1",
@@ -48538,13 +48829,15 @@
       "other": {
         "labels": {
           "de": "andere",
-          "en": "other"
+          "en": "other",
+          "fr": "NA"
         }
       },
       "NA": {
         "labels": {
           "de": "unbekannt",
-          "en": "unknown"
+          "en": "unknown",
+          "fr": "NA"
         }
       }
     }
@@ -48557,25 +48850,29 @@
       "CAD": {
         "labels": {
           "de": "CAD-Zeichnung",
-          "en": "CAD-Drawing"
+          "en": "CAD-Drawing",
+          "fr": "NA"
         }
       },
       "Totalstation-direct": {
         "labels": {
           "de": "Zeichnung durch Totalstation",
-          "en": "Drawn by Totalstation"
+          "en": "Drawn by Totalstation",
+          "fr": "NA"
         }
       },
       "Handzeichnung-precise": {
         "labels": {
           "de": "maßgetreue Handzeichnung",
-          "en": "precise manual Drawing"
+          "en": "precise manual Drawing",
+          "fr": "NA"
         }
       },
       "sketch": {
         "labels": {
           "de": "skizzenhafte Handzeichnung",
-          "en": "manual Drawing (Sketch)"
+          "en": "manual Drawing (Sketch)",
+          "fr": "NA"
         }
       }
     }
@@ -48592,6 +48889,7 @@
       "D": {},
       "DT": {},
       "H III": {},
+      "HS": {},
       "HU": {},
       "K": {},
       "KBA": {},
@@ -48616,7 +48914,8 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Blickrichtung",
-      "en": "Direction of View"
+      "en": "Direction of View",
+      "fr": "NA"
     },
     "creationDate": "01-03-2021",
     "order": [
@@ -48633,55 +48932,64 @@
       "North": {
         "labels": {
           "de": "Nord",
-          "en": "North"
+          "en": "North",
+          "fr": "NA"
         }
       },
       "Northeast": {
         "labels": {
           "de": "Nordost",
-          "en": "Northeast"
+          "en": "Northeast",
+          "fr": "NA"
         }
       },
       "East": {
         "labels": {
           "de": "Ost",
-          "en": "East"
+          "en": "East",
+          "fr": "NA"
         }
       },
       "Southeast": {
         "labels": {
           "de": "Südost",
-          "en": "Southeast"
+          "en": "Southeast",
+          "fr": "NA"
         }
       },
       "South": {
         "labels": {
           "de": "Süd",
-          "en": "South"
+          "en": "South",
+          "fr": "NA"
         }
       },
       "Southwest": {
         "labels": {
           "de": "Südwest",
-          "en": "Southwest"
+          "en": "Southwest",
+          "fr": "NA"
         }
       },
       "West": {
         "labels": {
           "de": "West",
-          "en": "West"
+          "en": "West",
+          "fr": "NA"
         }
       },
       "Northwest": {
         "labels": {
           "de": "Nordwest",
-          "en": "Northwest"
+          "en": "Northwest",
+          "fr": "NA"
         }
       },
       "not_applicable": {
         "labels": {
           "de": "nicht zutreffend",
-          "en": "not_applicable"
+          "en": "not_applicable",
+          "fr": "NA"
         }
       }
     }
@@ -48690,39 +48998,38 @@
     "createdBy": "Lisa Steinmann (Milet)",
     "description": {
       "de": "Empfehlung an die Fundbearbeitung",
-      "en": "Requests for find processing"
+      "en": "Requests for find processing",
+      "fr": "NA"
     },
     "creationDate": "10-03-2021",
     "order": [],
     "values": {
-      "none": {
-        "labels": {
-          "de": "keine weitere Bearbeitung",
-          "en": "no further processing required"
-        }
-      },
       "01_first_impression": {
         "labels": {
           "de": "nur Ersteindruck (Stufe 1)",
-          "en": "only cursory impression (Level 1)"
+          "en": "only cursory impression (Level 1)",
+          "fr": "NA"
         }
       },
       "02a_quantification": {
         "labels": {
           "de": "quantitative Aufnahme (Stufe 2A)",
-          "en": "quantification (Level 2A)"
+          "en": "quantification (Level 2A)",
+          "fr": "NA"
         }
       },
       "02b_quantification": {
         "labels": {
           "de": "quantitative Aufnahme (Stufe 2B)",
-          "en": "quantification (Level 2B)"
+          "en": "quantification (Level 2B)",
+          "fr": "NA"
         }
       },
       "03_complete_processing": {
         "labels": {
           "de": "Einzelfundaufnahme (Stufe 3)",
-          "en": "complete processing (Level 3)"
+          "en": "complete processing (Level 3)",
+          "fr": "NA"
         }
       }
     }
@@ -48735,43 +49042,50 @@
       "Fragmentarisch": {
         "labels": {
           "de": "Fragmentarisch",
-          "en": "Fragmented"
+          "en": "Fragmented",
+          "fr": "NA"
         }
       },
       "Fragmentarisch_0-25": {
         "labels": {
           "de": "Fragmentarisch (1-25%)",
-          "en": "Fragmented (1-25%)"
+          "en": "Fragmented (1-25%)",
+          "fr": "NA"
         }
       },
       "Fragmentarisch_25-50": {
         "labels": {
           "de": "Fragmentarisch (25-55%)",
-          "en": "Fragmented (25-55%)"
+          "en": "Fragmented (25-55%)",
+          "fr": "NA"
         }
       },
       "Fragmentarisch_50-75": {
         "labels": {
           "de": "Fragmentarisch (50-75%)",
-          "en": "Fragmented (50-75%)"
+          "en": "Fragmented (50-75%)",
+          "fr": "NA"
         }
       },
       "Fragmentarisch_75-100": {
         "labels": {
           "de": "Fragmentarisch (75-100%)",
-          "en": "Fragmented (75-100%)"
+          "en": "Fragmented (75-100%)",
+          "fr": "NA"
         }
       },
       "intakt": {
         "labels": {
           "de": "intakt",
-          "en": "intact"
+          "en": "intact",
+          "fr": "NA"
         }
       },
       "unbekannt": {
         "labels": {
           "de": "unbekannt",
-          "en": "unknown"
+          "en": "unknown",
+          "fr": "NA"
         }
       }
     },
@@ -48793,49 +49107,57 @@
       "Akropolis": {
         "labels": {
           "de": "Akropolis",
-          "en": "Acropolis"
+          "en": "Acropolis",
+          "fr": "NA"
         }
       },
       "Forum": {
         "labels": {
           "de": "Forum",
-          "en": "Forum"
+          "en": "Forum",
+          "fr": "NA"
         }
       },
       "Handwerksviertel": {
         "labels": {
           "de": "Handwerksviertel",
-          "en": "Artisans district"
+          "en": "Artisans district",
+          "fr": "NA"
         }
       },
       "Heiligtum": {
         "labels": {
           "de": "Heiligtum",
-          "en": "Sanctuary"
+          "en": "Sanctuary",
+          "fr": "NA"
         }
       },
       "Nekropole": {
         "labels": {
           "de": "Nekropole",
-          "en": "Necropolis"
+          "en": "Necropolis",
+          "fr": "NA"
         }
       },
       "Wohnviertel": {
         "labels": {
           "de": "Wohnviertel",
-          "en": "Residential area"
+          "en": "Residential area",
+          "fr": "NA"
         }
       },
       "Extraurban": {
         "labels": {
           "de": "Extraurban (sonstige)",
-          "en": "Extraurban (others)"
+          "en": "Extraurban (others)",
+          "fr": "NA"
         }
       },
       "Intraurban": {
         "labels": {
           "de": "Intraurban (sonstige)",
-          "en": "Intraurban (other)"
+          "en": "Intraurban (other)",
+          "fr": "NA"
         }
       }
     }
@@ -48844,50 +49166,306 @@
     "creationDate": "16-03-2021",
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
+    "order": [
+      "feine Keramik",
+      "Mittelgrobe Keramik",
+      "Grobe Keramik",
+      "Küchenkeramik",
+      "Graue Ware",
+      "Schwarzfirnisware",
+      "Schwarzfigurige Keramik",
+      "Rotfigurige Keramik",
+      "Weißgrundige Keramik",
+      "Kleckerware",
+      "Stapelware",
+      "Westabhang-Keramik",
+      "Westabhang-Nachfolgestil",
+      "Sigillata unbestimmt",
+      "Italische Sigillata",
+      "Eastern Sigillata A",
+      "Eastern Sigillata B",
+      "Eastern Sigillata C",
+      "African Red Slip",
+      "Late Roman C",
+      "Reliefkeramik",
+      "Applikenkeramik",
+      "Formschüsselkeramik",
+      "Bleiglasurkeramik",
+      "Barbotine Ware",
+      "Dünnwandige Keramik",
+      "Handgeformte Keramik",
+      "andere"
+    ],
     "values": {
-      "feine Keramik": {},
-      "Mittelgrobe Keramik": {},
-      "Grobe Keramik": {},
-      "Kochware": {},
-      "Graue Ware": {},
-      "Schwarzfirnisware": {},
-      "Schwarzfigurige Keramik": {},
-      "Rotfigurige Keramik": {},
-      "Weißgrundige Keramik": {},
-      "Kleckerware": {},
-      "Stapelware": {},
-      "Westabhang-Keramik": {},
-      "Westabhang-Nachfolgestil": {},
-      "Sigillata unbestimmt": {},
-      "Italische Sigillata": {},
-      "Eastern Sigillata A": {},
-      "Eastern Sigillata B": {},
-      "Eastern Sigillata C": {},
-      "African Red Slip": {},
-      "Late Roman C": {},
-      "Reliefkeramik": {},
-      "Applikenkeramik": {},
-      "Formschüsselkeramik": {},
-      "Bleiglasurkeramik": {},
-      "Barbotine Ware": {},
-      "Dünnwandige Keramik": {},
-      "Handgeformte Keramik": {},
-      "andere": {}
+      "feine Keramik": {
+        "labels": {
+          "de": "feine Keramik",
+          "en": "Fine Pottery",
+          "fr": "NA"
+        }
+      },
+      "Mittelgrobe Keramik": {
+        "labels": {
+          "de": "Mittelgrobe Keramik",
+          "en": "Medium-coarse Pottery",
+          "fr": "NA"
+        }
+      },
+      "Grobe Keramik": {
+        "labels": {
+          "de": "Grobe Keramik",
+          "en": "Coarse Pottery",
+          "fr": "NA"
+        }
+      },
+      "Küchenkeramik": {
+        "labels": {
+          "de": "Küchenkeramik",
+          "en": "Kitchen Pottery",
+          "fr": "NA"
+        }
+      },
+      "Graue Ware": {
+        "labels": {
+          "de": "Graue Ware",
+          "en": "Grey Ware",
+          "fr": "NA"
+        }
+      },
+      "Schwarzfirnisware": {
+        "labels": {
+          "de": "Schwarzfirnisware",
+          "en": "Black Glaze Pottery",
+          "fr": "NA"
+        }
+      },
+      "Schwarzfigurige Keramik": {
+        "labels": {
+          "de": "Schwarzfigurige Keramik",
+          "en": "Black-figure Pottery",
+          "fr": "NA"
+        }
+      },
+      "Rotfigurige Keramik": {
+        "labels": {
+          "de": "Rotfigurige Keramik",
+          "en": "Red-figure Pottery",
+          "fr": "NA"
+        }
+      },
+      "Weißgrundige Keramik": {
+        "labels": {
+          "de": "Weißgrundige Keramik",
+          "en": "White-Ground-Pottery",
+          "fr": "NA"
+        }
+      },
+      "Kleckerware": {
+        "labels": {
+          "de": "Kleckerware / Immersionskeramik",
+          "en": "Immersion Ware (Kleckerware, produced by dipping)",
+          "fr": "NA"
+        }
+      },
+      "Stapelware": {
+        "labels": {
+          "de": "Stapelware",
+          "en": "Stapelware (kiln stacking technique)",
+          "fr": "NA"
+        }
+      },
+      "Westabhang-Keramik": {
+        "labels": {
+          "de": "Westabhang-Keramik",
+          "en": "West-Slope-Pottery",
+          "fr": "NA"
+        }
+      },
+      "Westabhang-Nachfolgestil": {
+        "labels": {
+          "de": "Westabhang-Nachfolgestil",
+          "en": "West-Slope (Successor)",
+          "fr": "NA"
+        }
+      },
+      "Sigillata unbestimmt": {
+        "labels": {
+          "de": "Sigillata unbestimmt",
+          "en": "Sigillata (undetermined)",
+          "fr": "NA"
+        }
+      },
+      "Italische Sigillata": {
+        "labels": {
+          "de": "Italische Sigillata",
+          "en": "Italian Sigillata",
+          "fr": "NA"
+        }
+      },
+      "Eastern Sigillata A": {
+        "labels": {
+          "de": "Eastern Sigillata A",
+          "en": "Eastern Sigillata A",
+          "fr": "NA"
+        }
+      },
+      "Eastern Sigillata B": {
+        "labels": {
+          "de": "Eastern Sigillata B",
+          "en": "Eastern Sigillata B",
+          "fr": "NA"
+        }
+      },
+      "Eastern Sigillata C": {
+        "labels": {
+          "de": "Eastern Sigillata C",
+          "en": "Eastern Sigillata C",
+          "fr": "NA"
+        }
+      },
+      "African Red Slip": {
+        "labels": {
+          "de": "African Red Slip",
+          "en": "African Red Slip",
+          "fr": "NA"
+        }
+      },
+      "Late Roman C": {
+        "labels": {
+          "de": "Late Roman C",
+          "en": "Late Roman C",
+          "fr": "NA"
+        }
+      },
+      "Reliefkeramik": {
+        "labels": {
+          "de": "Reliefkeramik",
+          "en": "Relief Pottery",
+          "fr": "NA"
+        }
+      },
+      "Applikenkeramik": {
+        "labels": {
+          "de": "Applikenkeramik",
+          "en": "Appliqué decoration",
+          "fr": "NA"
+        }
+      },
+      "Formschüsselkeramik": {
+        "labels": {
+          "de": "Formschüsselkeramik",
+          "en": "Mold-made Pottery",
+          "fr": "NA"
+        }
+      },
+      "Bleiglasurkeramik": {
+        "labels": {
+          "de": "Bleiglasurkeramik",
+          "en": "Lead Glaze Pottery",
+          "fr": "NA"
+        }
+      },
+      "Barbotine Ware": {
+        "labels": {
+          "de": "Barbotine Ware",
+          "en": "Barbotine Ware",
+          "fr": "NA"
+        }
+      },
+      "Dünnwandige Keramik": {
+        "labels": {
+          "de": "Dünnwandige Keramik",
+          "en": "Thin-walled Pottery",
+          "fr": "NA"
+        }
+      },
+      "Handgeformte Keramik": {
+        "labels": {
+          "de": "Handgeformte Keramik",
+          "en": "handformed Pottery",
+          "fr": "NA"
+        }
+      },
+      "andere": {
+        "labels": {
+          "de": "andere",
+          "en": "other",
+          "fr": "NA"
+        }
+      }
     }
   }, 
   "Pottery-functionalCategory-milet": {
     "creationDate": "16-03-2021",
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
+    "order": [
+      "Tafelgeschirr",
+      "Haushaltskeramik",
+      "Küchenkeramik",
+      "Transportgefäße",
+      "Vorratskeramik",
+      "Ölgefäße",
+      "Miniaturkeramik",
+      "Geräte"
+    ],
     "values": {
-      "Tafelgeschirr": {},
-      "Haushaltskeramik": {},
-      "Kochkeramik": {},
-      "Transportgefäße": {},
-      "Vorratskeramik": {},
-      "Ölgefäße": {},
-      "Miniaturkeramik": {},
-      "Geräte": {}
+      "Tafelgeschirr": {
+        "labels": {
+          "de": "Tafelgeschirr",
+          "en": "Table Wares",
+          "fr": "NA"
+        }
+      },
+      "Haushaltskeramik": {
+        "labels": {
+          "de": "Haushaltskeramik",
+          "en": "Household Pottery",
+          "fr": "NA"
+        }
+      },
+      "Küchenkeramik": {
+        "labels": {
+          "de": "Küchenkeramik",
+          "en": "Kitchen Pottery",
+          "fr": "NA"
+        }
+      },
+      "Transportgefäße": {
+        "labels": {
+          "de": "Transportgefäße",
+          "en": "Transport Vessels",
+          "fr": "NA"
+        }
+      },
+      "Vorratskeramik": {
+        "labels": {
+          "de": "Vorratskeramik",
+          "en": "Storage Vessels",
+          "fr": "NA"
+        }
+      },
+      "Ölgefäße": {
+        "labels": {
+          "de": "Ölgefäße",
+          "en": "Oil-Containers",
+          "fr": "NA"
+        }
+      },
+      "Miniaturkeramik": {
+        "labels": {
+          "de": "Miniaturkeramik",
+          "en": "Miniature Pottery",
+          "fr": "NA"
+        }
+      },
+      "Geräte": {
+        "labels": {
+          "de": "Geräte",
+          "en": "Tools",
+          "fr": "NA"
+        }
+      }
     }
   },
   "Pottery-vesselForm-milet": {
@@ -48897,61 +49475,265 @@
     "values": {
       "Amphora": {},
       "Amphoriskos": {},
-      "Ampulle": {},
+      "Ampulle": {
+        "labels": {
+          "de": "Ampulle",
+          "en": "Vial (Ampulle)",
+          "fr": "NA"
+        }
+      },
       "Askos": {},
-      "Backteller": {},
-      "Becher": {},
-      "Bienenkorb": {},
-      "Bügelhenkelgefäß / Eimer": {},
+      "Backteller": {
+        "labels": {
+          "de": "Backteller",
+          "en": "Baking Dish",
+          "fr": "NA"
+        }
+      },
+      "Becher": {
+        "labels": {
+          "de": "Becher",
+          "en": "Mug (Becher)",
+          "fr": "NA"
+        }
+      },
+      "Bienenkorb": {
+        "labels": {
+          "de": "Bienenkorb",
+          "en": "Beehive",
+          "fr": "NA"
+        }
+      },
+      "Bügelhenkelgefäß / Eimer": {
+        "labels": {
+          "de": "Bügelhenkelgefäß / Eimer",
+          "en": "Bucket (Bügelhenkelgefäß)",
+          "fr": "NA"
+        }
+      },
       "Chytra": {},
-      "Deckel": {},
+      "Deckel": {
+        "labels": {
+          "de": "Deckel",
+          "en": "Lid",
+          "fr": "NA"
+        }
+      },
       "Dinos": {},
       "Dolium": {},
-      "Fischteller": {},
-      "Flasche": {},
-      "Gewicht": {},
+      "Fischteller": {
+        "labels": {
+          "de": "Fischteller",
+          "en": "Fishplate",
+          "fr": "NA"
+        }
+      },
+      "Flasche": {
+        "labels": {
+          "de": "Flasche",
+          "en": "Bottle / Flask (Flasche)",
+          "fr": "NA"
+        }
+      },
+      "Gewicht": {
+        "labels": {
+          "de": "Gewicht",
+          "en": "Weight",
+          "fr": "NA"
+        }
+      },
       "Grill": {},
-      "Haushaltsschüssel": {},
+      "Haushaltsschüssel": {
+        "labels": {
+          "de": "Haushaltsschüssel/-lekanis",
+          "en": "Household bowl/lekanis",
+          "fr": "NA"
+        }
+      },
       "Hydria": {},
-      "Kanne": {},
+      "Kanne": {
+        "labels": {
+          "de": "Kanne",
+          "en": "Jug (Kanne)",
+          "fr": "NA"
+        }
+      },
       "Kantharos": {},
-      "Kohlenbecken": {},
+      "Kohlenbecken": {
+        "labels": {
+          "de": "Kohlenbecken",
+          "en": "Brazier",
+          "fr": "NA"
+        }
+      },
       "Kotyle": {},
       "Krater": {},
-      "Krug": {},
+      "Krug": {
+        "labels": {
+          "de": "Haushaltskrug",
+          "en": "Household jug",
+          "fr": "NA"
+        }
+      },
       "Kylix": {},
       "Lagynos": {},
-      "Lampe": {},
+      "Lampe": {
+        "labels": {
+          "de": "Lampe",
+          "en": "Lamp",
+          "fr": "NA"
+        }
+      },
       "Lekanis": {},
       "Lekythos": {},
       "Lopas": {},
       "Louterion": {},
-      "Mischgefäß": {},
+      "Mischgefäß": {
+        "labels": {
+          "de": "Mischgefäß",
+          "en": "Mixing Vessel",
+          "fr": "NA"
+        }
+      },
       "Mortarium": {},
-      "Napf": {},
-      "Pfanne": {},
+      "Napf": {
+        "labels": {
+          "de": "Napf",
+          "en": "(Small) Bowl (Napf)",
+          "fr": "NA"
+        }
+      },
+      "Pfanne": {
+        "labels": {
+          "de": "Pfanne",
+          "en": "Pan / Ladle (Pfanne)",
+          "fr": "NA"
+        }
+      },
       "Pithos": {},
-      "Platte": {},
+      "Platte": {
+        "labels": {
+          "de": "Platte",
+          "en": "Serving dish (Platte)",
+          "fr": "NA"
+        }
+      },
       "Pyxis": {},
-      "Rost": {},
-      "Salznapf": {},
-      "Schale": {},
-      "Schüssel": {},
-      "Siebgefäß": {},
+      "Rost": {
+        "labels": {
+          "de": "Rost",
+          "en": "Grate",
+          "fr": "NA"
+        }
+      },
+      "Salznapf": {
+        "labels": {
+          "de": "Salznapf",
+          "en": "Saltcellar",
+          "fr": "NA"
+        }
+      },
+      "Schale": {
+        "labels": {
+          "de": "Schale",
+          "en": "Cup (Schale)",
+          "fr": "NA"
+        }
+      },
+      "Schüssel": {
+        "labels": {
+          "de": "Schüssel",
+          "en": "Bowl (Schüssel)",
+          "fr": "NA"
+        }
+      },
+      "Siebgefäß": {
+        "labels": {
+          "de": "Siebgefäß",
+          "en": "Sieve",
+          "fr": "NA"
+        }
+      },
       "Skyphos": {},
-      "Ständer": {},
-      "Tasse": {},
-      "Teller": {},
-      "Topf": {},
+      "Ständer": {
+        "labels": {
+          "de": "Ständer",
+          "en": "Stand",
+          "fr": "NA"
+        }
+      },
+      "Tasse": {
+        "labels": {
+          "de": "Tasse",
+          "en": "Cup/Mug (Tasse)",
+          "fr": "NA"
+        }
+      },
+      "Teller": {
+        "labels": {
+          "de": "Teller",
+          "en": "Plate (Teller)",
+          "fr": "NA"
+        }
+      },
+      "Topf": {
+        "labels": {
+          "de": "Topf",
+          "en": "Pot (Topf)",
+          "fr": "NA"
+        }
+      },
       "Thymiaterion": {},
       "Unguentarium": {},
-      "Vorratstopf": {},
-      "Wanne": {},
-      "Webgewicht": {},
-      "offenes Gefäß": {},
-      "geschlossenes Gefäß": {},
-      "unbekanntes Gefäß": {},
-      "unbestimmbares Gefäß": {}
+      "Vorratstopf": {
+        "labels": {
+          "de": "Vorratstopf",
+          "en": "Storage Pot",
+          "fr": "NA"
+        }
+      },
+      "Wanne": {
+        "labels": {
+          "de": "Wanne",
+          "en": "Basin",
+          "fr": "NA"
+        }
+      },
+      "Webgewicht": {
+        "labels": {
+          "de": "Webgewicht",
+          "en": "Loom Weight",
+          "fr": "NA"
+        }
+      },
+      "offenes Gefäß": {
+        "labels": {
+          "de": "offenes Gefäß",
+          "en": "open vessel",
+          "fr": "NA"
+        }
+      },
+      "geschlossenes Gefäß": {
+        "labels": {
+          "de": "geschlossenes Gefäß",
+          "en": "closed vessel",
+          "fr": "NA"
+        }
+      },
+      "unbekanntes Gefäß": {
+        "labels": {
+          "de": "unbekanntes Gefäß",
+          "en": "unknown vessel",
+          "fr": "NA"
+        }
+      },
+      "unbestimmbares Gefäß": {
+        "labels": {
+          "de": "unbestimmbares Gefäß",
+          "en": "undeterminable vessel",
+          "fr": "NA"
+        }
+      }
     }
   },
   "Pottery-potteryCondition-milet": {
@@ -48961,47 +49743,65 @@
     "values": {
       "intakt": {
         "labels": {
-          "de": "(weitgehend ) vollständige(s), intakte(s) Gefäß(e)"
+          "de": "(weitgehend) vollständige(s), intakte(s) Gefäß(e)",
+          "en": "(almost) complete and intact vessels",
+          "fr": "NA"
         }
       },
       "vollständig zerbrochen": {
         "labels": {
-          "de": "vollständige(s), zerbrochene(s) Gefäß(e)"
+          "de": "vollständige(s), zerbrochene(s) Gefäß(e)",
+          "en": "complete but fragmented vessel",
+          "fr": "NA"
         }
       },
       "vollständiges Profil": {
         "labels": {
-          "de": "vollständige(s) Profil(e)"
+          "de": "vollständige(s) Profil(e)",
+          "en": "complete profile",
+          "fr": "NA"
         }
       },
       "große Scherben": {
         "labels": {
-          "de": "große Scherben"
+          "de": "große Scherben",
+          "en": "large sherds",
+          "fr": "NA"
         }
       },
       "kleine Scherben": {
         "labels": {
-          "de": "kleine Scherben"
+          "de": "kleine Scherben",
+          "en": "small sherds",
+          "fr": "NA"
         }
       },
       "(sehr) stark zerscherbt": {
         "labels": {
-          "de": "(sehr) stark zerscherbt"
+          "de": "(sehr) stark zerscherbt",
+          "en": "heavily fragmented",
+          "fr": "NA"
         }
       },
       "Oberflächen stark beschädigt": {
         "labels": {
-          "de": "Oberflächen stark beschädigt (Pflanzen, Sinter etc.)"
+          "de": "Oberflächen stark beschädigt (Pflanzen, Sinter etc.)",
+          "en": "surfaces heavily damaged (plants, sinter, etc.)",
+          "fr": "NA"
         }
       },
       "Abrollungen": {
         "labels": {
-          "de": "deutliche Abrollungen"
+          "de": "deutliche Abrollungen",
+          "en": "heavily worn",
+          "fr": "NA"
         }
       },
       "Brandspuren": {
         "labels": {
-          "de": "Brandspuren"
+          "de": "Brandspuren",
+          "en": "traces of (secondary) burning",
+          "fr": "NA"
         }
       }
     }
@@ -49013,22 +49813,30 @@
     "values": {
       "weich": {
         "labels": {
-          "de": "weich (mit dem Fingernagel ritzbar)"
+          "de": "weich (mit dem Fingernagel ritzbar)",
+          "en": "soft (can be scratched by fingernail)",
+          "fr": "NA"
         }
       },
       "hart": {
         "labels": {
-          "de": "hart (mit dem Messer ritzbar)"
+          "de": "hart (mit dem Messer ritzbar)",
+          "en": "hard (can be scratched by knife)",
+          "fr": "NA"
         }
       },
       "sehr hart": {
         "labels": {
-          "de": "sehr hart (mit dem Messer schwer ritzbar)"
+          "de": "sehr hart (mit dem Messer schwer ritzbar)",
+          "en": "very hard (can hardly be scratched by knife)",
+          "fr": "NA"
         }
       },
       "klingend hart": {
         "labels": {
-          "de": "klingend hart (nicht mit dem Messer ritzbar)"
+          "de": "klingend hart (nicht mit dem Messer ritzbar)",
+          "en": "(?trans.) very hard (can not be scratched by knife)",
+          "fr": "NA"
         }
       }
     }, 
@@ -49041,18 +49849,90 @@
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
     "values": {
-      "Glimmer": {},
-      "Sand": {},
-      "Kalk": {},
-      "Calzit": {},
-      "Eisenoxid": {},
-      "Quarzit": {},
-      "Steinchen": {},
-      "Muschelgrus": {},
-      "Schamotte": {},
-      "Organische": {},
-      "Magerung": {},
-      "Vulkanisch": {}
+      "Glimmer": {
+        "labels": {
+          "de": "Glimmer",
+          "en": "Mica",
+          "fr": "NA"
+        }
+      },
+      "Sand": {
+        "labels": {
+          "de": "Sand",
+          "en": "Sand",
+          "fr": "NA"
+        }
+      },
+      "Kalk": {
+        "labels": {
+          "de": "Kalk",
+          "en": "Lime",
+          "fr": "NA"
+        }
+      },
+      "Calzit": {
+        "labels": {
+          "de": "Calzit",
+          "en": "Calcite",
+          "fr": "NA"
+        }
+      },
+      "Eisenoxid": {
+        "labels": {
+          "de": "Eisenoxid",
+          "en": "Iron Oxide",
+          "fr": "NA"
+        }
+      },
+      "Quarzit": {
+        "labels": {
+          "de": "Quarzit",
+          "en": "Quartzite",
+          "fr": "NA"
+        }
+      },
+      "Steinchen": {
+        "labels": {
+          "de": "Steinchen",
+          "en": "small Stones",
+          "fr": "NA"
+        }
+      },
+      "Muschelgrus": {
+        "labels": {
+          "de": "Muschelgrus",
+          "en": "Shell particles",
+          "fr": "NA"
+        }
+      },
+      "Schamotte": {
+        "labels": {
+          "de": "Schamotte",
+          "en": "Fireclay (Schamotte)",
+          "fr": "NA"
+        }
+      },
+      "Organische": {
+        "labels": {
+          "de": "Organische",
+          "en": "Organic",
+          "fr": "NA"
+        }
+      },
+      "Magerung": {
+        "labels": {
+          "de": "Magerung",
+          "en": "Temper",
+          "fr": "NA"
+        }
+      },
+      "Vulkanisch": {
+        "labels": {
+          "de": "Vulkanisch",
+          "en": "Volcanic",
+          "fr": "NA"
+        }
+      }
     }
   }, 
   "Pottery-temperAmount-milet": {
@@ -49060,12 +49940,48 @@
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
     "values": {
-      "nicht erkennbar": {},
-      "wenige": {},
-      "einige": {},
-      "mittel": {},
-      "reichlich": {},
-      "sehr viel": {}
+      "nicht erkennbar": {
+        "labels": {
+          "de": "nicht erkennbar",
+          "en": "indistinguishable",
+          "fr": "NA"
+        }
+      },
+      "wenige": {
+        "labels": {
+          "de": "wenige",
+          "en": "few",
+          "fr": "NA"
+        }
+      },
+      "einige": {
+        "labels": {
+          "de": "einige",
+          "en": "some / several",
+          "fr": "NA"
+        }
+      },
+      "mittel": {
+        "labels": {
+          "de": "mittel",
+          "en": "medium",
+          "fr": "NA"
+        }
+      },
+      "reichlich": {
+        "labels": {
+          "de": "reichlich",
+          "en": "abundant",
+          "fr": "NA"
+        }
+      },
+      "sehr viel": {
+        "labels": {
+          "de": "sehr viel",
+          "en": "very much",
+          "fr": "NA"
+        }
+      }
     }, 
     "order": [
       "nicht erkennbar",
@@ -49081,11 +49997,41 @@
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
     "values": {
-      "sehr fein": {},
-      "fein": {},
-      "mittel": {},
-      "grob": {},
-      "sehr grob": {}
+      "sehr fein": {
+        "labels": {
+          "de": "sehr fein",
+          "en": "very fine",
+          "fr": "NA"
+        }
+      },
+      "fein": {
+        "labels": {
+          "de": "fein",
+          "en": "fine",
+          "fr": "NA"
+        }
+      },
+      "mittel": {
+        "labels": {
+          "de": "mittel",
+          "en": "medium",
+          "fr": "NA"
+        }
+      },
+      "grob": {
+        "labels": {
+          "de": "grob",
+          "en": "coarse",
+          "fr": "NA"
+        }
+      },
+      "sehr grob": {
+        "labels": {
+          "de": "sehr grob",
+          "en": "very coarse",
+          "fr": "NA"
+        }
+      }
     }, 
     "order": [
       "sehr fein",
@@ -49100,32 +50046,163 @@
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
     "values": {
-      "verstrichen": {},
-      "geglättet": {},
-      "poliert": {},
-      "glasiert": {},
-      "bemalt": {},
-      "Überzug": {},
-      "Stempel": {},
-      "Relief": {},
-      "Einkerbungen": {},
-      "Applikation": {},
-      "Ritzungen": {},
-      "Kammstrich": {},
-      "Fingereindrücke": {}
+      "verstrichen": {
+        "labels": {
+          "de": "verstrichen",
+          "en": "striked / spread",
+          "fr": "NA"
+        }
+      },
+      "geglättet": {
+        "labels": {
+          "de": "geglättet",
+          "en": "smoothed",
+          "fr": "NA"
+        }
+      },
+      "poliert": {
+        "labels": {
+          "de": "poliert",
+          "en": "polished",
+          "fr": "NA"
+        }
+      },
+      "glasiert": {
+        "labels": {
+          "de": "glasiert",
+          "en": "glazed",
+          "fr": "NA"
+        }
+      },
+      "bemalt": {
+        "labels": {
+          "de": "bemalt",
+          "en": "painted",
+          "fr": "NA"
+        }
+      },
+      "Überzug": {
+        "labels": {
+          "de": "Überzug",
+          "en": "Coating",
+          "fr": "NA"
+        }
+      },
+      "Stempel": {
+        "labels": {
+          "de": "Stempel",
+          "en": "Stamps / Punches",
+          "fr": "NA"
+        }
+      },
+      "Relief": {
+        "labels": {
+          "de": "Relief",
+          "en": "Relief",
+          "fr": "NA"
+        }
+      },
+      "Einkerbungen": {
+        "labels": {
+          "de": "Einkerbungen",
+          "en": "Notches",
+          "fr": "NA"
+        }
+      },
+      "Applikation": {
+        "labels": {
+          "de": "Applikation",
+          "en": "Appliqué",
+          "fr": "NA"
+        }
+      },
+      "Ritzungen": {
+        "labels": {
+          "de": "Ritzungen",
+          "en": "Scratchings",
+          "fr": "NA"
+        }
+      },
+      "Kammstrich": {
+        "labels": {
+          "de": "Kammstrich",
+          "en": "Coombed Grooves (Kammstrich)",
+          "fr": "NA"
+        }
+      },
+      "Fingereindrücke": {
+        "labels": {
+          "de": "Fingereindrücke",
+          "en": "Finger indents",
+          "fr": "NA"
+        }
+      }
     }
-  }, 
-  "Pottery-analysisMethod-milet": {
-    "creationDate": "16-03-2021",
+  },
+  "Sample-sampleType-milet": {
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
+    "creationDate": "26-04-2021",
     "description": {},
     "values": {
       "NAA": {},
       "XRF": {},
       "p-XRF": {},
-      "Dünnschliff": {},
-      "Rückstände": {},
-      "Gebrauchsspuren": {}
+      "Dünnschliff": {
+        "labels": {
+          "de": "Dünnschliff",
+          "en": "thin-section",
+          "fr": "NA"
+        }
+      },
+      "Rückstände": {
+        "labels": {
+          "de": "Rückstände",
+          "en": "Residues",
+          "fr": "NA"
+        }
+      },
+      "Gebrauchsspuren": {
+        "labels": {
+          "de": "Gebrauchsspuren",
+          "en": "Traces of Usage",
+          "fr": "NA"
+        }
+      },
+      "Bodenprobe": {
+        "labels": {
+          "de": "Bodenprobe",
+          "en": "Soil sample",
+          "fr": "NA"
+        }
+      },
+      "C14-Analyse": {
+        "labels": {
+          "de": "C14-Analyse",
+          "en": "C14-Analysis",
+          "fr": "NA"
+        }
+      },
+      "Dendroprobe": {
+        "labels": {
+          "de": "Dendroprobe",
+          "en": "Dendro-Sample",
+          "fr": "NA"
+        }
+      },
+      "Phosphatanalyse": {
+        "labels": {
+          "de": "Phosphatanalyse",
+          "en": "Phosphate analysis",
+          "fr": "NA"
+        }
+      },
+      "Pollenanalyse": {
+        "labels": {
+          "de": "Pollenanalyse",
+          "en": "Pollen analysis",
+          "fr": "NA"
+        }
+      }
     }
   },
   "Building-buildingCategory-milet": {
@@ -49136,139 +50213,162 @@
       "Altar": {
         "labels": {
           "de": "Altar",
-          "en": "Altar"
+          "en": "Altar",
+          "fr": "NA"
         }
       },
       "Basilika": {
         "labels": {
           "de": "Basilika",
-          "en": "Basilica"
+          "en": "Basilica",
+          "fr": "NA"
         }
       },
       "Bogen": {
         "labels": {
           "de": "Bogen",
-          "en": "Arch"
+          "en": "Arch",
+          "fr": "NA"
         }
       },
       "Brücke": {
         "labels": {
           "de": "Brücke",
-          "en": "Bridge"
+          "en": "Bridge",
+          "fr": "NA"
         }
       },
       "Grabbau": {
         "labels": {
           "de": "Grabbau",
-          "en": "Tomb"
+          "en": "Tomb",
+          "fr": "NA"
         }
       },
       "Gymnasium": {
         "labels": {
           "de": "Gymnasium",
-          "en": "Gymnasium"
+          "en": "Gymnasium",
+          "fr": "NA"
         }
       },
       "Mauerkurtine": {
         "labels": {
           "de": "Mauerkurtine",
-          "en": "Curtain wall"
+          "en": "Curtain wall",
+          "fr": "NA"
         }
       },
       "Nymphäum": {
         "labels": {
           "de": "Nymphäum",
-          "en": "Nymphaeum"
+          "en": "Nymphaeum",
+          "fr": "NA"
         }
       },
       "Odeion": {
         "labels": {
           "de": "Odeion",
-          "en": "Odeion"
+          "en": "Odeion",
+          "fr": "NA"
         }
       },
       "Strasse": {
         "labels": {
           "de": "Strasse",
-          "en": "Street"
+          "en": "Street",
+          "fr": "NA"
         }
       },
       "Stützmauer": {
         "labels": {
           "de": "Stützmauer",
-          "en": "Retaining wall"
+          "en": "Retaining wall",
+          "fr": "NA"
         }
       },
       "Säulenhalle": {
         "labels": {
           "de": "Säulenhalle",
-          "en": "Portico"
+          "en": "Portico",
+          "fr": "NA"
         }
       },
       "Tempel": {
         "labels": {
           "de": "Tempel / Heiligtum",
-          "en": "Temple / Sanctuary"
+          "en": "Temple / Sanctuary",
+          "fr": "NA"
         }
       },
       "Theater": {
         "labels": {
           "de": "Theater",
-          "en": "Theatre"
+          "en": "Theatre",
+          "fr": "NA"
         }
       },
       "Therme": {
         "labels": {
           "de": "Therme",
-          "en": "Bath"
+          "en": "Bath",
+          "fr": "NA"
         }
       },
       "Toranlage": {
         "labels": {
           "de": "Toranlage",
-          "en": "Gate"
+          "en": "Gate",
+          "fr": "NA"
         }
       },
       "Befestigungsanlage": {
         "labels": {
           "de": "Befestigungsanlage",
-          "en": "Fortification"
+          "en": "Fortification",
+          "fr": "NA"
         }
       },
       "Wohnbau": {
         "labels": {
           "de": "Wohngebäude",
-          "en": "Residential Building"
+          "en": "Residential Building",
+          "fr": "NA"
         }
       },
       "Platzanlage": {
         "labels": {
           "de": "Platzanlage",
-          "en": "Square / Open space"
+          "en": "Square / Open space",
+          "fr": "NA"
         }
       },
       "Moschee": {
         "labels": {
           "de": "Moschee",
-          "en": "Mosque"
+          "en": "Mosque",
+          "fr": "NA"
         }
       },
       "Kirche": {
         "labels": {
           "de": "Kirche",
-          "en": "Church"
+          "en": "Church",
+          "fr": "NA"
         }
       },
       "Monument": {
         "labels": {
           "de": "Monument",
-          "en": "Monument"
+          "en": "Monument",
+          "fr": "NA"
         }
       },
       "Werkstatt": {
         "labels": {
           "de": "Werkstatt",
-          "en": "Workshop"
+          "en": "Workshop",
+          "fr": "NA"
         }
       }
     }
@@ -49283,43 +50383,50 @@
       "Sakral": {
         "labels": {
           "de": "Sakral / Religiös",
-          "en": "Sacral / Relgious"
+          "en": "Sacral / Relgious",
+          "fr": "NA"
         }
       },
       "Öffentlich": {
         "labels": {
           "de": "Öffentlich",
-          "en": "Public"
+          "en": "Public",
+          "fr": "NA"
         }
       },
       "Privat": {
         "labels": {
           "de": "Privat",
-          "en": "Private"
+          "en": "Private",
+          "fr": "NA"
         }
       },
       "Industriell": {
         "labels": {
           "de": "Industriell",
-          "en": "Industrial"
+          "en": "Industrial",
+          "fr": "NA"
         }
       },
       "Infrastruktur": {
         "labels": {
           "de": "Infrastruktur",
-          "en": "Infrastructure"
+          "en": "Infrastructure",
+          "fr": "NA"
         }
       },
       "Monumental": {
         "labels": {
           "de": "Monumental",
-          "en": "Monumental"
+          "en": "Monumental",
+          "fr": "NA"
         }
       },
       "Befestigung": {
         "labels": {
           "de": "Befestigung / Militärisch",
-          "en": "Fortification / Military"
+          "en": "Fortification / Military",
+          "fr": "NA"
         }
       }
     }
@@ -49332,37 +50439,50 @@
       "dorisch": {
         "labels": {
           "de": "dorisch",
-          "en": "doric"
+          "en": "doric",
+          "fr": "NA"
         }
       },
       "ionisch": {
         "labels": {
           "de": "ionisch",
-          "en": "ionic"
+          "en": "ionic",
+          "fr": "NA"
         }
       },
       "komposit": {
         "labels": {
           "de": "komposit",
-          "en": "composite"
+          "en": "composite",
+          "fr": "NA"
         }
       },
       "äolisch": {
         "labels": {
           "de": "äolisch",
-          "en": "aeolian"
+          "en": "aeolian",
+          "fr": "NA"
         }
       },
       "korinthisch": {
         "labels": {
           "de": "korinthisch",
-          "en": "corinthian"
+          "en": "corinthian",
+          "fr": "NA"
         }
       },
       "keine": {
         "labels": {
           "de": "keine",
-          "en": "none"
+          "en": "none",
+          "fr": "NA"
+        }
+      },
+      "nicht erhalten": {
+        "labels": {
+          "de": "nicht erhalten / unbekannt",
+          "en": "not preserved / unknown",
+          "fr": "NA"
         }
       }
     }
@@ -49371,11 +50491,303 @@
     "createdBy": "Miletgrabung",
     "creationDate": "2021",
     "description": {},
+    "order": [
+      "Neolitisch",
+      "Chalkolitisch [Milet I]",
+      "Bronzezeitlich",
+      "Frühbronzezeitlich [Milet II]",
+      "Mittelbronzezeitlich [Milet III]",
+      "Spätbronzezeitlich [Milet IV]",
+      "Spätbronzezeitlich [Milet V]",
+      "Spätbronzezeitlich [Milet VI]",
+      "Spätbronzezeitlich [Milet VII]",
+      "Geometrisch",
+      "Protogeometrisch",
+      "Frühgeometrisch",
+      "Mittelgeometrisch",
+      "Spätgeometrisch",
+      "Archaisch",
+      "Früharchaisch",
+      "Hocharchaisch",
+      "Spätarchaisch",
+      "Perserzerstörung",
+      "Klassisch",
+      "Frühklassisch",
+      "Spätklassik",
+      "Hellenistisch",
+      "Früher Hellenismus",
+      "Später Hellenismus",
+      "Kaiserzeitlich",
+      "Frühkaiserzeitlich",
+      "Mittelkaiserzeitlich",
+      "Spätkaiserzeitlich",
+      "Spätantik",
+      "Byzantinisch",
+      "Frühbyzantinisch / Spätantik",
+      "Mittelbyzantinisch",
+      "Spätbyzantinisch",
+      "Menteşe / emiratszeitlich",
+      "Osmanisch",
+      "Rezent"
+    ],
     "values": {
-      "": {
+      "Neolitisch": {
         "labels": {
-          "de": "",
-          "en": ""
+          "de": "Neolithisch",
+          "en": "Neolithic",
+          "fr": "NA"
+        }
+      },
+      "Chalkolitisch [Milet I]": {
+        "labels": {
+          "de": "Chalkolitisch [Milet I]",
+          "en": "Chalcolithic [Milet I]",
+          "fr": "NA"
+        }
+      },
+      "Bronzezeitlich": {
+        "labels": {
+          "de": "Bronzezeitlich",
+          "en": "Bronze age",
+          "fr": "NA"
+        }
+      },
+      "Frühbronzezeitlich [Milet II]": {
+        "labels": {
+          "de": "Frühbronzezeitlich [Milet II]",
+          "en": "Early Bronze age [Milet II]",
+          "fr": "NA"
+        }
+      },
+      "Mittelbronzezeitlich [Milet III]": {
+        "labels": {
+          "de": "Mittelbronzezeitlich [Milet III]",
+          "en": "Middle Bronze age [Milet III]",
+          "fr": "NA"
+        }
+      },
+      "Spätbronzezeitlich [Milet IV]": {
+        "labels": {
+          "de": "Spätbronzezeitlich [Milet IV]",
+          "en": "Late Bronze age [Milet IV]",
+          "fr": "NA"
+        }
+      },
+      "Spätbronzezeitlich [Milet V]": {
+        "labels": {
+          "de": "Spätbronzezeitlich [Milet V]",
+          "en": "Late Bronze age [Milet V]",
+          "fr": "NA"
+        }
+      },
+      "Spätbronzezeitlich [Milet VI]": {
+        "labels": {
+          "de": "Spätbronzezeitlich [Milet VI]",
+          "en": "Late Bronze age [Milet VI]",
+          "fr": "NA"
+        }
+      },
+      "Spätbronzezeitlich [Milet VII]": {
+        "labels": {
+          "de": "Spätbronzezeitlich [Milet VII]",
+          "en": "Late Bronze age [Milet VII]",
+          "fr": "NA"
+        }
+      },
+      "Geometrisch": {
+        "labels": {
+          "de": "Geometrisch",
+          "en": "Geometric",
+          "fr": "NA"
+        }
+      },
+      "Protogeometrisch": {
+        "labels": {
+          "de": "Protogeometrisch",
+          "en": "Protogeometric",
+          "fr": "NA"
+        }
+      },
+      "Frühgeometrisch": {
+        "labels": {
+          "de": "Frühgeometrisch",
+          "en": "Early Geometric",
+          "fr": "NA"
+        }
+      },
+      "Mittelgeometrisch": {
+        "labels": {
+          "de": "Mittelgeometrisch",
+          "en": "Middle Geometric",
+          "fr": "NA"
+        }
+      },
+      "Spätgeometrisch": {
+        "labels": {
+          "de": "Spätgeometrisch",
+          "en": "Late Geometric",
+          "fr": "NA"
+        }
+      },
+      "Archaisch": {
+        "labels": {
+          "de": "Archaisch",
+          "en": "Archaic",
+          "fr": "NA"
+        }
+      },
+      "Früharchaisch": {
+        "labels": {
+          "de": "Früharchaisch",
+          "en": "Early Archaic",
+          "fr": "NA"
+        }
+      },
+      "Hocharchaisch": {
+        "labels": {
+          "de": "Hocharchaisch",
+          "en": "Archaic (Hocharchaisch)",
+          "fr": "NA"
+        }
+      },
+      "Spätarchaisch": {
+        "labels": {
+          "de": "Spätarchaisch",
+          "en": "Late Archaic",
+          "fr": "NA"
+        }
+      },
+      "Perserzerstörung": {
+        "labels": {
+          "de": "Perserzerstörung",
+          "en": "Persian destruction",
+          "fr": "NA"
+        }
+      },
+      "Klassisch": {
+        "labels": {
+          "de": "Klassisch",
+          "en": "Classical",
+          "fr": "NA"
+        }
+      },
+      "Frühklassisch": {
+        "labels": {
+          "de": "Frühklassisch",
+          "en": "Early classical",
+          "fr": "NA"
+        }
+      },
+      "Spätklassik": {
+        "labels": {
+          "de": "Spätklassik",
+          "en": "Late Classical",
+          "fr": "NA"
+        }
+      },
+      "Hellenistisch": {
+        "labels": {
+          "de": "Hellenistisch",
+          "en": "Hellenistic",
+          "fr": "NA"
+        }
+      },
+      "Früher Hellenismus": {
+        "labels": {
+          "de": "Früher Hellenismus",
+          "en": "Early hellenistic",
+          "fr": "NA"
+        }
+      },
+      "Später Hellenismus": {
+        "labels": {
+          "de": "Später Hellenismus",
+          "en": "Late Hellenistic",
+          "fr": "NA"
+        }
+      },
+      "Kaiserzeitlich": {
+        "labels": {
+          "de": "Kaiserzeitlich",
+          "en": "Roman imperial",
+          "fr": "NA"
+        }
+      },
+      "Frühkaiserzeitlich": {
+        "labels": {
+          "de": "Frühkaiserzeitlich",
+          "en": "Early imperial",
+          "fr": "NA"
+        }
+      },
+      "Mittelkaiserzeitlich": {
+        "labels": {
+          "de": "Mittelkaiserzeitlich",
+          "en": "Middle Imperial",
+          "fr": "NA"
+        }
+      },
+      "Spätkaiserzeitlich": {
+        "labels": {
+          "de": "Spätkaiserzeitlich",
+          "en": "Late Imperial",
+          "fr": "NA"
+        }
+      },
+      "Spätantik": {
+        "labels": {
+          "de": "Spätantik",
+          "en": "Late Antiquity",
+          "fr": "NA"
+        }
+      },
+      "Byzantinisch": {
+        "labels": {
+          "de": "Byzantinisch",
+          "en": "Byzantine",
+          "fr": "NA"
+        }
+      },
+      "Frühbyzantinisch / Spätantik": {
+        "labels": {
+          "de": "Frühbyzantinisch / Spätantik",
+          "en": "Early Byzantine / Late Antiquity",
+          "fr": "NA"
+        }
+      },
+      "Mittelbyzantinisch": {
+        "labels": {
+          "de": "Mittelbyzantinisch",
+          "en": "Middle Byzantine",
+          "fr": "NA"
+        }
+      },
+      "Spätbyzantinisch": {
+        "labels": {
+          "de": "Spätbyzantinisch",
+          "en": "Late Byzantine",
+          "fr": "NA"
+        }
+      },
+      "Menteşe / emiratszeitlich": {
+        "labels": {
+          "de": "Menteşe / emiratszeitlich",
+          "en": "Menteşe",
+          "fr": "NA"
+        }
+      },
+      "Osmanisch": {
+        "labels": {
+          "de": "Osmanisch",
+          "en": "Ottoman",
+          "fr": "NA"
+        }
+      },
+      "Rezent": {
+        "labels": {
+          "de": "Rezent / Modern",
+          "en": "Recent / Modern",
+          "fr": "NA"
         }
       }
     }
@@ -49388,55 +50800,64 @@
       "Pottery": {
         "labels": {
           "de": "Keramik",
-          "en": "Pottery"
+          "en": "Pottery",
+          "fr": "NA"
         }
       },
       "Bones": {
         "labels": {
           "de": "Knochen",
-          "en": "Bones"
+          "en": "Bones",
+          "fr": "NA"
         }
       },
       "Mollusks": {
         "labels": {
           "de": "Mollusken",
-          "en": "Mollusks"
+          "en": "Mollusks",
+          "fr": "NA"
         }
       },
       "Glass": {
         "labels": {
           "de": "Glas",
-          "en": "Glass"
+          "en": "Glass",
+          "fr": "NA"
         }
       },
       "Metal": {
         "labels": {
           "de": "Metall",
-          "en": "Metal"
+          "en": "Metal",
+          "fr": "NA"
         }
       },
       "Stone": {
         "labels": {
           "de": "Stein",
-          "en": "Stone"
+          "en": "Stone",
+          "fr": "NA"
         }
       },
       "Terracotta": {
         "labels": {
           "de": "Terrakotta",
-          "en": "Terracotta"
+          "en": "Terracotta",
+          "fr": "NA"
         }
       },
       "Coins": {
         "labels": {
           "de": "Münzen",
-          "en": "Coins"
+          "en": "Coins",
+          "fr": "NA"
         }
       },
       "Plaster": {
         "labels": {
           "de": "Putz",
-          "en": "Plaster"
+          "en": "Plaster",
+          "fr": "NA"
         }
       }
     }
@@ -49446,10 +50867,34 @@
     "createdBy": "Sabine Huy / Lisa Steinmann (Milet)",
     "description": {},
     "values": {
-      "gering": {},
-      "mittel": {},
-      "hoch": {},
-      "sehr hoch": {}
+      "gering": {
+        "labels": {
+          "de": "gering",
+          "en": "low",
+          "fr": "NA"
+        }
+      },
+      "mittel": {
+        "labels": {
+          "de": "mittel",
+          "en": "medium",
+          "fr": "NA"
+        }
+      },
+      "hoch": {
+        "labels": {
+          "de": "hoch",
+          "en": "high",
+          "fr": "NA"
+        }
+      },
+      "sehr hoch": {
+        "labels": {
+          "de": "sehr hoch",
+          "en": "very high",
+          "fr": "NA"
+        }
+      }
     }, 
     "order": [
       "gering",

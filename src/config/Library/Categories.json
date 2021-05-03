@@ -552,8 +552,7 @@
       "processor",
       "campaign",
       "description",
-      "area",
-      "spatialLocation"
+      "area"
     ],
     "valuelists": {},
     "fields": {
