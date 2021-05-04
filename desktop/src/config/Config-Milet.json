@@ -86,19 +86,22 @@
         "inputType": "text"
       },
       "contextFindProcessing": {
-        "inputType": "radio"
+        "inputType": "checkboxes"
       }
     },
     "valuelists": {
       "localization": "localization-milet",
       "contextFindProcessing": "findProcessingWorkflow-milet",
-      "period": "periods-default-1"
+      "period": "periods-milet"
     }
   },
   "Layer:default": {
     "hidden": [],
     "color": "#665432",
     "fields": {
+      "findprocessingFinished": {
+        "inputType": "boolean"
+      },
       "sampleTaken": {
         "inputType": "boolean"
       },
@@ -189,7 +192,10 @@
     }
   },
   "Building": {
-    "hidden": ["buildingCategorySpecific"],
+    "hidden": [
+      "buildingCategorySpecific", 
+      "spatialLocation"
+    ],
     "commons": [
       "period",
       "dating",
@@ -254,7 +260,8 @@
       "material": "Building-material-default",
       "context": "Building-context-milet",
       "buildingTechnique": "Building-buildingTechnique-default",
-      "period": "periods-default-1"
+      "period": "periods-milet",
+      "localization": "localization-milet"
     }
   },
   "Find": {
@@ -269,7 +276,6 @@
       "conditionPercent"
     ],
     "commons": [
-      "spatialLocation",
       "processor",
       "campaign",
       "period",
@@ -341,7 +347,7 @@
       "workflow": "Find-workflow-milet",
       "condition": "Building-condition-default",
       "conditionAmount": "Find-conditionAmount-milet",
-      "period": "periods-default-1"
+      "period": "periods-milet"
     }
   },
   "Pottery": {
@@ -395,7 +401,7 @@
         "inputType": "unsignedFloat"
       },
       "potteryCondition": {
-        "inputType": "dropdown"
+        "inputType": "checkboxes"
       },
       "fabricGroup": {
         "inputType": "input"
@@ -422,30 +428,15 @@
         "inputType": "input"
       }, 
       "temperAmount": {
-        "inputType": "checkboxes"
+        "inputType": "dropdownRange"
       }, 
       "temperGrain": {
-        "inputType": "checkboxes"
+        "inputType": "dropdownRange"
       }, 
       "surfaceTreatment": {
         "inputType": "checkboxes"
       }, 
       "surfaceTreatmentDescription": {
-        "inputType": "text"
-      }, 
-      "analysisMethod": {
-        "inputType": "checkboxes"
-      }, 
-      "analysisMethodOther": {
-        "inputType": "multiInput"
-      }, 
-      "analysisAim": {
-        "inputType": "text"
-      }, 
-      "analysisActor": {
-        "inputType": "multiInput"
-      }, 
-      "analysisResult": {
         "inputType": "text"
       }, 
       "otherNotes": {
@@ -521,7 +512,9 @@
   "Sculpture": {
     "color": "#eb0ee7",
     "parent": "Find",
-    "commons": [],
+    "commons": [
+      "dimensionHeadHeight"
+    ],
     "fields": {
       "reused": {
         "inputType": "boolean"
@@ -615,7 +608,16 @@
     "fields": {}
   },
   "Sample:default": {
-    "hidden": [],
+    "hidden": [
+      "sampleType", "spatialLocation"
+    ],
+    "commons": [
+      "date",
+      "dating",
+      "period",
+      "description",
+      "processor"
+    ],
     "fields": {
       "measuringPointID": {
         "inputType": "input"
@@ -625,10 +627,27 @@
       },
       "volume": {
         "inputType": "unsignedFloat"
+      }, 
+      "analysisMethod": {
+        "inputType": "radio"
+      }, 
+      "analysisMethodOther": {
+        "inputType": "multiInput"
+      }, 
+      "analysisAim": {
+        "inputType": "input"
+      }, 
+      "analysisActor": {
+        "inputType": "multiInput"
+      }, 
+      "analysisResult": {
+        "inputType": "text"
       }
     },
     "valuelists": {
-      "localization": "localization-milet"
+      "localization": "localization-milet",
+      "analysisMethod": "Sample-sampleType-milet",
+      "period": "periods-milet"
     }
   },
   "TypeCatalog:default": {
@@ -792,6 +811,9 @@
       "countCookingwaresRim": {
         "inputType": "unsignedInt"
       }, 
+      "countCookingwaresWall": {
+        "inputType": "unsignedInt"
+      }, 
       "countCookingwaresBase": {
         "inputType": "unsignedInt"
       }, 
@@ -810,6 +832,9 @@
       "countTablewaresRim": {
         "inputType": "unsignedInt"
       }, 
+      "countTablewaresWall": {
+        "inputType": "unsignedInt"
+      }, 
       "countTablewaresBase": {
         "inputType": "unsignedInt"
       }, 
@@ -817,6 +842,9 @@
         "inputType": "unsignedInt"
       }, 
       "countFinepotteryRim": {
+        "inputType": "unsignedInt"
+      }, 
+      "countFinepotteryWall": {
         "inputType": "unsignedInt"
       }, 
       "countFinepotteryBase": {
@@ -837,6 +865,9 @@
       "countLampsRim": {
         "inputType": "unsignedInt"
       }, 
+      "countLampsWall": {
+        "inputType": "unsignedInt"
+      }, 
       "countLampsBase": {
         "inputType": "unsignedInt"
       }, 
@@ -848,7 +879,7 @@
       }
     },
     "valuelists": {
-      "period": "periods-default-1"
+      "period": "periods-milet"
     }
   },
   "Impression": {
@@ -898,7 +929,7 @@
     "valuelists": {
       "findProcessingWorkflow": "findProcessingWorkflow-milet",
       "relativeAmountCheck": "relativeAmountCheck-milet",
-      "period": "periods-default-1"
+      "period": "periods-milet"
     }
   }
 }
