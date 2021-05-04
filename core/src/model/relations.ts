@@ -42,6 +42,12 @@ export namespace Relations {
         export const BORDERS = 'borders';                 //
         export const CUTS = 'cuts';                       //
         export const CUTBY = 'isCutBy';               //
+        /* Milet (Lisa Steinmann) */
+        export const FILLS = 'fills';                       //
+        export const FILLEDBY = 'isFilledBy';                       //
+        export const FINDS = 'hasFinds';     //
+        export const FOUNDIN = 'wasFoundIn'; //
+        /* /Milet */
 
         export const ALL = [BORDERS, CUTS, CUTBY, ABOVE, BELOW, EQUIVALENT];
     }
