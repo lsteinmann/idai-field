@@ -1,30 +1,12 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "ES5",
-    "allowSyntheticDefaultImports": true,
-    "lib": [
-      "es2018",
-      "dom"
-    ],
-    "paths": {
-      "jszip": [
-        "node_modules/jszip/dist/jszip.min.js"
-      ]
+    "compilerOptions": {
+        "baseUrl": "./",
+        // These paths are configured here because IDEs normally only pick up
+        // this tsconfig.json and thus will be able to correctly resolve
+        // TypeScript code in other packages.
+        // Packages are built with the corresponding local tsconfig.json files.
+        "paths": {
+            "idai-field-core": ["core/index.ts"]
+        }
     }
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableIvy": true
-  }
 }

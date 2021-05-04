@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="info-window.css">
+    </head>
+    <body>
+        <div class="info-window">
+            <img src="../img/logo.png">
+            <p id="brand">iDAI.field</p>
+            <p id="about-version"></p>
+            <p>
+                <button id="close-button"></button>
+            </p>
+        </div>
+        <script>
+            const remote = window.require('@electron/remote');
+
+            document.getElementById('about-version').textContent = 'Version ' + remote.app.getVersion();
+
+            document.getElementById('close-button').textContent = remote.getGlobal('config')['locale'] === 'de'
+                ? 'Schließen'
+                : 'Close';
+
+            document.getElementById('close-button').addEventListener('click', function() {
+                remote.getCurrentWindow().close();
+            });
+        </script>
+    </body>
+</html>

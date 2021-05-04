@@ -1,0 +1,67 @@
+<div id="map-container"></div>
+
+<layer-menu [layerGroups]="getLayerGroups()"
+            (onToggleLayer)="toggleLayer($event)"
+            (onFocusLayer)="focusLayer($event)"
+            (onAddOrRemoveLayers)="updateLayers(false)"
+            (onChangeLayersOrder)="updatePaneZIndices()"></layer-menu>
+
+<div id="map-editor-buttons" *ngIf="isEditing">
+    <div *ngIf="mousePositionCoordinates" id="mouse-position-coordinates-x" class="badge badge-secondary">
+        <b>X:</b> {{mousePositionCoordinates[0]}}
+    </div>
+    <div *ngIf="mousePositionCoordinates" id="mouse-position-coordinates-y" class="badge badge-secondary">
+        <b>Y:</b> {{mousePositionCoordinates[1]}}
+    </div>
+    <div *ngIf="selectedPolygon || selectedPolyline || selectedMarker" id="map-editor-button-delete"
+         class="btn btn-danger" (click)="deleteGeometry()"
+         ngbTooltip="Löschen"
+         i18n-ngbTooltip="@@resources.map.delete"
+         placement="top" container="body">
+        <span class="mdi mdi-delete mdi-24px"></span>
+    </div>
+    <div *ngIf="!selectedPolygon && !selectedPolyline && !selectedMarker" id="map-editor-button-delete-disabled"
+         class="btn btn-danger disabled">
+        <span class="mdi mdi-delete mdi-24px"></span>
+    </div>
+    <div *ngIf="getEditorType() === 'polygon'" id="map-editor-button-add-polygon"
+         class="btn btn-success" (click)="addPolygon()"
+         ngbTooltip="Polygon hinzufügen"
+         i18n-ngbTooltip="@@resources.map.addPolygon"
+         placement="top" container="body">
+        <span class="mdi mdi-shape-polygon-plus mdi-24px"></span>
+    </div>
+    <div *ngIf="getEditorType() === 'polyline'" id="map-editor-button-add-polyline"
+         class="btn btn-success" (click)="addPolyline()"
+         ngbTooltip="Polyline hinzufügen"
+         i18n-ngbTooltip="@@resources.map.addPolyline"
+         placement="top" container="body">
+        <span class="mdi mdi-vector-polyline mdi-24px"></span>
+    </div>
+    <div *ngIf="getEditorType() === 'point'" id="map-editor-button-add-point"
+         class="btn btn-success" (click)="addMarker()"
+         ngbTooltip="Punkt hinzufügen"
+         i18n-ngbTooltip="@@resources.map.addPoint"
+         placement="top" container="body">
+        <span class="mdi mdi-map-marker-plus mdi-24px"></span>
+    </div>
+    <div *ngIf="getEditorType() === 'polygon' || getEditorType() === 'polyline'" id="map-editor-button-drag"
+         class="btn btn-primary" [class.active]="isInDragMode()" (click)="toggleDragMode()"
+         ngbTooltip="Verschieben"
+         i18n-ngbTooltip="@@resources.map.drag"
+         placement="top" container="body">
+        <span class="mdi mdi-cursor-move mdi-24px"></span>
+    </div>
+    <div id="map-editor-ok-abort-buttons" class="btn-toolbar">
+        <div id="map-editor-ok-button-group" class="btn-group">
+            <div id="map-editor-button-ok" class="btn btn-primary" (click)="finishEditing()">
+                <span i18n="@@buttons.ok">OK</span>
+            </div>
+        </div>
+        <div class="btn-group">
+            <div id="map-editor-button-abort" class="btn btn-secondary" (click)="abortEditing()">
+                <span i18n="@@buttons.cancel">Abbrechen</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,348 @@
+$mdi-font-path: 'fonts' !default;
+$roboto-font-path: 'fonts/' !default;
+@import '../node_modules/roboto-fontface';
+@import '../node_modules/@mdi/font/css/materialdesignicons';
+
+@import 'app/components/variables';
+@import 'app/components/messages/messages';
+@import 'bootstrap';
+
+@import 'app/components/initialization';
+@import 'app/components/navbar/navbar';
+@import 'app/components/spinner';
+@import 'app/components/buttons';
+@import 'app/components/default-page';
+@import 'app/components/resources/resources';
+@import 'app/components/import/import';
+@import 'app/components/export/export';
+@import 'app/components/settings/settings';
+@import 'app/components/viewmodal/view-modal';
+@import 'app/components/widgets/widgets';
+@import 'app/components/docedit/docedit';
+@import 'app/components/image/image';
+@import 'app/components/matrix/matrix-view';
+@import 'app/components/help/help';
+@import 'app/components/configuration/project-configuration';
+
+.search-help-tooltip {
+  .tooltip-inner {
+    width: 400px;
+    max-width: 400px;
+  }
+  animation-name: delayedFadeIn;
+  animation-duration: 1s; /* Adjust this duration */
+}
+
+.tooltip > div {
+  animation-name: delayedFadeIn;
+  animation-duration: 1s; /* Adjust this duration */
+}
+
+.tooltip {
+  pointer-events: none;
+}
+
+@keyframes delayedFadeIn {
+  0% { opacity: 0; }
+  75% { opacity: 0; } /* Set this to 99% for no fade-in. */
+  100% { opacity: 1; }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif !important;
+  overflow: hidden;
+}
+
+#idaifieldlogo {
+  height: 35px;
+}
+
+.btn {
+  text-transform: none !important;
+  border-radius: 0 !important;
+}
+
+.btn:focus, .btn.focus {
+  box-shadow: none;
+}
+
+.btn:active, .btn.active {
+  box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: rgba(85, 114, 161, 1);
+  border-color: rgba(85, 114, 161, 1);
+}
+
+.btn-primary:hover {
+  background-color: lighten(rgba(85, 114, 161, 1), 10%);
+  border-color: lighten(rgba(85, 114, 161, 1), 10%);
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+  background-color: darken(rgba(85, 114, 161, 1), 10%);
+  border-color: darken(rgba(85, 114, 161, 1), 10%);
+  cursor: not-allowed;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background-color: saturate(rgba(85, 114, 161, 1), 10%);
+  border-color: saturate(rgba(85, 114, 161, 1), 10%);
+}
+
+.btn-outline-primary {
+  border-color: #5572A1;
+  color: #5572A1;
+  background-color: white;
+}
+
+.btn-outline-primary:hover {
+  border-color: lighten(#5572A1, 10%);
+  color: lighten(#5572A1, 10%);
+  background-color: white;
+}
+
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+  border-color: darken(#5572A1, 10%);
+  color: darken(#5572A1, 10%);
+  cursor: not-allowed;
+  background-color: white;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #727b84;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: lighten(#727b84, 10%);
+  border-color: lighten(#6c757d, 10%);
+  color: #fff;
+}
+
+.btn-secondary:disabled, .btn-primary.disabled {
+  background-color: darken(#727b84, 10%);
+  border-color: darken(#6c757d, 10%);
+  cursor: not-allowed;
+}
+
+.btn-secondary:active, .btn-secondary.active {
+  background-color: saturate(#727b84, 10%);
+  background-color: saturate(#6c757d, 10%);
+}
+
+.btn-success:disabled, .btn-success.disabled {
+  background-color: darken(#6ca378, 10%);
+  border-color: darken(#6ca378, 10%);
+  cursor: not-allowed;
+}
+
+.btn-danger:disabled, .btn-danger.disabled {
+  cursor: not-allowed;
+}
+
+.btn-light {
+  color: $link-color;
+}
+
+.md-form {
+  margin-bottom: 0 !important;
+}
+
+/* override needed for buttons to look good in chrome with bootstrap 4 */
+button,
+html [type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: none;
+}
+
+/* override popover styles */
+.popover {
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+
+.popover-body {
+  padding: 0 !important;
+}
+
+.popover-header,
+.popover-custom-title {
+  background-color: #eee;
+  font-size: 1.1em;
+  user-select: none;
+  cursor: default;
+}
+
+.popover-header {
+  font-weight: normal;
+  border-radius: 0;
+}
+
+.popover-custom-title {
+  padding: 10px 10px 8px 10px;
+}
+
+.popover-body .list-group {
+  max-height: calc(100vh - 230px);
+  overflow: auto;
+}
+
+.popover-item {
+  cursor: default;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.popover-item:hover {
+  background-color: $list-item-hover-color;
+  transition: background-color .65s ease;
+}
+
+/* Cards */
+/* override ugly styling of list-group-items inside cards in bootstrap 4 */
+.card > .list-group {
+  > .list-group-item {
+    border-width: 1px 0 0;
+  }
+  > .list-group-item:first-child {
+    border-width: 0;
+  }
+}
+
+.card {
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: #eee;
+
+  &.bg-warning {
+    background-color: $custom-highlight-color !important;
+  }
+}
+
+.card-header {
+  border-radius: 0 !important;
+}
+
+.card-title {
+  font-weight: normal !important;
+  font-size: 17px !important;
+  margin: 0 !important;
+}
+
+.card-block {
+  padding: 10px !important;
+}
+
+.card-block .form-control {
+  margin: 0;
+  font-size: 13px;
+}
+
+.form-control {
+  border-radius: 1px !important;
+  -webkit-appearance: none;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+select.form-control:not([size]):not([multiple]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: calc(100% - 7px) 50%;
+  background-repeat: no-repeat;
+  background-image: url(img/chevron-down.png);
+  padding-right: 1.5em;
+  height: auto;
+  user-select: none;
+}
+
+.form-check .form-check-label {
+  font-size: 15px;
+  padding-left: 1.4rem;
+}
+
+/* Relation Picker */
+
+#relation-picker .btn-secondary {
+  margin: 0 0 0 10px !important;
+  padding: 5px 5px 5px 15px!important;
+  border-radius: 2px !important;
+}
+
+#relation-picker .badge {
+  background-color: transparent;
+}
+
+.delete-relation {
+  margin-top: 1px !important;
+  padding-top: 5px !important;
+}
+
+.relation-link:before {
+  color: #333;
+  margin-right: 5px;
+  margin-left: -10px;
+  content: '\2022';
+}
+
+relations-view .fieldvalue:hover {
+  background-color: #ddd;
+}
+
+.fade {
+  transition: none;
+}
+
+/* wider modals */
+.modal-lg {
+  min-width: 86%;
+}
+
+.modal-header {
+  user-select: none;
+}
+
+.modal-body {
+  p {
+    user-select: none;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+a {
+  -webkit-user-drag: none;
+}
+
+.alert {
+  text-align: center;
+}

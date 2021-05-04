@@ -1,0 +1,37 @@
+/**
+ * @author: Jan G. Wieners
+ * @author: Thomas Kleinke
+ */
+
+.import {
+  .disabled {
+    transition: none !important;
+  }
+
+  .import-info {
+    font-size: 14px;
+    margin-bottom: 12px;
+    user-select: none;
+    cursor: default;
+  }
+
+  .form-check-inline {
+    margin-bottom: 8px;
+
+    .form-check-label {
+      position: relative;
+      top: 1px;
+      user-select: none;
+    }
+  }
+
+  #back-to-import-button {
+    margin-top: 22px;
+  }
+
+  #ignored-identifiers {
+    max-height: calc(100vh - 258px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

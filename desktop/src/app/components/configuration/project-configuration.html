@@ -1,0 +1,138 @@
+<div class="project-configuration row">
+    <div class="col">
+        <div class="row">
+            <div class="col-2 sidebar">
+                <category-picker *ngIf="toplevelCategoriesArray"
+                                 [toplevelCategoriesArray]="toplevelCategoriesArray"
+                                 [selectedCategories]="[selectedCategory.name]"
+                                 [allowPickingAbstractCategories]="true"
+                                 [highlightCustomCategories]="true"
+                                 (onCategoryPicked)="selectCategory($event)"></category-picker>
+            </div>
+
+            <div class="col-10">
+                <div class="row" [class.custom-category]="!selectedCategory.libraryId">
+                    <div class="col header header-left d-flex">
+                        <category-icon size="41" category="{{selectedCategory.name}}"></category-icon>
+                        <h5>
+                            <span *ngIf="!selectedCategory.libraryId"
+                                class="mdi mdi-alert-circle-outline"
+                                ngbTooltip="Projektspezifisches Formular"
+                                i18n-ngbTooltip="@@config.form.custom"
+                                placement="right">
+                            </span>
+                            {{selectedCategory.label ? selectedCategory.label : selectedCategory.name}}
+                        </h5>
+                    </div>
+                    <div class="col header header-right text-right">
+                        <span *ngIf="selectedCategory.name">
+                            <strong i18n="@@configuration.defaultFields.category">Kategorie</strong>:
+                            <code>{{selectedCategory.name}}</code>
+                        </span>
+                        &nbsp;
+                        <span *ngIf="selectedCategory.libraryId">
+                            <strong i18n="@@config.libraryId">Formular</strong>:
+                            <code>{{selectedCategory.libraryId}}</code>
+                        </span>
+                    </div>
+                </div>
+                <div *ngIf="getCategoryDescription(selectedCategory)" class="row subheader">
+                    <div class="col">
+                        {{getCategoryDescription(selectedCategory)}}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 groups">
+                        <ul class="nav nav-pills flex-column">
+                            <li *ngFor="let group of getGroups(selectedCategory)" class="nav flex-column">
+                                <a class="nav-link group-button"
+                                        [class.active]="selectedGroup === group.name"
+                                        (click)="selectedGroup = group.name">
+                                    {{group.label}}
+                                    <span *ngIf="hasCustomFields(group)"> *</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-10 content" [class.shortened]="getCategoryDescription(selectedCategory)">
+                        <div *ngFor="let field of getVisibleFields(selectedCategory)"
+                                class="card"
+                                [class.bg-warning]="field.source === 'custom'">
+
+                            <div class="card-header">
+                                <span *ngIf="field.source === 'custom'"
+                                    class="mdi mdi-alert-circle-outline"
+                                    ngbTooltip="Projektspezifisches Feld"
+                                    i18n-ngbTooltip="@@config.source.custom"
+                                    placement="right">
+                                </span>
+                                <b *ngIf="field.label"> {{field.label}}</b>
+                                <code> {{field.name}}</code>
+                            </div>
+
+                            <div class="card-body">
+                                <p *ngIf="field.description" class="card-text">{{field.description}}</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <b i18n="@@configuration.field.inputType">Eingabetyp</b>:
+                                        <span *ngIf="field.inputType === 'input'" i18n="@@config.inputType.input">Einzeiliger Text</span>
+                                        <span *ngIf="field.inputType === 'unsignedInt'" i18n="@@config.inputType.unsignedInt">Positive Ganzzahl</span>
+                                        <span *ngIf="field.inputType === 'float'" i18n="@@config.inputType.float">Kommazahl</span>
+                                        <span *ngIf="field.inputType === 'unsignedFloat'" i18n="@@config.inputType.unsignedFloat">Positive Kommazahl</span>
+                                        <span *ngIf="field.inputType === 'multiInput'" i18n="@@config.inputType.multiInput">Einzeiliger Text mit Mehrfachauswahl</span>
+                                        <span *ngIf="field.inputType === 'text'" i18n="@@config.inputType.text">Mehrzeiliger Text</span>
+                                        <span *ngIf="field.inputType === 'dropdown'" i18n="@@config.inputType.dropdown">Dropdown-Liste</span>
+                                        <span *ngIf="field.inputType === 'dropdownRange'" i18n="@@config.inputType.dropdownRange">Dropdown-Liste (Bereich)</span>
+                                        <span *ngIf="field.inputType === 'radio'" i18n="@@config.inputType.radio">Radiobutton</span>
+                                        <span *ngIf="field.inputType === 'boolean'" i18n="@@config.inputType.boolean">Ja / Nein</span>
+                                        <span *ngIf="field.inputType === 'checkboxes'" i18n="@@config.inputType.checkboxes">Checkboxen</span>
+                                        <span *ngIf="field.inputType === 'dating'" i18n="@@config.inputType.dating">Datierungsangabe</span>
+                                        <span *ngIf="field.inputType === 'date'" i18n="@@config.inputType.date">Datum</span>
+                                        <span *ngIf="field.inputType === 'dimension'" i18n="@@config.inputType.dimension">Maßangabe</span>
+                                        <span *ngIf="field.inputType === 'literature'" i18n="@@config.inputType.literature">Literaturangabe</span>
+                                        <span *ngIf="field.inputType === 'geometry'" i18n="@@config.inputType.geometry">Geometrie</span>
+                                        <span *ngIf="field.inputType === 'instanceOf'" i18n="@@config.inputType.instanceOf">Typenauswahl</span>
+                                    </li>
+
+                                    <li *ngIf="field.valuelist" class="list-group-item">
+                                        <div *ngIf="getValuelistDescription(field.valuelist)"
+                                                class="valuelist-description">
+                                            {{getValuelistDescription(field.valuelist)}}
+                                        </div>
+                                        <div class="row valuelist">
+                                            <div *ngFor="let value of getValues(field.valuelist)"
+                                                    class="col-2 value-col">
+                                                <span class="badge badge-light value-badge">
+                                                    {{getValueLabel(field.valuelist, value)}}
+                                                    <code>{{value}}</code>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div *ngFor="let relation of getRelations(selectedCategory)" class="card">
+                            <div class="card-header">
+                                <b *ngIf="relation.label">{{relation.label}}</b>
+                                <code> {{relation.name}}</code>
+                            </div>
+
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <b i18n="@@configuration.field.inputType">Eingabetyp</b>:
+                                        <span i18n="@@config.inputType.relation">Relation</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
