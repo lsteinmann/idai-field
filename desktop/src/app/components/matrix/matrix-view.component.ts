@@ -213,7 +213,7 @@ export class MatrixViewComponent implements OnInit {
         });
         this.totalFeatureDocuments = this.featureDocuments = result.documents as Array<FeatureDocument>;
 
-        /* Milet */
+        /* Milet 
         const findCategories = (this.projectConfiguration.getCategory("Find")?.children || []).map(c => c.name);
         this.findDocuments = (await this.datastore.find({ categories: findCategories, constraints: { 'liesWithin:contain': this.featureDocuments.map(d => d.resource.id) } })).documents;
         this.sampleDocuments = (await this.datastore.find({ categories: ["Sample"], constraints: { 'liesWithin:contain': ((this.featureDocuments as Array<FieldDocument>).concat(this.findDocuments)).map(d => d.resource.id) } })).documents;

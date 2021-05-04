@@ -49,7 +49,7 @@ export namespace Relations {
         export const FOUNDIN = 'wasFoundIn'; //
         /* /Milet */
 
-        export const ALL = [BORDERS, CUTS, CUTBY, ABOVE, BELOW, EQUIVALENT];
+        export const ALL = [BORDERS, CUTS, CUTBY, ABOVE, BELOW, EQUIVALENT, /*Milet->*/, FILLS, FILLEDBY, FINDS, FOUNDIN/* / */];
     }
 
 
