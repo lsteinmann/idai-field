@@ -894,13 +894,30 @@ export class AppConfigurator {
                 fields: {}
             };
 
+            /* #TODO Change the recurring fields to default fields with domain of the corresponging categories */
+            
             (this.builtinCategories as any)['Building'] = {
-                userDefinedSubcategoriesAllowed: true,
                 parent: 'Operation',
                 fields: {
                     gazId: {
                     inputType: FieldDefinition.InputType.UNSIGNEDINT,
                     group: Groups.POSITION
+                    },
+                    datingAddenda: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.TIME,
+                    },
+                    measuringPointID: {
+                        inputType: FieldDefinition.InputType.INPUT,
+                        group: Groups.POSITION
+                    },
+                    localization: {
+                        inputType: FieldDefinition.InputType.RADIO,
+                        group: Groups.POSITION
+                    },
+                    localizationDescription: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.POSITION
                     }
                 }
             };
@@ -917,13 +934,87 @@ export class AppConfigurator {
                         inputType: FieldDefinition.InputType.UNSIGNEDFLOAT,
                         group: Groups.DIMENSION
                     },
+                    datingAddenda: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.TIME,
+                    },
+                    measuringPointID: {
+                        inputType: FieldDefinition.InputType.INPUT,
+                        group: Groups.POSITION
+                    },
+                    localization: {
+                        inputType: FieldDefinition.InputType.RADIO,
+                        group: Groups.POSITION
+                    },
+                    localizationDescription: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.POSITION
+                    }
+                }
+            };
+
+            (this.builtinCategories as any)['Feature'] = {
+                supercategory: true,
+                userDefinedSubcategoriesAllowed: true,
+                fields: {
+                    period: {
+                        inputType: FieldDefinition.InputType.DROPDOWNRANGE,
+                        group: Groups.TIME
+                    },
+                    dating: {
+                        inputType: FieldDefinition.InputType.DATING,
+                        group: Groups.TIME
+                    },
+                    datingAddenda: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.TIME,
+                    },
+                    measuringPointID: {
+                        inputType: FieldDefinition.InputType.INPUT,
+                        group: Groups.POSITION
+                    },
+                    localization: {
+                        inputType: FieldDefinition.InputType.RADIO,
+                        group: Groups.POSITION
+                    },
+                    localizationDescription: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.POSITION
+                    }
+                }
+            };
+
+            (this.builtinCategories as any)['Sample'] = {
+                mustLieWithin: true,
+                fields: {
+                    datingAddenda: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.TIME,
+                    },
+                    measuringPointID: {
+                        inputType: FieldDefinition.InputType.INPUT,
+                        group: Groups.POSITION
+                    },
+                    localization: {
+                        inputType: FieldDefinition.InputType.RADIO,
+                        group: Groups.POSITION
+                    },
+                    localizationDescription: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.POSITION
+                    }
                 }
             };
 
             (this.builtinCategories as any)['Impression'] = {
                 supercategory: false,
                 userDefinedSubcategoriesAllowed: false,
-                fields: {}
+                fields: {
+                    datingAddenda: {
+                        inputType: FieldDefinition.InputType.TEXT,
+                        group: Groups.TIME,
+                    }
+                }
             };
 
             this.defaultRelations.push({
@@ -953,7 +1044,7 @@ export class AppConfigurator {
                 domain: ['Quantification:inherit'],
                 range: ['Feature:inherit', 'Quantification:inherit']
             });
-         
+
             this.defaultRelations.push({
                 name: 'fills',
                 inverse: 'isFilledBy',
@@ -988,13 +1079,6 @@ export class AppConfigurator {
                 range: ['Find:inherit']
             });
 
-            (this.defaultFields as any)['datingAddenda'] = {
-                visible: true,
-                editable: true,
-                mandatory: false,
-                inputType: 'text',
-                group: Groups.TIME
-            };
 
             (this.defaultFields as any)['notes'] = {
                 visible: true,
