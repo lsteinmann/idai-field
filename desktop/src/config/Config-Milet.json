@@ -41,10 +41,6 @@
     "hidden": ["trenchComment"],
     "fields": {}
   },
-  "Floor:default": {
-    "hidden": [],
-    "fields": {}
-  },
   "Feature": {
     "color": "#121009",
     "commons": [
@@ -477,23 +473,15 @@
     "hidden": [],
     "fields": {}
   },
-  "Burial:default": {
-    "hidden": [],
-    "fields": {}
-  },
   "Wood:default": {
     "hidden": [],
     "fields": {}
   },
   "Architecture:default": {
-    "hidden": [],
+    "hidden": [], 
     "fields": {}
   },
   "Metal:default": {
-    "hidden": [],
-    "fields": {}
-  },
-  "Grave:default": {
     "hidden": [],
     "fields": {}
   },
@@ -601,7 +589,11 @@
   },
   "PlasterFragment:default": {
     "hidden": [],
-    "fields": {}
+    "fields": {
+      "decorationDescription":  {
+        "inputType": "text"
+      }
+    }
   },
   "Excavation:default": {
     "hidden": [],

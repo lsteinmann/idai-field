@@ -86,16 +86,16 @@
   },
   "relations": {
       "isEquivalentTo": {
-          "label": "identical with"
+          "label": "Identical with"
       },
       "isFilledBy": {
-          "label": "is filled by"
+          "label": "Is Filled by"
       },
       "fills": {
-          "label": "fills"
+          "label": "Fills"
       },
       "wasFoundIn": {
-          "label": "was found in",
+          "label": "Was Found in",
           "description": "Building, Place or Survey the find came from."
       },
       "hasFinds": {
@@ -205,7 +205,7 @@
           }
       },
       "StrUnit": {
-          "label": "Stratigraphical Unit",
+          "label": "Stratigraphical Unit", 
           "fields": {
               "unitNotes": {
                   "label": "Notes"
@@ -246,6 +246,13 @@
               "YearOfFind": {
                   "label": "Year (in case of Altfund)",
                   "description": "Year in which the object has been found or first recorded, in case of Altfunde"
+              }
+          }
+      },
+      "PlasterFragment": {
+          "fields": {
+              "decorationDescription": {
+                  "Label": "Description of the Decoration # TODO"
               }
           }
       },
