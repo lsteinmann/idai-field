@@ -495,7 +495,14 @@
   },
   "Stone:default": {
     "hidden": [],
-    "fields": {}
+    "fields": {
+      "origin": {
+        "inputType": "dropdown"
+      }
+    },
+    "valuelists": {
+      "origin": "Stone-origin-milet"
+    }
   },
   "Sculpture": {
     "color": "#eb0ee7",

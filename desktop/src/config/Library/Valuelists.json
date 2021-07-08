@@ -54563,5 +54563,209 @@
       "hoch",
       "sehr hoch"
     ]
+  },
+  "Stone-origin-milet": {
+    "creationDate": "08-07-2021",
+    "createdBy": "Maurice Thurn / Lisa Steinmann (Milet)",
+    "description": {
+      "de": "Ergänzt um Steinbrüche um Milet"
+    },
+    "values": {
+      "Alpen": {
+        "labels": {
+          "de": "Alpen",
+          "it": "Alpi",
+          "en": "Alpine", 
+          "fr": "Alpes"
+        }
+      },
+      "Anatolien": {
+        "labels": {
+          "de": "Anatolien",
+          "it": "Anatolia",
+          "en": "Anatolia", 
+          "fr": "Anatolie"
+        }
+      },
+      "Chimtou": {
+        "labels": {
+          "de": "Chimtou",
+          "it": "Chimtou",
+          "en": "Chimtou", 
+          "fr": "Chimtou"
+        }
+      },
+      "Harz": {
+        "labels": {
+          "de": "Harz",
+          "it": "Harz",
+          "en": "Harz", 
+          "fr": "Harz"
+        }
+      },
+      "Kreta": {
+        "labels": {
+          "de": "Kreta",
+          "it": "Creta",
+          "en": "Crete", 
+          "fr": "Crète"
+        }
+      },
+      "Sizilien": {
+        "labels": {
+          "de": "Sizilien",
+          "it": "Sicilia",
+          "en": "Sicily", 
+          "fr": "Sicile"
+        }
+      },
+      "Aphrodisias": {
+        "labels": {
+          "de": "Aphrodisias",
+          "en": "Aphrodisias",
+          "fr": "Aphrodisias"
+        }
+      },
+      "Burgass Adası": {
+        "labels": {
+          "de": "Burgass Adası",
+          "en": "Burgass Adası",
+          "fr": "Burgass Adası"
+        }
+      },
+      "Carrara": {
+        "labels": {
+          "de": "Carrara",
+          "en": "Carrara",
+          "fr": "Carrara"
+        }
+      },
+      "Docimium": {
+        "labels": {
+          "de": "Dokimeion (Afyon)",
+          "en": "Docimium",
+          "fr": "Docimium"
+        }
+      },
+      "Ephesus": {
+        "labels": {
+          "de": "Ephesos",
+          "en": "Ephesus",
+          "fr": "Éphèse"
+        }
+      },
+      "Euromos": {
+        "labels": {
+          "de": "Euromos",
+          "en": "Euromus",
+          "fr": "Euromus"
+        }
+      },
+      "Fourni": {
+        "labels": {
+          "de": "Fourni",
+          "en": "Fourni",
+          "fr": "Fourni"
+        }
+      },
+      "Heraclea at Latmus": {
+        "labels": {
+          "de": "Herakleia am Latmos",
+          "en": "Heraclea at Latmus",
+          "fr": "Héraclée du Latmos"
+        }
+      },
+      "Hymettus": {
+        "labels": {
+          "de": "Hymettos",
+          "en": "Hymettus",
+          "fr": "Hymette"
+        }
+      },
+      "Lesbos": {
+        "labels": {
+          "de": "Lesbos (Moria) ",
+          "en": "Lesbos",
+          "fr": "Lesbos"
+        }
+      },
+      "Marmara (Proconnesus)": {
+        "labels": {
+          "de": "Marmara (Prokonnesos)",
+          "en": "Marmara (Proconnesus)",
+          "fr": "Marmara (Proconnèse)"
+        }
+      },
+      "Milas": {
+        "labels": {
+          "de": "Milas",
+          "en": "Milas",
+          "fr": "Milas"
+        }
+      },
+      "Miletus East": {
+        "labels": {
+          "de": "Milet Ost",
+          "en": "Milet East",
+          "fr": "Milet Est"
+        }
+      },
+      "Miletus West": {
+        "labels": {
+          "de": "Milet West",
+          "en": "Miletus West",
+          "fr": "Milet Ouest"
+        }
+      },
+      "Naxos": {
+        "labels": {
+          "de": "Naxos",
+          "en": "Naxos",
+          "fr": "Naxos"
+        }
+      },
+      "Paros": {
+        "labels": {
+          "de": "Paros",
+          "en": "Paros",
+          "fr": "Paros"
+        }
+      },
+      "Pentelikon": {
+        "labels": {
+          "de": "Pentelikon",
+          "en": "Pentelikon",
+          "fr": "Pentélique"
+        }
+      },
+      "Priene": {
+        "labels": {
+          "de": "Priene",
+          "en": "Priene",
+          "fr": "Priène"
+        }
+      },
+      "Samos": {
+        "labels": {
+          "de": "Samos",
+          "en": "Samos",
+          "fr": "Samos"
+        }
+      },
+      "Stratonikeia": {
+        "labels": {
+          "de": "Stratonikeia",
+          "en": "Stratonicea",
+          "fr": "Stratonicée"
+        }
+      },
+      "Thasos": {
+        "labels": {
+          "de": "Thasos",
+          "en": "Thasos",
+          "fr": "Thásos"
+        }
+      }
+    }
   }
 }
