@@ -235,8 +235,8 @@
           "description": "Indirizzo e-mail del progetto o della persona di contatto"
         },
         "contactPerson": {
-          "label": "persona di contatto",
-          "description": "persona di contatto del progetto"
+          "label": "Persona di contatto",
+          "description": "Persona di contatto del progetto"
         },
         "epsgId": {
           "label": "Codice-EPSG",
@@ -262,6 +262,9 @@
           "label": "Longitudine",
           "description": "Inserimento come numero decimale, sono possibili valori negativi"
         },
+        "license": {
+          "label": "Informazioni sulla licenza"
+        },
         "projectURI": {
           "label": "URL del progetto",
           "description": "Riferimento ad una pagina di progetto esterna con ulteriori informazioni"
@@ -275,6 +278,9 @@
         "projectSupervisor": {
           "label": "Supervisore",
           "description": "Responsabile del progetto"
+        },
+        "bibliographicReferences": {
+          "label": "Bibliografia"
         }
       }
     },

@@ -47,9 +47,12 @@ export function buildImportCatalog(services: ImportCatalogServices,
             assertProjectAlwaysTheSame(importDocuments);
             const importCatalog = getImportTypeCatalog(importDocuments);
 
-            if (importCatalog.project === context.selectedProject) { // owned catalog
+            if (isOwned(context, importCatalog)) {
                 await assertCatalogNotOwned(services, context, importCatalog);
                 await assertNoImagesOverwritten(services, context, importDocuments);
+                for (const importDocument of importDocuments) {
+                    delete importDocument.project;
+                }
             }
             await assertNoIdentifierClashes(services, importDocuments);
 
@@ -58,7 +61,6 @@ export function buildImportCatalog(services: ImportCatalogServices,
                 existingDocumentsRelatedImages,
                 existingCatalogAndImageDocuments
             ] = await getExistingDocuments(services, importCatalog.resource.id);
-
 
             assertRelationsValid(importDocuments);
             assertNoDeletionOfRelatedTypes(existingCatalogDocuments, importDocuments);
@@ -204,13 +206,16 @@ function assertNoDeletionOfRelatedTypes(existingDocuments: Array<Document>,
             problems.push(removedDocument.resource.identifier);
         }
     }
-    if (problems.length > 0 ) throw [
-        ImportCatalogErrors.CONNECTED_TYPE_DELETED,
-        problems.join(',')];
+    if (problems.length > 0 ) {
+        throw [
+            ImportCatalogErrors.CONNECTED_TYPE_DELETED,
+            problems.join(',')
+        ];
+    }
 }
 
 
-function getImportTypeCatalog(importDocuments: Array<Document>) {
+function getImportTypeCatalog(importDocuments: Array<Document>): Document {
 
     const typeCatalogDocuments =
         importDocuments.filter(_ => _.resource.category === 'TypeCatalog');
@@ -238,32 +243,43 @@ function importOneDocument(services: ImportCatalogServices,
                            context: ImportCatalogContext,
                            existingDocuments: Lookup<Document>) {
 
-    return async function(document: Document) {
+    return async (document: Document) => {
 
         delete document[Document._REV];
         delete document[Document.MODIFIED];
         delete document[Document.CREATED];
 
-        const existingDocument: Document | undefined = await existingDocuments[document.resource.id];
+        const existingDocument: Document|undefined = existingDocuments[document.resource.id];
         const updateDocument = Document.clone(existingDocument ?? document);
 
-        if (document.project === context.selectedProject) delete updateDocument.project;
-
-        if (existingDocument) {
-            if (existingDocument.resource.category === 'Type' || existingDocument.resource.category === 'TypeCatalog') {
-                const oldRelations = clone(existingDocument.resource.relations[Relations.Type.HASINSTANCE]);
-                updateDocument.resource = clone(document.resource);
-                if (oldRelations) updateDocument.resource.relations[Relations.Type.HASINSTANCE] = oldRelations;
-            } else {
-                updateDocument.resource = clone(document.resource);
-            }
-            await services.datastore.update(updateDocument, context.username);
-        } else {
+        if (!existingDocument) {
             await services.datastore.create(updateDocument, context.username);
+            return updateDocument;
         }
 
+        if (isTypeOrCatalog(existingDocument)) {
+            const oldRelations = clone(existingDocument.resource.relations[Relations.Type.HASINSTANCE]);
+            updateDocument.resource = clone(document.resource);
+            if (oldRelations) updateDocument.resource.relations[Relations.Type.HASINSTANCE] = oldRelations;
+            await services.datastore.update(updateDocument, context.username);
+        } else {
+            await services.datastore.remove(existingDocument);
+            await services.datastore.create(updateDocument, context.username);
+        }
         return updateDocument;
     }
+}
+
+
+function isOwned(context: ImportCatalogContext, document: Document) {
+
+    return document.project === context.selectedProject;
+}
+
+
+function isTypeOrCatalog(document: Document) {
+
+    return document.resource.category === 'Type' || document.resource.category === 'TypeCatalog';
 }
 
 

@@ -232,6 +232,9 @@
         "longitude": {
           "label": "Longitude"
         },
+        "license": {
+          "label": "License information"
+        },
         "projectURI": {
           "label": "Project URL"
         },
@@ -244,6 +247,9 @@
         "projectSupervisor": {
           "label": "Supervisor",
           "description": "Person in charge of the project"
+        },
+        "bibliographicReferences": {
+          "label": "Bibliography"
         }
       }
     },

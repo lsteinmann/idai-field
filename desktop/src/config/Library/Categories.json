@@ -248,11 +248,17 @@
       "longitude": {
         "inputType": "float"
       },
+      "license": {
+        "inputType": "text"
+      },
       "projectURI": {
         "inputType": "input"
       },
       "projectSupervisor": {
         "inputType": "input"
+      },
+      "bibliographicReferences": {
+        "inputType" : "literature"
       }
     }
   },
