@@ -56941,9 +56941,9 @@
       },
       "Humusschicht": {
         "labels": {
-          "de": "Humusschicht",
-          "en": "humus",
-          "fr": "Humus"
+          "de": "Humusschicht / Oberfläche",
+          "en": "humus / Surface",
+          "fr": "Humus / surface"
         }
       },
       "Filling": {
@@ -56951,6 +56951,13 @@
           "de": "Verfüllung",
           "en": "Filling",
           "fr": "Remplissage"
+        }
+      },
+      "Baugrube": {
+        "labels": {
+          "de": "Baugrube",
+          "en": "Foundation trench/pit",
+          "fr": "Foundation trench/pit (fosse de soubassement?)"
         }
       },
       "Grave": {
