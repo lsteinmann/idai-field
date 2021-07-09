@@ -186,7 +186,7 @@
     "color": "#d52228",
     "hidden": [],
     "fields": {
-      "otherNotesS": {
+      "unitNotes": {
         "inputType": "text"
       }
     }
