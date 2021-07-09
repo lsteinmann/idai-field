@@ -41,6 +41,10 @@
     "hidden": ["trenchComment"],
     "fields": {}
   },
+  "Floor:default": {
+    "hidden": [],
+    "fields": {}
+  },
   "Feature": {
     "color": "#121009",
     "commons": [
@@ -473,6 +477,10 @@
     "hidden": [],
     "fields": {}
   },
+  "Burial:default": {
+    "hidden": [],
+    "fields": {}
+  },
   "Wood:default": {
     "hidden": [],
     "fields": {}
@@ -482,6 +490,10 @@
     "fields": {}
   },
   "Metal:default": {
+    "hidden": [],
+    "fields": {}
+  },
+  "Grave:default": {
     "hidden": [],
     "fields": {}
   },
